@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#164f42"/>
+  <rect x="40" y="40" width="1120" height="550" rx="24" fill="#1f6f5c"/>
+  <g fill="#ffffff" transform="translate(90,120)">
+    <text font-family="system-ui, sans-serif" font-size="30" fill="#bfe0d6" font-weight="600" letter-spacing="2">RESCUE DOG GUIDE</text>
+    <text y="120" font-family="Georgia, serif" font-size="72" font-weight="700">Adopting a rescue dog</text>
+    <text y="205" font-family="Georgia, serif" font-size="72" font-weight="700">from overseas</text>
+    <text y="300" font-family="system-ui, sans-serif" font-size="34" fill="#dcefe8">Honest, practical help for UK adopters — Romania,</text>
+    <text y="348" font-family="system-ui, sans-serif" font-size="34" fill="#dcefe8">Cyprus, Bulgaria, Greece and Spain.</text>
+  </g>
+</svg>
