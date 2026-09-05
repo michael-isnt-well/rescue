@@ -18,16 +18,22 @@ const crumbs = [
       <p>
         I want every guide and rescue profile here to be accurate. If something
         is wrong, out of date, or if you represent a rescue and want your
-        profile corrected or removed, please get in touch and I'll respond
-        quickly.
+        profile corrected or removed, use the form below and I'll respond
+        quickly. If you're getting in touch about a specific page, popping its
+        link in helps. For rescues, a message from an address on your
+        organisation's domain helps me verify the request.
       </p>
-      <h2>How to reach me</h2>
-      <p>
-        Email <a href="mailto:hello@example.com">hello@example.com</a> with the
-        page URL and what needs changing. For rescues, a quick note from an
-        address on your organisation's domain helps me verify the request.
-      </p>
-      <h2>What I'll do</h2>
+    </div>
+
+    <div class="mt-8">
+      <ContactForm
+        access-key="1ef98639-1053-4292-a02e-d374a38abb87"
+        subject="Correction / takedown — Rescue Journey"
+      />
+    </div>
+
+    <div class="prose mt-12">
+      <h2>What happens next</h2>
       <p>
         Factual corrections are usually made within a few days. If a profile is
         removed, the page won't simply vanish — it'll show a short "no longer

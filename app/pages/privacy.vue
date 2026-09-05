@@ -15,9 +15,21 @@ const crumbs = [
     <h1 class="display text-[2.2rem] sm:text-[2.6rem]">Privacy policy</h1>
     <div class="prose mt-8">
       <p>
-        This is a static content site. It has no accounts, no logins, and no
-        comment forms, so I don't ask you for personal information and I don't
-        store any.
+        This is a static content site with no accounts, no logins, and no
+        tracking of individuals. The only place it collects personal
+        information is the contact form — and only what you choose to type
+        into it.
+      </p>
+      <h2>The contact form</h2>
+      <p>
+        When you send a message through the
+        <NuxtLink to="/takedown">corrections form</NuxtLink>, the details you
+        enter (your name, email, an optional page link, and your message) are
+        delivered to me by email via a third-party form service,
+        <strong>Web3Forms</strong>, which processes the submission on my behalf.
+        I use your email only to reply. I won't add you to any mailing list —
+        there isn't one. Web3Forms' handling of the data in transit is governed
+        by their own privacy policy.
       </p>
       <h2>Analytics</h2>
       <p>
@@ -36,10 +48,10 @@ const crumbs = [
       </p>
       <h2>Your rights</h2>
       <p>
-        Under UK GDPR you have rights over any personal data a site holds about
-        you. As this site holds none, there is nothing to request, correct, or
-        erase. If that ever changes, this page will say so and give a contact
-        route.
+        Under UK GDPR you have rights over any personal data held about you. In
+        practice the only personal data here is what you send via the contact
+        form. If you'd like me to delete a message you've sent, just reply to it
+        or get in touch and I'll remove it.
       </p>
     </div>
   </div>
