@@ -43,18 +43,26 @@ files.
 | ---------------------- | ---------------------------- |
 | Framework preset       | Nuxt.js (or None)            |
 | Build command          | `npm run generate`           |
-| Build output directory | `.output/public`             |
+| Build output directory | `dist`  ← see note        |
 | Node version           | `22` (set `NODE_VERSION=22`, or via `.nvmrc`) |
 
-**Environment variable (all environments):**
+> **Output directory — important.** On Cloudflare, Nuxt auto-detects the
+> environment and uses the `cloudflare-pages-static` Nitro preset, which emits
+> to **`dist`**. So the Pages "Build output directory" must be **`dist`**, even
+> though a *local* `npm run generate` produces `.output/public` (the local
+> `static` preset). Setting `.output/public` in Pages fails with "Output
+> directory not found".
+
+**Environment variables (all environments):**
 
 ```
-NUXT_PUBLIC_SITE_URL = https://your-domain.co.uk
+NUXT_PUBLIC_SITE_URL = https://rescuejourney.co.uk
+NODE_VERSION         = 22
 ```
 
-This drives canonicals, the sitemap, OG URLs and JSON-LD. For preview
-deployments you can point it at the `*.pages.dev` URL. Without it the site
-falls back to `https://example.com` — set it before going live.
+`NUXT_PUBLIC_SITE_URL` drives canonicals, the sitemap, OG URLs and JSON-LD. For
+preview deployments you can point it at the `*.pages.dev` URL. The config also
+falls back to `https://rescuejourney.co.uk` if the var is unset.
 
 ## Content model
 
