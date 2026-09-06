@@ -40,6 +40,48 @@
     0 8px 24px -12px rgba(28, 26, 23, 0.14);
 }
 
+/* ---------------------------------------------------------------------------
+   Dark theme — token overrides only. Every component reads var(--color-*), so
+   flipping these values themes the whole site. Applied when the root carries
+   data-theme="dark", set by the no-flash script (nuxt.config) and the header
+   toggle.
+--------------------------------------------------------------------------- */
+:root[data-theme='dark'] {
+  --color-paper: #1a1917;
+  --color-ink: #ece7dd;
+  --color-muted: #a8a294;
+  --color-faint: #79736a;
+  --color-line: #333029;
+  --color-subtle: #232220;
+  --color-brand: #2f9077;
+  --color-brand-dark: #74c9b1;
+  --color-brand-soft: #17322b;
+  --color-warn: #e0a86a;
+  --color-warn-bg: #2e2113;
+  --color-info: #86b4de;
+  --color-info-bg: #14212e;
+}
+/* On dark, the primary button reads better with dark text on the accent. */
+:root[data-theme='dark'] .btn-primary {
+  color: #0f1f1a;
+}
+/* Give code blocks separation from the near-black page. */
+:root[data-theme='dark'] .prose pre {
+  background: #0e0d0b;
+  border: 1px solid var(--color-line);
+}
+
+/* Theme-toggle icon swap (driven purely by the root attribute). */
+.theme-sun {
+  display: none;
+}
+:root[data-theme='dark'] .theme-moon {
+  display: none;
+}
+:root[data-theme='dark'] .theme-sun {
+  display: inline;
+}
+
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;

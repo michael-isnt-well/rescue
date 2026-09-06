@@ -11,6 +11,19 @@ const open = ref(false)
 const route = useRoute()
 // Close the mobile menu on navigation.
 watch(() => route.path, () => (open.value = false))
+
+// Theme toggle — icons swap via CSS from the root data-theme attribute, so no
+// reactive state is needed (and no hydration mismatch).
+function toggleTheme() {
+  const el = document.documentElement
+  const next = (el.getAttribute('data-theme') || 'light') === 'dark' ? 'light' : 'dark'
+  el.setAttribute('data-theme', next)
+  try {
+    localStorage.setItem('theme', next)
+  } catch {
+    /* storage unavailable — fine */
+  }
+}
 </script>
 
 <template>
@@ -33,37 +46,55 @@ watch(() => route.path, () => (open.value = false))
         </span>
       </NuxtLink>
 
-      <!-- Desktop nav -->
-      <nav class="hidden sm:block" aria-label="Primary">
-        <ul class="flex items-center gap-1 text-sm sm:gap-2">
-          <li v-for="item in nav" :key="item.to">
-            <NuxtLink
-              :to="item.to"
-              class="rounded-lg px-2.5 py-1.5 text-[var(--color-muted)] no-underline transition-colors hover:bg-[var(--color-subtle)] hover:text-[var(--color-ink)]"
-              active-class="!text-[var(--color-ink)] font-semibold"
-            >
-              {{ item.label }}
-            </NuxtLink>
-          </li>
-        </ul>
-      </nav>
+      <div class="flex items-center gap-1">
+        <!-- Desktop nav -->
+        <nav class="hidden sm:block" aria-label="Primary">
+          <ul class="flex items-center gap-1 text-sm sm:gap-2">
+            <li v-for="item in nav" :key="item.to">
+              <NuxtLink
+                :to="item.to"
+                class="rounded-lg px-2.5 py-1.5 text-[var(--color-muted)] no-underline transition-colors hover:bg-[var(--color-subtle)] hover:text-[var(--color-ink)]"
+                active-class="!text-[var(--color-ink)] font-semibold"
+              >
+                {{ item.label }}
+              </NuxtLink>
+            </li>
+          </ul>
+        </nav>
 
-      <!-- Mobile toggle -->
-      <button
-        type="button"
-        class="-mr-1 grid h-9 w-9 place-items-center rounded-lg text-[var(--color-ink)] hover:bg-[var(--color-subtle)] sm:hidden"
-        :aria-expanded="open"
-        aria-controls="mobile-nav"
-        aria-label="Toggle menu"
-        @click="open = !open"
-      >
-        <svg v-if="!open" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
-          <path d="M4 7h16M4 12h16M4 17h16" />
-        </svg>
-        <svg v-else class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
-          <path d="M6 6l12 12M18 6L6 18" />
-        </svg>
-      </button>
+        <!-- Theme toggle -->
+        <button
+          type="button"
+          class="grid h-9 w-9 place-items-center rounded-lg text-[var(--color-ink)] hover:bg-[var(--color-subtle)]"
+          aria-label="Toggle dark mode"
+          @click="toggleTheme"
+        >
+          <svg class="theme-moon h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+          </svg>
+          <svg class="theme-sun h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.4 1.4M17.6 17.6 19 19M5 19l1.4-1.4M17.6 6.4 19 5" />
+          </svg>
+        </button>
+
+        <!-- Mobile toggle -->
+        <button
+          type="button"
+          class="-mr-1 grid h-9 w-9 place-items-center rounded-lg text-[var(--color-ink)] hover:bg-[var(--color-subtle)] sm:hidden"
+          :aria-expanded="open"
+          aria-controls="mobile-nav"
+          aria-label="Toggle menu"
+          @click="open = !open"
+        >
+          <svg v-if="!open" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+          <svg v-else class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+      </div>
     </div>
 
     <!-- Mobile menu -->

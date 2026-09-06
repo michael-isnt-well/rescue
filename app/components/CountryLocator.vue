@@ -41,7 +41,7 @@ const activePoint = computed(() => (props.active ? POINTS[props.active] : null))
         v-for="(d, slug) in origins"
         :key="slug"
         :d="d"
-        :fill="active === slug ? 'var(--color-brand-dark)' : 'var(--color-brand)'"
+        :fill="active === slug ? '#164f42' : '#1f6f5c'"
         stroke="#ffffff"
         :stroke-width="active === slug ? 1.1 : 0.8"
       />
@@ -50,24 +50,24 @@ const activePoint = computed(() => (props.active ? POINTS[props.active] : null))
       <line
         v-if="activePoint"
         :x1="UK.x" :y1="UK.y" :x2="activePoint.x" :y2="activePoint.y"
-        stroke="var(--color-brand-dark)" stroke-width="2" stroke-dasharray="5 6" opacity="0.6"
+        stroke="#164f42" stroke-width="2" stroke-dasharray="5 6" opacity="0.6"
       />
 
       <!-- UK anchor -->
-      <circle :cx="UK.x" :cy="UK.y" r="6" fill="var(--color-ink)" stroke="#fff" stroke-width="2" />
-      <text :x="UK.x - 10" :y="UK.y - 10" text-anchor="end" font-size="20" font-weight="700" fill="var(--color-ink)">UK</text>
+      <circle :cx="UK.x" :cy="UK.y" r="6" fill="#1c1a17" stroke="#fff" stroke-width="2" />
+      <text :x="UK.x - 10" :y="UK.y - 10" text-anchor="end" font-size="20" font-weight="700" fill="#1c1a17">UK</text>
 
       <!-- country pins + labels -->
       <g v-for="c in list" :key="c.slug">
         <circle
           :cx="c.x" :cy="c.y" :r="active === c.slug ? 7 : 5"
-          fill="var(--color-ink)" stroke="#fff" stroke-width="2"
+          fill="#1c1a17" stroke="#fff" stroke-width="2"
         />
         <text
           :x="c.x + c.dx" :y="c.y + c.dy" :text-anchor="c.ax"
           font-size="19"
           :font-weight="active === c.slug ? 700 : 500"
-          fill="var(--color-ink)"
+          fill="#1c1a17"
         >{{ c.flag }} {{ c.name }}</text>
       </g>
     </svg>

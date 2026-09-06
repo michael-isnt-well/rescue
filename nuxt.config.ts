@@ -85,6 +85,14 @@ export default defineNuxtConfig({
       htmlAttrs: { lang: 'en-GB' },
       // charset + viewport are set by Nuxt defaults — don't repeat them.
       link: [{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
+      // Set the theme before first paint (no flash of the wrong theme).
+      script: [
+        {
+          tagPosition: 'head',
+          innerHTML:
+            "(function(){try{var s=localStorage.getItem('theme');var d=s?s:(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',d);}catch(e){}})();",
+        },
+      ],
     },
   },
 })
