@@ -6,6 +6,11 @@ const nav = [
   { label: 'Journal', to: '/journal' },
   { label: 'About', to: '/about' },
 ]
+
+const open = ref(false)
+const route = useRoute()
+// Close the mobile menu on navigation.
+watch(() => route.path, () => (open.value = false))
 </script>
 
 <template>
@@ -27,7 +32,9 @@ const nav = [
           Rescue Journey
         </span>
       </NuxtLink>
-      <nav aria-label="Primary">
+
+      <!-- Desktop nav -->
+      <nav class="hidden sm:block" aria-label="Primary">
         <ul class="flex items-center gap-1 text-sm sm:gap-2">
           <li v-for="item in nav" :key="item.to">
             <NuxtLink
@@ -40,7 +47,44 @@ const nav = [
           </li>
         </ul>
       </nav>
+
+      <!-- Mobile toggle -->
+      <button
+        type="button"
+        class="-mr-1 grid h-9 w-9 place-items-center rounded-lg text-[var(--color-ink)] hover:bg-[var(--color-subtle)] sm:hidden"
+        :aria-expanded="open"
+        aria-controls="mobile-nav"
+        aria-label="Toggle menu"
+        @click="open = !open"
+      >
+        <svg v-if="!open" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16" />
+        </svg>
+        <svg v-else class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18" />
+        </svg>
+      </button>
     </div>
+
+    <!-- Mobile menu -->
+    <nav
+      v-show="open"
+      id="mobile-nav"
+      class="border-t border-[var(--color-line)] bg-[var(--color-paper)] sm:hidden"
+      aria-label="Primary"
+    >
+      <ul class="mx-auto max-w-3xl px-2 py-2">
+        <li v-for="item in nav" :key="item.to">
+          <NuxtLink
+            :to="item.to"
+            class="block rounded-lg px-3 py-2.5 text-[var(--color-muted)] no-underline hover:bg-[var(--color-subtle)] hover:text-[var(--color-ink)]"
+            active-class="!text-[var(--color-ink)] font-semibold"
+          >
+            {{ item.label }}
+          </NuxtLink>
+        </li>
+      </ul>
+    </nav>
   </header>
 </template>
 
