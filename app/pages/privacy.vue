@@ -33,9 +33,11 @@ const crumbs = [
       </p>
       <h2>Analytics</h2>
       <p>
-        If analytics are enabled, they are privacy-friendly and cookieless —
-        aggregate page views only, with no cross-site tracking and no personal
-        profiles. This section will name the provider once one is in use.
+        This site uses <strong>Cloudflare Web Analytics</strong> — a
+        privacy-friendly, cookieless analytics tool that counts aggregate page
+        views only. It sets no cookies, builds no personal profiles, and does
+        not track you across other sites. Because it collects no personal data
+        and uses no cookies, it needs no cookie banner.
       </p>
       <h2>Outbound links</h2>
       <p>
