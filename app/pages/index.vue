@@ -53,7 +53,7 @@ const sections = [
         Bringing a rescue dog home from overseas
       </h1>
       <p class="lede mt-6">
-        I'm going through it myself — adopting Barnie, a 16-month-old boy from
+        We're going through the process — adopting Barnie, a 16-month-old boy from
         Romania — and I built this site to be the resource I wished existed:
         clear, honest, and specific to the UK process.
       </p>
@@ -62,7 +62,7 @@ const sections = [
         Greece and Spain: the rabies titre and 21-day rule, transport day, the
         first three weeks of decompression, and insurance that understands
         imported dogs. Rescue profiles are checked and dated, so you can trust
-        what you read. It's free and independent — no ads, no affiliate income.
+        what you read. It's independent and in terms of adopting from Romania, documents our direct experience.
       </p>
       <div class="mt-8 flex flex-wrap gap-3">
         <NuxtLink to="/guides" class="btn btn-primary">Start with the guides</NuxtLink>
