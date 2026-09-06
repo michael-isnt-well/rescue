@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const nav = [
   { label: 'Guides', to: '/guides' },
+  { label: 'Countries', to: '/countries' },
   { label: 'Rescues', to: '/rescues' },
   { label: 'Journal', to: '/journal' },
   { label: 'About', to: '/about' },

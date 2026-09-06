@@ -6,6 +6,7 @@ const cols = [
     heading: 'Sections',
     links: [
       { label: 'Guides', to: '/guides' },
+      { label: 'Countries', to: '/countries' },
       { label: 'Rescues', to: '/rescues' },
       { label: 'Journal', to: '/journal' },
     ],

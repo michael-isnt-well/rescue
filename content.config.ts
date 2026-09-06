@@ -106,5 +106,23 @@ export default defineContentConfig({
         rescue: z.string().nullable().default(null), // rescue slug
       }),
     }),
+
+    // -----------------------------------------------------------------------
+    // Countries — one page per overseas origin. Facts must be cited, not
+    // inferred; health content is vet-check-gated in the body.
+    // -----------------------------------------------------------------------
+    countries: defineCollection({
+      type: 'page',
+      source: 'countries/**/*.md',
+      schema: z.object({
+        name: z.string(),
+        flag: z.string(), // emoji, e.g. "🇷🇴"
+        countrySlug: z.enum(COUNTRIES), // links to guides/rescues by country
+        capital: z.string().optional(),
+        distanceKm: z.number(), // approx straight-line, London -> capital
+        transport: z.array(z.string()).default([]),
+        lastReviewedAt: isoDate,
+      }),
+    }),
   },
 })

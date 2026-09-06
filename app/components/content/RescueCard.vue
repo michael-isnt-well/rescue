@@ -49,7 +49,7 @@ const countries = computed(() =>
     <dl class="mt-5 grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
       <div v-if="fee">
         <dt class="text-xs uppercase tracking-wide text-[var(--color-faint)]">Adoption fee</dt>
-        <dd class="mt-0.5 font-semibold">{{ fee }}</dd>
+        <dd class="mt-0.5 font-semibold">{{ fee }} (approx / varies)</dd>
       </div>
       <div v-if="rescue.homeCheckType">
         <dt class="text-xs uppercase tracking-wide text-[var(--color-faint)]">Home check</dt>
