@@ -10,6 +10,10 @@ rescue: pawprints-to-freedom
 
 The message came through this week, Barnie's tests are back, they're clear, and he's fit to travel!
 
+![Barnie, a cream-coloured rescue dog, lying on a wooden pallet behind wire fencing at the shelter in Romania](/images/barnie.webp){width="720" height="960" style="max-width:20rem;margin-inline:auto;display:block"}
+
+*Barnie waiting at the shelter in Romania. Photo shared by a Pawprints to Freedom volunteer, used with permission.*
+
 If you've read the [Romania country notes](/countries/romania), you'll know the health screening is the part of adopting from overseas I'd been quietly worrying about — the blood tests for the things that aren't really a concern here. A clean set of results is an enormous relief. It isn't a guarantee of anything forever, and he'll still get a proper vet check once he's home, but for now: cleared.
 
 And with that, we finally have a date. He's booked onto Pawprints' own transport — the "Happy Bus" — leaving Romania on **22 September**. After weeks of open-ended waiting, there's suddenly a number on the calendar, and the whole thing feels real in a way it didn't a fortnight ago.

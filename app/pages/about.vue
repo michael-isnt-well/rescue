@@ -28,15 +28,21 @@ const crumbs = [
     <p class="eyebrow">About</p>
     <h1 class="display mt-3 text-[2.2rem] sm:text-[2.8rem]">Who writes this, and why</h1>
 
-    <img
-      src="/images/mike-and-barnie.svg"
-      alt="Mike Harper sitting on the floor with Barnie, a tan-and-white rescue dog from Romania"
-      width="800"
-      height="500"
-      loading="lazy"
-      decoding="async"
-      class="mt-8 w-full rounded-[var(--radius-lg)] border border-[var(--color-line)] object-cover"
-    />
+    <figure class="mt-8 text-center">
+      <img
+        src="/images/barnie.webp"
+        alt="Barnie, a cream-coloured rescue dog, lying on a wooden pallet behind wire fencing at the shelter in Romania"
+        width="720"
+        height="960"
+        loading="lazy"
+        decoding="async"
+        class="mx-auto w-full max-w-xs rounded-[var(--radius-lg)] border border-[var(--color-line)]"
+      />
+      <figcaption class="mt-2 text-xs text-[var(--color-faint)]">
+        Barnie, waiting at the shelter in Romania. Photo shared by a Pawprints
+        to Freedom volunteer, used with permission.
+      </figcaption>
+    </figure>
 
     <div class="prose mt-8">
       <p>
