@@ -64,8 +64,20 @@ export default defineNuxtConfig({
   },
 
   robots: {
-    // Static hosting — allow everything, point at the sitemap.
-    disallow: [],
+    // Allow everything, point at the sitemap, and declare how AI systems may
+    // use the content (Cloudflare/IETF Content Signals): allow search indexing
+    // and AI answers/citation (ai-input), but not model training (ai-train).
+    groups: [
+      {
+        userAgent: '*',
+        allow: '/',
+        contentSignal: {
+          search: 'yes',
+          'ai-input': 'yes',
+          'ai-train': 'no',
+        },
+      },
+    ],
   },
 
   // ---------------------------------------------------------------------------
