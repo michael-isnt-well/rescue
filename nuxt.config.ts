@@ -77,6 +77,10 @@ export default defineNuxtConfig({
       crawlLinks: true,
       failOnError: false,
       routes: ['/', '/sitemap.xml', '/robots.txt'],
+      // Output flat `foo.html` (not `foo/index.html`) so Cloudflare Pages serves
+      // the no-trailing-slash URL directly — matching our canonicals/sitemap and
+      // avoiding the 308 redirect, the 404 flash, and indexing ambiguity.
+      autoSubfolderIndex: false,
     },
   },
 
