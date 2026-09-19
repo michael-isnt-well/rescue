@@ -39,6 +39,15 @@ const input = computed<FinderInput | null>(() =>
 
 const result = computed(() => (input.value ? recommendSetup(input.value) : null))
 
+// Tier presentation
+const tierPanel: Record<string, string> = {
+  standard: 'border-[var(--color-line)] bg-[var(--color-subtle)]',
+  high: 'border-[var(--color-brand)] bg-[var(--color-brand-soft)]',
+  maximum: 'border-[var(--color-brand-dark)] bg-[var(--color-brand-soft)]',
+}
+const TIER_INDEX: Record<string, number> = { standard: 1, high: 2, maximum: 3 }
+const tierLevel = computed(() => (result.value ? TIER_INDEX[result.value.tier] : 0))
+
 // Match the engine's recommended items to real catalog entries.
 function gearFor(item: RecommendedItem) {
   const list = gear.value || []
@@ -51,12 +60,6 @@ function gearFor(item: RecommendedItem) {
       (item.role === 'addon' || (g.tiers as string[]).includes(tier)) &&
       ((g.morphotypes as string[]).includes(morpho) || (g.morphotypes as string[]).includes('all')),
   )
-}
-
-const tierClass: Record<string, string> = {
-  standard: 'bg-[var(--color-subtle)] text-[var(--color-ink)]',
-  high: 'bg-[var(--color-brand-soft)] text-[var(--color-brand-dark)]',
-  maximum: 'bg-[var(--color-brand)] text-white',
 }
 
 // --- Persistence (per-viewer convenience) ---------------------------------
@@ -101,11 +104,12 @@ function reset() {
           <label
             v-for="o in fearOptions"
             :key="o.value"
-            class="cursor-pointer rounded-lg border p-3 transition-colors"
+            class="option relative cursor-pointer rounded-lg border p-3"
             :class="fear === o.value ? 'border-[var(--color-brand)] bg-[var(--color-brand-soft)]' : 'border-[var(--color-line)] hover:bg-[var(--color-subtle)]'"
           >
             <input v-model="fear" type="radio" name="fear" :value="o.value" class="sr-only" />
-            <span class="block text-sm font-medium">{{ o.label }}</span>
+            <span v-if="fear === o.value" class="check">✓</span>
+            <span class="block pr-5 text-sm font-medium">{{ o.label }}</span>
             <span class="block text-xs text-[var(--color-muted)]">{{ o.hint }}</span>
           </label>
         </div>
@@ -117,11 +121,12 @@ function reset() {
           <label
             v-for="o in morphoOptions"
             :key="o.value"
-            class="cursor-pointer rounded-lg border p-3 transition-colors"
+            class="option relative cursor-pointer rounded-lg border p-3"
             :class="morphotype === o.value ? 'border-[var(--color-brand)] bg-[var(--color-brand-soft)]' : 'border-[var(--color-line)] hover:bg-[var(--color-subtle)]'"
           >
             <input v-model="morphotype" type="radio" name="morpho" :value="o.value" class="sr-only" />
-            <span class="block text-sm font-medium">{{ o.label }}</span>
+            <span v-if="morphotype === o.value" class="check">✓</span>
+            <span class="block pr-5 text-sm font-medium">{{ o.label }}</span>
             <span class="block text-xs text-[var(--color-muted)]">{{ o.hint }}</span>
           </label>
         </div>
@@ -133,11 +138,12 @@ function reset() {
           <label
             v-for="o in envOptions"
             :key="o.value"
-            class="cursor-pointer rounded-lg border p-3 transition-colors"
+            class="option relative cursor-pointer rounded-lg border p-3"
             :class="environment === o.value ? 'border-[var(--color-brand)] bg-[var(--color-brand-soft)]' : 'border-[var(--color-line)] hover:bg-[var(--color-subtle)]'"
           >
             <input v-model="environment" type="radio" name="env" :value="o.value" class="sr-only" />
-            <span class="block text-sm font-medium">{{ o.label }}</span>
+            <span v-if="environment === o.value" class="check">✓</span>
+            <span class="block pr-5 text-sm font-medium">{{ o.label }}</span>
             <span class="block text-xs text-[var(--color-muted)]">{{ o.hint }}</span>
           </label>
         </div>
@@ -150,90 +156,152 @@ function reset() {
     </p>
 
     <!-- Result -->
-    <div v-else-if="result" class="mt-8">
-      <div class="flex items-center justify-between gap-4">
-        <div>
-          <p class="eyebrow">Recommended setup</p>
-          <h2 class="display mt-1 text-2xl">
-            <span class="rounded-full px-3 py-1 text-base align-middle" :class="tierClass[result.tier]">{{ result.tierLabel }}</span>
-          </h2>
+    <Transition name="reveal">
+      <div v-if="answered && result" :key="result.tier" class="mt-8">
+        <!-- Tier-tinted panel: label, security meter, tagline -->
+        <div class="rounded-[var(--radius-lg)] border-l-4 p-5" :class="tierPanel[result.tier]">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <p class="eyebrow">Recommended setup</p>
+              <h2 class="display mt-1 text-2xl">{{ result.tierLabel }}</h2>
+            </div>
+            <button type="button" class="shrink-0 text-sm text-[var(--color-muted)] underline" @click="reset">
+              Start over
+            </button>
+          </div>
+          <div class="mt-4 flex items-center gap-3">
+            <span class="text-xs font-semibold uppercase tracking-wide text-[var(--color-muted)]">Security level</span>
+            <div class="flex gap-1.5" role="img" :aria-label="`Security level ${tierLevel} of 3`">
+              <span
+                v-for="n in 3"
+                :key="n"
+                class="meter-seg h-2.5 w-9 rounded-full"
+                :class="n <= tierLevel ? 'bg-[var(--color-brand)]' : 'bg-[color-mix(in_srgb,var(--color-ink)_14%,transparent)]'"
+              />
+            </div>
+          </div>
+          <p class="mt-3 text-[var(--color-ink)]">{{ result.tagline }}</p>
         </div>
-        <button type="button" class="text-sm text-[var(--color-muted)] underline" @click="reset">Start over</button>
-      </div>
-      <p class="lede mt-3">{{ result.tagline }}</p>
 
-      <!-- Why (transparency of the safety rules) -->
-      <div v-if="result.rulesTriggered.length" class="mt-5 rounded-[var(--radius-lg)] border-l-4 border-[var(--color-warn)] bg-[var(--color-warn-bg)] px-4 py-3">
-        <p class="text-xs font-semibold uppercase tracking-wide text-[var(--color-warn)]">Why this setup</p>
-        <ul class="mt-2 space-y-1.5 text-sm text-[var(--color-ink)]">
-          <li v-for="r in result.rulesTriggered" :key="r.id">• {{ r.text }}</li>
-        </ul>
-      </div>
+        <!-- Why (transparency of the safety rules) -->
+        <div v-if="result.rulesTriggered.length" class="mt-5 rounded-[var(--radius-lg)] border-l-4 border-[var(--color-warn)] bg-[var(--color-warn-bg)] px-4 py-3">
+          <p class="text-xs font-semibold uppercase tracking-wide text-[var(--color-warn)]">Why this setup</p>
+          <ul class="mt-2 space-y-1.5 text-sm text-[var(--color-ink)]">
+            <li v-for="r in result.rulesTriggered" :key="r.id">• {{ r.text }}</li>
+          </ul>
+        </div>
 
-      <!-- Essentials -->
-      <h3 class="display mt-8 text-lg">The setup</h3>
-      <div class="mt-4 space-y-4">
-        <div v-for="item in result.essentials" :key="item.category + item.role">
-          <div v-for="g in gearFor(item)" :key="g.name" class="card p-5">
-            <div class="flex items-start justify-between gap-3">
-              <div>
-                <span class="pill">{{ item.role }}</span>
-                <h4 class="mt-2 font-semibold">{{ g.name }}</h4>
+        <!-- Essentials -->
+        <h3 class="display mt-8 text-lg">The setup</h3>
+        <div class="mt-4 space-y-4">
+          <div v-for="item in result.essentials" :key="item.category + item.role">
+            <div v-for="g in gearFor(item)" :key="g.name" class="card p-5">
+              <span class="pill">{{ item.role }}</span>
+              <h4 class="mt-2 font-semibold">{{ g.name }}</h4>
+              <p class="mt-2 text-sm text-[var(--color-ink)]">{{ item.why }}</p>
+              <p class="mt-2 text-sm text-[var(--color-muted)]">{{ g.summary }}</p>
+              <ul v-if="g.features?.length" class="mt-3 space-y-1 text-sm text-[var(--color-muted)]">
+                <li v-for="f in g.features" :key="f">— {{ f }}</li>
+              </ul>
+              <p v-if="g.sizingNote" class="mt-3 text-xs text-[var(--color-faint)]"><strong>Fit:</strong> {{ g.sizingNote }}</p>
+              <div class="mt-4">
+                <a
+                  v-if="g.affiliateUrl"
+                  :href="g.affiliateUrl"
+                  rel="sponsored nofollow"
+                  target="_blank"
+                  class="btn btn-primary"
+                >View a vetted option →</a>
+                <p v-else class="text-xs text-[var(--color-faint)]">
+                  No product linked here yet — use the "what to look for" points above to choose a vetted one.
+                </p>
               </div>
             </div>
-            <p class="mt-2 text-sm text-[var(--color-ink)]">{{ item.why }}</p>
-            <p class="mt-2 text-sm text-[var(--color-muted)]">{{ g.summary }}</p>
-            <ul v-if="g.features?.length" class="mt-3 space-y-1 text-sm text-[var(--color-muted)]">
-              <li v-for="f in g.features" :key="f">— {{ f }}</li>
-            </ul>
-            <p v-if="g.sizingNote" class="mt-3 text-xs text-[var(--color-faint)]"><strong>Fit:</strong> {{ g.sizingNote }}</p>
-            <div class="mt-4">
-              <a
-                v-if="g.affiliateUrl"
-                :href="g.affiliateUrl"
-                rel="sponsored nofollow"
-                target="_blank"
-                class="btn btn-primary"
-              >View a vetted option →</a>
-              <p v-else class="text-xs text-[var(--color-faint)]">
-                No product linked here yet — use the "what to look for" points above to choose a vetted one.
-              </p>
-            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Add-ons -->
-      <h3 class="display mt-8 text-lg">Worth adding</h3>
-      <div class="mt-4 grid gap-4 sm:grid-cols-2">
-        <template v-for="item in result.addons" :key="item.category">
-          <div v-for="g in gearFor(item)" :key="g.name" class="card p-5">
-            <h4 class="font-semibold">{{ g.name }}</h4>
-            <p class="mt-2 text-sm text-[var(--color-ink)]">{{ item.why }}</p>
-            <ul v-if="g.features?.length" class="mt-3 space-y-1 text-sm text-[var(--color-muted)]">
-              <li v-for="f in g.features" :key="f">— {{ f }}</li>
-            </ul>
-            <div class="mt-4">
-              <a
-                v-if="g.affiliateUrl"
-                :href="g.affiliateUrl"
-                rel="sponsored nofollow"
-                target="_blank"
-                class="btn btn-ghost"
-              >View a vetted option →</a>
+        <!-- Add-ons -->
+        <h3 class="display mt-8 text-lg">Worth adding</h3>
+        <div class="mt-4 grid gap-4 sm:grid-cols-2">
+          <template v-for="item in result.addons" :key="item.category">
+            <div v-for="g in gearFor(item)" :key="g.name" class="card p-5">
+              <h4 class="font-semibold">{{ g.name }}</h4>
+              <p class="mt-2 text-sm text-[var(--color-ink)]">{{ item.why }}</p>
+              <ul v-if="g.features?.length" class="mt-3 space-y-1 text-sm text-[var(--color-muted)]">
+                <li v-for="f in g.features" :key="f">— {{ f }}</li>
+              </ul>
+              <div class="mt-4">
+                <a
+                  v-if="g.affiliateUrl"
+                  :href="g.affiliateUrl"
+                  rel="sponsored nofollow"
+                  target="_blank"
+                  class="btn btn-ghost"
+                >View a vetted option →</a>
+              </div>
             </div>
-          </div>
-        </template>
-      </div>
+          </template>
+        </div>
 
-      <!-- Safety disclaimer -->
-      <div class="mt-8 rounded-[var(--radius-lg)] border border-[var(--color-line)] bg-[var(--color-subtle)] px-4 py-3 text-sm text-[var(--color-muted)]">
-        <strong class="text-[var(--color-ink)]">No harness is truly escape-proof.</strong>
-        This is general guidance, not a fitting service. The setup only works if
-        every piece is <em>fitted correctly</em> and checked before each walk —
-        get the fit checked in person if you can, and always follow your rescue's
-        advice for your individual dog.
+        <!-- Safety disclaimer -->
+        <div class="mt-8 rounded-[var(--radius-lg)] border border-[var(--color-line)] bg-[var(--color-subtle)] px-4 py-3 text-sm text-[var(--color-muted)]">
+          <strong class="text-[var(--color-ink)]">No harness is truly escape-proof.</strong>
+          This is general guidance, not a fitting service. The setup only works if
+          every piece is <em>fitted correctly</em> and checked before each walk —
+          get the fit checked in person if you can, and always follow your rescue's
+          advice for your individual dog.
+        </div>
       </div>
-    </div>
+    </Transition>
   </div>
 </template>
+
+<style scoped>
+/* Subtle interactivity — all guarded by prefers-reduced-motion. */
+.option {
+  transition: transform 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+}
+.check {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.6rem;
+  font-size: 0.8rem;
+  line-height: 1;
+  color: var(--color-brand-dark);
+}
+.meter-seg {
+  transition: background-color 0.35s ease;
+}
+.reveal-enter-active {
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.reveal-enter-from {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.reveal-leave-active {
+  transition: opacity 0.2s ease;
+}
+.reveal-leave-to {
+  opacity: 0;
+}
+@media (hover: hover) {
+  .option:hover {
+    transform: translateY(-1px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .option,
+  .meter-seg,
+  .reveal-enter-active,
+  .reveal-leave-active {
+    transition: none;
+  }
+  .option:hover {
+    transform: none;
+  }
+  .reveal-enter-from {
+    transform: none;
+  }
+}
+</style>
