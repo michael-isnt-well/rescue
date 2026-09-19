@@ -4,6 +4,7 @@ const nav = [
   { label: 'Countries', to: '/countries' },
   { label: 'Rescues', to: '/rescues' },
   { label: 'Journal', to: '/journal' },
+  { label: 'Tools', to: '/tools/harness-fit-finder' },
   { label: 'About', to: '/about' },
 ]
 

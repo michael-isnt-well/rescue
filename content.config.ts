@@ -124,5 +124,33 @@ export default defineContentConfig({
         lastReviewedAt: isoDate,
       }),
     }),
+
+    // -----------------------------------------------------------------------
+    // Gear — vetted kit surfaced by the Harness Finder tool. Data collection
+    // (no per-item routes). Recommendations are SAFETY-led, never
+    // commission-led. `affiliateUrl` is a ready slot: null until a real,
+    // vetted product link is added, at which point a Buy button appears.
+    // -----------------------------------------------------------------------
+    gear: defineCollection({
+      type: 'data',
+      source: 'gear/**/*.md',
+      schema: z.object({
+        name: z.string(),
+        category: z.enum(['harness', 'collar', 'lead', 'longline', 'tracker', 'id-tag']),
+        role: z.enum(['primary', 'backup', 'connector', 'addon']),
+        tiers: z.array(z.enum(['standard', 'high', 'maximum'])).default([]),
+        morphotypes: z
+          .array(z.enum(['deep-chested', 'standard', 'bully-broad', 'all']))
+          .default(['all']),
+        summary: z.string(),
+        features: z.array(z.string()).default([]),
+        sizingNote: z.string().nullable().default(null),
+        brand: z.string().nullable().default(null),
+        // Affiliate-ready: null for now → no Buy button; add a vetted link later.
+        affiliateUrl: z.string().url().nullable().default(null),
+        retailer: z.enum(['awin', 'amazon', 'other']).nullable().default(null),
+        order: z.number().default(100),
+      }),
+    }),
   },
 })

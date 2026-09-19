@@ -1,0 +1,239 @@
+<script setup lang="ts">
+import type { FinderInput, Fear, Morphotype, Environment, RecommendedItem } from '~/utils/harnessFinder'
+
+// Gear catalog (safety-led; affiliateUrl is null until a vetted link is added).
+const { data: gear } = await useAsyncData('gear-catalog', () =>
+  queryCollection('gear').order('order', 'ASC').all(),
+)
+
+const fearOptions = [
+  { value: 0, label: 'Confident / calm', hint: 'Settled, not easily startled' },
+  { value: 1, label: 'Mildly anxious', hint: 'Noise-sensitive, a bit unsure' },
+  { value: 2, label: 'High bolt risk', hint: 'Spooks easily, has backed out of a lead' },
+  { value: 3, label: 'Severe flight risk', hint: 'Recent rescue, panics, strong flight instinct' },
+]
+const morphoOptions = [
+  { value: 'deep-chested', label: 'Deep-chested', hint: 'Deep ribcage, narrow waist — lurchers, sighthounds, many Romanian rescues' },
+  { value: 'standard', label: 'Standard build', hint: 'Proportional chest and waist — Labradors, terriers' },
+  { value: 'bully-broad', label: 'Broad / thick-necked', hint: 'Thick neck, broad chest — Staffies, bulldogs' },
+]
+const envOptions = [
+  { value: 0, label: 'Quiet / rural', hint: 'Private field, quiet lanes' },
+  { value: 1, label: 'Suburban streets', hint: 'Pavements with some traffic' },
+  { value: 2, label: 'Busy / urban', hint: 'Main roads, high traffic' },
+]
+
+const fear = ref<Fear | null>(null)
+const morphotype = ref<Morphotype | null>(null)
+const environment = ref<Environment | null>(null)
+
+const answered = computed(
+  () => fear.value !== null && morphotype.value !== null && environment.value !== null,
+)
+
+const input = computed<FinderInput | null>(() =>
+  answered.value
+    ? { fear: fear.value as Fear, morphotype: morphotype.value as Morphotype, environment: environment.value as Environment }
+    : null,
+)
+
+const result = computed(() => (input.value ? recommendSetup(input.value) : null))
+
+// Match the engine's recommended items to real catalog entries.
+function gearFor(item: RecommendedItem) {
+  const list = gear.value || []
+  const tier = result.value!.tier
+  const morpho = input.value!.morphotype
+  return list.filter(
+    (g) =>
+      g.category === item.category &&
+      g.role === item.role &&
+      (item.role === 'addon' || (g.tiers as string[]).includes(tier)) &&
+      ((g.morphotypes as string[]).includes(morpho) || (g.morphotypes as string[]).includes('all')),
+  )
+}
+
+const tierClass: Record<string, string> = {
+  standard: 'bg-[var(--color-subtle)] text-[var(--color-ink)]',
+  high: 'bg-[var(--color-brand-soft)] text-[var(--color-brand-dark)]',
+  maximum: 'bg-[var(--color-brand)] text-white',
+}
+
+// --- Persistence (per-viewer convenience) ---------------------------------
+const KEY = 'harness-finder-v1'
+onMounted(() => {
+  try {
+    const saved = JSON.parse(localStorage.getItem(KEY) || 'null')
+    if (saved) {
+      fear.value = saved.fear ?? null
+      morphotype.value = saved.morphotype ?? null
+      environment.value = saved.environment ?? null
+    }
+  } catch {
+    /* storage unavailable — ignore */
+  }
+})
+watch([fear, morphotype, environment], () => {
+  try {
+    localStorage.setItem(
+      KEY,
+      JSON.stringify({ fear: fear.value, morphotype: morphotype.value, environment: environment.value }),
+    )
+  } catch {
+    /* ignore */
+  }
+})
+
+function reset() {
+  fear.value = null
+  morphotype.value = null
+  environment.value = null
+}
+</script>
+
+<template>
+  <div>
+    <!-- Questions -->
+    <form class="space-y-7" @submit.prevent>
+      <fieldset>
+        <legend class="text-sm font-semibold">1. How is your dog on a lead?</legend>
+        <div class="mt-3 grid gap-2 sm:grid-cols-2">
+          <label
+            v-for="o in fearOptions"
+            :key="o.value"
+            class="cursor-pointer rounded-lg border p-3 transition-colors"
+            :class="fear === o.value ? 'border-[var(--color-brand)] bg-[var(--color-brand-soft)]' : 'border-[var(--color-line)] hover:bg-[var(--color-subtle)]'"
+          >
+            <input v-model="fear" type="radio" name="fear" :value="o.value" class="sr-only" />
+            <span class="block text-sm font-medium">{{ o.label }}</span>
+            <span class="block text-xs text-[var(--color-muted)]">{{ o.hint }}</span>
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend class="text-sm font-semibold">2. What's your dog's build?</legend>
+        <div class="mt-3 grid gap-2 sm:grid-cols-3">
+          <label
+            v-for="o in morphoOptions"
+            :key="o.value"
+            class="cursor-pointer rounded-lg border p-3 transition-colors"
+            :class="morphotype === o.value ? 'border-[var(--color-brand)] bg-[var(--color-brand-soft)]' : 'border-[var(--color-line)] hover:bg-[var(--color-subtle)]'"
+          >
+            <input v-model="morphotype" type="radio" name="morpho" :value="o.value" class="sr-only" />
+            <span class="block text-sm font-medium">{{ o.label }}</span>
+            <span class="block text-xs text-[var(--color-muted)]">{{ o.hint }}</span>
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend class="text-sm font-semibold">3. Where will you mostly walk?</legend>
+        <div class="mt-3 grid gap-2 sm:grid-cols-3">
+          <label
+            v-for="o in envOptions"
+            :key="o.value"
+            class="cursor-pointer rounded-lg border p-3 transition-colors"
+            :class="environment === o.value ? 'border-[var(--color-brand)] bg-[var(--color-brand-soft)]' : 'border-[var(--color-line)] hover:bg-[var(--color-subtle)]'"
+          >
+            <input v-model="environment" type="radio" name="env" :value="o.value" class="sr-only" />
+            <span class="block text-sm font-medium">{{ o.label }}</span>
+            <span class="block text-xs text-[var(--color-muted)]">{{ o.hint }}</span>
+          </label>
+        </div>
+      </fieldset>
+    </form>
+
+    <!-- Prompt until answered -->
+    <p v-if="!answered" class="mt-8 rounded-lg bg-[var(--color-subtle)] px-4 py-3 text-sm text-[var(--color-muted)]">
+      Answer the three questions above to see a recommended setup.
+    </p>
+
+    <!-- Result -->
+    <div v-else-if="result" class="mt-8">
+      <div class="flex items-center justify-between gap-4">
+        <div>
+          <p class="eyebrow">Recommended setup</p>
+          <h2 class="display mt-1 text-2xl">
+            <span class="rounded-full px-3 py-1 text-base align-middle" :class="tierClass[result.tier]">{{ result.tierLabel }}</span>
+          </h2>
+        </div>
+        <button type="button" class="text-sm text-[var(--color-muted)] underline" @click="reset">Start over</button>
+      </div>
+      <p class="lede mt-3">{{ result.tagline }}</p>
+
+      <!-- Why (transparency of the safety rules) -->
+      <div v-if="result.rulesTriggered.length" class="mt-5 rounded-[var(--radius-lg)] border-l-4 border-[var(--color-warn)] bg-[var(--color-warn-bg)] px-4 py-3">
+        <p class="text-xs font-semibold uppercase tracking-wide text-[var(--color-warn)]">Why this setup</p>
+        <ul class="mt-2 space-y-1.5 text-sm text-[var(--color-ink)]">
+          <li v-for="r in result.rulesTriggered" :key="r.id">• {{ r.text }}</li>
+        </ul>
+      </div>
+
+      <!-- Essentials -->
+      <h3 class="display mt-8 text-lg">The setup</h3>
+      <div class="mt-4 space-y-4">
+        <div v-for="item in result.essentials" :key="item.category + item.role">
+          <div v-for="g in gearFor(item)" :key="g.name" class="card p-5">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <span class="pill">{{ item.role }}</span>
+                <h4 class="mt-2 font-semibold">{{ g.name }}</h4>
+              </div>
+            </div>
+            <p class="mt-2 text-sm text-[var(--color-ink)]">{{ item.why }}</p>
+            <p class="mt-2 text-sm text-[var(--color-muted)]">{{ g.summary }}</p>
+            <ul v-if="g.features?.length" class="mt-3 space-y-1 text-sm text-[var(--color-muted)]">
+              <li v-for="f in g.features" :key="f">— {{ f }}</li>
+            </ul>
+            <p v-if="g.sizingNote" class="mt-3 text-xs text-[var(--color-faint)]"><strong>Fit:</strong> {{ g.sizingNote }}</p>
+            <div class="mt-4">
+              <a
+                v-if="g.affiliateUrl"
+                :href="g.affiliateUrl"
+                rel="sponsored nofollow"
+                target="_blank"
+                class="btn btn-primary"
+              >View a vetted option →</a>
+              <p v-else class="text-xs text-[var(--color-faint)]">
+                No product linked here yet — use the "what to look for" points above to choose a vetted one.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add-ons -->
+      <h3 class="display mt-8 text-lg">Worth adding</h3>
+      <div class="mt-4 grid gap-4 sm:grid-cols-2">
+        <template v-for="item in result.addons" :key="item.category">
+          <div v-for="g in gearFor(item)" :key="g.name" class="card p-5">
+            <h4 class="font-semibold">{{ g.name }}</h4>
+            <p class="mt-2 text-sm text-[var(--color-ink)]">{{ item.why }}</p>
+            <ul v-if="g.features?.length" class="mt-3 space-y-1 text-sm text-[var(--color-muted)]">
+              <li v-for="f in g.features" :key="f">— {{ f }}</li>
+            </ul>
+            <div class="mt-4">
+              <a
+                v-if="g.affiliateUrl"
+                :href="g.affiliateUrl"
+                rel="sponsored nofollow"
+                target="_blank"
+                class="btn btn-ghost"
+              >View a vetted option →</a>
+            </div>
+          </div>
+        </template>
+      </div>
+
+      <!-- Safety disclaimer -->
+      <div class="mt-8 rounded-[var(--radius-lg)] border border-[var(--color-line)] bg-[var(--color-subtle)] px-4 py-3 text-sm text-[var(--color-muted)]">
+        <strong class="text-[var(--color-ink)]">No harness is truly escape-proof.</strong>
+        This is general guidance, not a fitting service. The setup only works if
+        every piece is <em>fitted correctly</em> and checked before each walk —
+        get the fit checked in person if you can, and always follow your rescue's
+        advice for your individual dog.
+      </div>
+    </div>
+  </div>
+</template>
