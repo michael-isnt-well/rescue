@@ -52,7 +52,7 @@ Your job in these days is to be boring, in the best way:
 - **Offer food and water** near its safe space and don't worry too much if it barely touches them at first.
 
 ::callout{type="warning"}
-Escape is the biggest risk in the early days and weeks. A frightened dog can slip a collar in a heartbeat, and a lost overseas rescue that doesn't know its home is a genuine emergency. Use a **well-fitted harness and a backup slip lead** every single time the dog is outside, check the garden for gaps and low fences, and never open a door onto an unsecured space. See [transport day](/guides/transport-day) for getting those first hours right.
+Escape is the biggest risk in the early days and weeks. A frightened dog can slip a collar in a heartbeat, and a lost overseas rescue that doesn't know its home is a genuine emergency. Use a **well-fitted harness and a backup slip lead** every single time the dog is outside, check the garden for gaps and low fences, and never open a door onto an unsecured space. The [harness finder](/tools/harness-fit-finder) helps you match the right escape-resistant setup to your dog, and [transport day](/guides/transport-day) covers getting those first hours right.
 ::
 
 ## The first three weeks: learning the ropes

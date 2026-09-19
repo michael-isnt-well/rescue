@@ -27,7 +27,7 @@ Most dogs travel by road in a licensed transporter's van, often for **three to f
 By the time the van reaches you, your dog has spent days in motion, surrounded by unfamiliar dogs and people, with no idea where it's going. Whatever personality you've been promised, the dog that steps out of the van is a tired, overwhelmed version of it. That's normal.
 
 ::callout{type="warning"}
-The single biggest risk on arrival is a dog bolting. A frightened dog can slip a collar in an instant, and a lost overseas rescue in a strange country is a genuine emergency. Use a well-fitted harness **and** a slip lead as backup, and never open the van or your car until you're inside a fully enclosed space.
+The single biggest risk on arrival is a dog bolting. A frightened dog can slip a collar in an instant, and a lost overseas rescue in a strange country is a genuine emergency. Use a well-fitted harness **and** a slip lead as backup, and never open the van or your car until you're inside a fully enclosed space. Not sure what setup your dog needs? The [harness finder](/tools/harness-fit-finder) walks you through it.
 ::
 
 ## Door-to-door, or a meeting point?

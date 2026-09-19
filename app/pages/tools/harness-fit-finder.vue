@@ -41,6 +41,7 @@ const schema = computed(() => [
 
 const crumbs = [
   { name: 'Home', path: '/' },
+  { name: 'Tools', path: '/tools' },
   { name: 'Harness Finder', path: '/tools/harness-fit-finder' },
 ]
 </script>
