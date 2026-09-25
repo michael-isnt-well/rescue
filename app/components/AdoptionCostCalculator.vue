@@ -740,7 +740,7 @@ function scrollToSummary() {
         <li v-for="p in PUPPY_PRICES" :key="p.label" class="text-sm text-[var(--color-muted)]">
           <div class="flex justify-between gap-3">
             <span>{{ p.label }} <span class="text-xs text-[var(--color-faint)]">· {{ p.note }}</span></span>
-            <span class="shrink-0 tabular-nums">{{ p.min === p.max ? `${gbp(p.min)}${p.plus ? '+' : ''}` : `${gbp(p.min)}–${gbp(p.max)}` }}</span>
+            <span class="shrink-0 tabular-nums">{{ p.min === p.max ? `${gbp(p.min)}${p.plus ? '+' : ''}` : `${gbp(p.min)}–${gbp(p.max)}${p.plus ? '+' : ''}` }}</span>
           </div>
           <div class="relative mt-1 h-2.5 rounded-full bg-[var(--color-subtle)]">
             <div class="absolute inset-y-0 left-0 rounded-full bg-[var(--cmp-grey)]" :style="{ width: cmpPos(p.min) }" />

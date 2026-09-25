@@ -360,11 +360,40 @@ export const PUPPY_PRICES: PuppyPrice[] = [
       'https://www.pets4homes.co.uk/pet-advice/uk-pet-market-2026-the-decisive-turning-point-for-pet-parents-and-breeders.html',
   },
   {
+    label: 'Chow Chow',
+    min: 800,
+    max: 1900,
+    note: 'Typical price range',
+    sourceUrl: 'https://www.pets4homes.co.uk/dog-breeds/chow-chow/',
+  },
+  {
+    label: 'Samoyed',
+    min: 1100,
+    max: 2000,
+    note: 'Typical price range',
+    sourceUrl: 'https://www.pets4homes.co.uk/dog-breeds/samoyed/',
+  },
+  {
+    label: 'Cavalier King Charles Spaniel',
+    min: 1100,
+    max: 2000,
+    note: 'Typical price range',
+    sourceUrl: 'https://www.pets4homes.co.uk/dog-breeds/cavalier-king-charles-spaniel/',
+  },
+  {
     label: 'Golden Retriever',
     min: 1100,
     max: 2300,
     note: 'Typical price range',
     sourceUrl: 'https://www.pets4homes.co.uk/dog-breeds/golden-retriever/',
+  },
+  {
+    label: 'English Bulldog',
+    min: 1000,
+    max: 3000,
+    plus: true,
+    note: 'Typical price range (2025)',
+    sourceUrl: 'https://www.pets4homes.co.uk/pet-advice/how-much-should-you-pay-for-an-english-bulldog-puppy.html',
   },
 ]
 
