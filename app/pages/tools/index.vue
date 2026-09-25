@@ -2,10 +2,16 @@
 usePageSeo({
   title: 'Tools for overseas rescue adopters',
   description:
-    'Free, practical tools for adopting a rescue dog from overseas — starting with the Bolt-Risk Harness Finder for building an escape-resistant setup.',
+    'Free, practical tools for adopting a rescue dog from overseas: a sourced adoption cost calculator and the Bolt-Risk Harness Finder for an escape-resistant setup.',
 })
 
 const tools = [
+  {
+    title: 'Adoption Cost Calculator',
+    to: '/tools/adoption-cost-calculator',
+    tag: 'New',
+    body: 'What adopting from Romania, Cyprus, Bulgaria, Greece or Spain really costs: published rescue fees, the first vet visit, tests, kit and running costs, with every default figure sourced.',
+  },
   {
     title: 'Bolt-Risk Harness Finder',
     to: '/tools/harness-fit-finder',
