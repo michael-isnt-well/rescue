@@ -314,6 +314,61 @@ export const PDSA_SOURCE = {
 }
 
 // ---------------------------------------------------------------------------
+// For comparison: buying a puppy. Advertised prices on Pets4Homes (the UK's
+// largest pet classifieds site). A single figure has min === max.
+// ---------------------------------------------------------------------------
+
+export interface PuppyPrice {
+  label: string
+  min: number
+  max: number
+  plus?: boolean // source says "over" this figure
+  note: string
+  sourceUrl: string
+}
+
+export const PUPPY_PRICES: PuppyPrice[] = [
+  {
+    label: 'Average puppy',
+    min: 989,
+    max: 989,
+    note: 'Average price across Pets4Homes adverts, December 2025',
+    sourceUrl:
+      'https://www.pets4homes.co.uk/pet-advice/uk-pet-market-2026-the-decisive-turning-point-for-pet-parents-and-breeders.html',
+  },
+  {
+    label: 'Cockapoo',
+    min: 893,
+    max: 893,
+    note: 'Average sale price (2025 data)',
+    sourceUrl: 'https://www.pets4homes.co.uk/pet-advice/how-much-should-you-pay-for-a-cockapoo-puppy.html',
+  },
+  {
+    label: 'Miniature Dachshund',
+    min: 800,
+    max: 1500,
+    note: 'Typical price range',
+    sourceUrl: 'https://www.pets4homes.co.uk/dog-breeds/miniature-dachshund/',
+  },
+  {
+    label: 'Licensed breeder',
+    min: 1500,
+    max: 1500,
+    plus: true,
+    note: 'Average for licensed breeders, 2026',
+    sourceUrl:
+      'https://www.pets4homes.co.uk/pet-advice/uk-pet-market-2026-the-decisive-turning-point-for-pet-parents-and-breeders.html',
+  },
+  {
+    label: 'Golden Retriever',
+    min: 1100,
+    max: 2300,
+    note: 'Typical price range',
+    sourceUrl: 'https://www.pets4homes.co.uk/dog-breeds/golden-retriever/',
+  },
+]
+
+// ---------------------------------------------------------------------------
 // Engine
 // ---------------------------------------------------------------------------
 

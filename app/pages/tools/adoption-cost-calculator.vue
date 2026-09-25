@@ -30,6 +30,10 @@ const faqs = [
     answer: `Because getting a dog here is expensive. Pawprints to Freedom publishes its per-dog costs, covering transport, tests and vaccinations, a Brucellosis test, neutering, an import fee and paperwork, at ${gbp(bTotal.min)}–${gbp(bTotal.max)}. That's more than its ${gbp(520)} fee, before any of the shelter's own running costs.`,
   },
   {
+    question: 'Is adopting a dog from abroad cheaper than buying a puppy?',
+    answer: `Usually, yes. The average advertised puppy on Pets4Homes was ${gbp(989)} in December 2025, and licensed breeders average over ${gbp(1500)}. Most overseas rescue fees we checked sit between ${gbp(range.min)} and ${gbp(760)}, and the rescues that list what's included typically cover vaccinations, a microchip, a pet passport and transport, and often neutering. Running costs after that are much the same for any dog of the same size.`,
+  },
+  {
     question: 'What costs come after the dog arrives?',
     answer: `A first UK vet health check (a median of ${gbp(VET_CHECK.default)} for a dog consultation at Medivet practices, September 2026), possibly a Brucella canis test if your vet asks (published prices of ${gbp(87.42)}–${gbp(177)} at the practices we checked), kit such as an escape-resistant harness and ID tag, and running costs: food, insurance and parasite treatment.`,
   },
@@ -48,6 +52,7 @@ const sources = computed(() => {
   for (const q of BRUCELLA_TEST.quotes) add(`${q.practice} — Brucella canis test`, q.url)
   add(GPS_SOURCE.name, GPS_SOURCE.url)
   add(PDSA_SOURCE.name, PDSA_SOURCE.url)
+  for (const p of PUPPY_PRICES) add(`Pets4Homes — ${p.label.toLowerCase()} prices`, p.sourceUrl)
   return list
 })
 

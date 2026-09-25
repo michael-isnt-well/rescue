@@ -6,6 +6,7 @@ import {
   breakdownTotal,
   gbp,
   RESCUE_FEES,
+  PUPPY_PRICES,
   type CostInput,
 } from '../app/utils/adoptionCosts'
 
@@ -60,6 +61,13 @@ describe('data', () => {
     for (const f of RESCUE_FEES) {
       expect(f.sourceUrl).toMatch(/^https:\/\//)
       expect(f.parts.reduce((a, p) => a + p.amount, 0)).toBe(f.fee)
+    }
+  })
+
+  it('every puppy comparison price is sourced and ordered min <= max', () => {
+    for (const p of PUPPY_PRICES) {
+      expect(p.sourceUrl).toMatch(/^https:\/\/www\.pets4homes\.co\.uk\//)
+      expect(p.min).toBeLessThanOrEqual(p.max)
     }
   })
 

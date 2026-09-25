@@ -96,6 +96,10 @@ const plotTicks = computed(() => {
   return ticks
 })
 
+// Comparison scale: fits the dearest puppy range and any custom fee.
+const cmpMax = computed(() => Math.max(fee.value, ...PUPPY_PRICES.map((p) => p.max)) * 1.05)
+const cmpPos = (n: number) => `${(Math.max(0, n) / cmpMax.value) * 100}%`
+
 const breakdown = FEE_BREAKDOWN
 const bTotal = breakdownTotal()
 const bMax = Math.max(...breakdown.items.map((i) => i.max))
@@ -713,6 +717,59 @@ function scrollToSummary() {
       </div>
     </aside>
 
+    <!-- ================================================================ -->
+    <!-- For comparison: buying a puppy (deliberately low-key, grey)      -->
+    <!-- ================================================================ -->
+    <section class="compare mt-6 rounded-[var(--radius-lg)] p-5 sm:p-6" aria-labelledby="compare-heading">
+      <p class="eyebrow !text-[var(--color-muted)]">For comparison</p>
+      <h3 id="compare-heading" class="display mt-1 text-lg">Your rescue fee next to buying a puppy</h3>
+      <p class="mt-2 text-sm text-[var(--color-muted)]">
+        Food, insurance and vet care cost much the same for any dog of the same size, so the real
+        difference is the upfront price.
+      </p>
+
+      <ul class="mt-5 space-y-3">
+        <li class="text-sm">
+          <div class="flex justify-between gap-3 font-semibold">
+            <span>Your rescue fee</span><span class="tabular-nums">{{ gbp(fee) }}</span>
+          </div>
+          <div class="mt-1 h-2.5 rounded-full bg-[var(--color-subtle)]">
+            <div class="cmp-bar h-full rounded-full bg-[var(--acc-fee)]" :style="{ width: cmpPos(fee) }" />
+          </div>
+        </li>
+        <li v-for="p in PUPPY_PRICES" :key="p.label" class="text-sm text-[var(--color-muted)]">
+          <div class="flex justify-between gap-3">
+            <span>{{ p.label }} <span class="text-xs text-[var(--color-faint)]">· {{ p.note }}</span></span>
+            <span class="shrink-0 tabular-nums">{{ p.min === p.max ? `${gbp(p.min)}${p.plus ? '+' : ''}` : `${gbp(p.min)}–${gbp(p.max)}` }}</span>
+          </div>
+          <div class="relative mt-1 h-2.5 rounded-full bg-[var(--color-subtle)]">
+            <div class="absolute inset-y-0 left-0 rounded-full bg-[var(--cmp-grey)]" :style="{ width: cmpPos(p.min) }" />
+            <div
+              v-if="p.max > p.min"
+              class="absolute inset-y-0 rounded-r-full bg-[var(--cmp-grey)] opacity-45"
+              :style="{ left: cmpPos(p.min), width: `calc(${cmpPos(p.max)} - ${cmpPos(p.min)})` }"
+            />
+          </div>
+        </li>
+      </ul>
+
+      <p v-if="fee > 0 && fee < PUPPY_PRICES[0]!.min" class="mt-5 text-sm">
+        That’s <strong>{{ gbp(PUPPY_PRICES[0]!.min - fee) }} less</strong> than the average advertised puppy,
+        and it gives a home to a dog who’s been waiting for one.
+      </p>
+      <p v-else class="mt-5 text-sm">
+        Every rescue fee helps a dog who’s been waiting for a home, and usually the rescue’s work with the next one.
+      </p>
+      <p v-if="selectedFee" class="mt-2 text-sm text-[var(--color-muted)]">
+        <strong class="font-semibold text-[var(--color-ink)]">{{ selectedFee.rescue }}:</strong> {{ selectedFee.note }}
+      </p>
+      <p class="mt-3 text-xs text-[var(--color-faint)]">
+        Puppy prices are advertised prices on
+        <a :href="PUPPY_PRICES[0]!.sourceUrl" target="_blank" rel="noopener" class="underline">Pets4Homes</a>
+        and vary widely, and so does what’s included. Whichever route you take, ask what the price covers.
+      </p>
+    </section>
+
   </div>
 </template>
 
@@ -726,6 +783,18 @@ function scrollToSummary() {
   --acc-running: #7a5ea8;
   --acc-gps: #c24d6a;
   --acc-extras: #8a8175;
+  --cmp-grey: #b5afa5;
+}
+.acc-root .compare {
+  border: 1px dashed var(--color-line);
+}
+.acc-root .cmp-bar {
+  transition: width 0.4s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .acc-root .cmp-bar {
+    transition: none;
+  }
 }
 :root[data-theme='dark'] .acc-root {
   --acc-fee-2: #3f7466;
@@ -734,6 +803,7 @@ function scrollToSummary() {
   --acc-running: #ab93d6;
   --acc-gps: #e58aa0;
   --acc-extras: #a8a294;
+  --cmp-grey: #5a554d;
 }
 </style>
 
