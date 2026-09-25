@@ -47,7 +47,9 @@ const crumbs = [
     <div class="prose mt-8">
       <p>
         I'm Mike from North Wales. My partner and I are adopting Barnie, a 16-month-old
-        boy from a shelter in Romania, through Pawprints to Freedom (a dog rescue charity who do amazing things). As I write
+        boy from a shelter in Romania, through Pawprints to Freedom (a dog rescue charity who do amazing things). He was
+        found at a very young age, one of a litter, behind a Kaufland
+        supermarket, and he's grown up in the shelter since. As I write
         this he's due to arrive at the end of September 2026, and we're deep in
         the part nobody quite prepares you for — the transport
         timings, and the long wait in between. So I started writing it down.
