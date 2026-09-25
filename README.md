@@ -25,7 +25,15 @@ npm install
 npm run dev          # http://localhost:3000
 npm run generate     # static build -> .output/public
 npx serve .output/public   # preview the static output
+npm test             # unit tests (tool engines + data integrity)
+npm run check        # generate, then test everything incl. the built pages
 ```
+
+`npm run check` runs `test/buildOutput.test.ts` against every generated page:
+exactly one `<h1>`, title and meta description, a self-referencing canonical,
+indexable robots meta and OG image, valid JSON-LD, no broken internal links or
+images, and a sitemap that matches the pages. Run it before pushing. Plain
+`npm test` skips these checks if the site hasn't been generated.
 
 `better-sqlite3` is a build-time dependency of Nuxt Content 3 (it builds the
 content database during `generate`). It is **not** shipped to the browser —

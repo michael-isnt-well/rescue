@@ -24,6 +24,7 @@ the editorial principles.
 - **SEO correctness first** — all JSON-LD via the single `<JsonLd>` component +
   typed builders in `app/composables/useSchema.ts`; self-referencing canonicals;
   sitemap + robots; exactly one `<h1>` per page; static OG fallback image.
+  Enforced on every built page by `npm run check` — run it before pushing.
 - **Verify, don't guess** — rescue facts come from the rescue's own sources;
   unknown fields stay `null` (render as "Not stated"); always set
   `lastVerifiedAt`.
