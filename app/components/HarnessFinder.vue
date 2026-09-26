@@ -1,11 +1,15 @@
 <script setup lang="ts">
-import type { FinderInput, Fear, Morphotype, Environment, RecommendedItem } from '~/utils/harnessFinder'
+import type { FinderInput, Fear, Morphotype, Environment, HomeStage, RecommendedItem } from '~/utils/harnessFinder'
 
 // Gear catalog (safety-led; affiliateUrl is null until a vetted link is added).
 const { data: gear } = await useAsyncData('gear-catalog', () =>
   queryCollection('gear').order('order', 'ASC').all(),
 )
 
+const stageOptions = [
+  { value: 'new', label: 'Arriving soon, or home under 3 months', hint: 'Still learning where home is' },
+  { value: 'settled', label: 'Home 3 months or more', hint: 'Knows the house, the routine and you' },
+]
 const fearOptions = [
   { value: 0, label: 'Confident / calm', hint: 'Settled, not easily startled' },
   { value: 1, label: 'Mildly anxious', hint: 'Noise-sensitive, a bit unsure' },
@@ -23,17 +27,23 @@ const envOptions = [
   { value: 2, label: 'Busy / urban', hint: 'Main roads, high traffic' },
 ]
 
+const homeStage = ref<HomeStage | null>(null)
 const fear = ref<Fear | null>(null)
 const morphotype = ref<Morphotype | null>(null)
 const environment = ref<Environment | null>(null)
 
 const answered = computed(
-  () => fear.value !== null && morphotype.value !== null && environment.value !== null,
+  () => homeStage.value !== null && fear.value !== null && morphotype.value !== null && environment.value !== null,
 )
 
 const input = computed<FinderInput | null>(() =>
   answered.value
-    ? { fear: fear.value as Fear, morphotype: morphotype.value as Morphotype, environment: environment.value as Environment }
+    ? {
+        fear: fear.value as Fear,
+        morphotype: morphotype.value as Morphotype,
+        environment: environment.value as Environment,
+        homeStage: homeStage.value as HomeStage,
+      }
     : null,
 )
 
@@ -63,11 +73,12 @@ function gearFor(item: RecommendedItem) {
 }
 
 // --- Persistence (per-viewer convenience) ---------------------------------
-const KEY = 'harness-finder-v1'
+const KEY = 'harness-finder-v2'
 onMounted(() => {
   try {
     const saved = JSON.parse(localStorage.getItem(KEY) || 'null')
     if (saved) {
+      homeStage.value = saved.homeStage ?? null
       fear.value = saved.fear ?? null
       morphotype.value = saved.morphotype ?? null
       environment.value = saved.environment ?? null
@@ -76,11 +87,11 @@ onMounted(() => {
     /* storage unavailable — ignore */
   }
 })
-watch([fear, morphotype, environment], () => {
+watch([homeStage, fear, morphotype, environment], () => {
   try {
     localStorage.setItem(
       KEY,
-      JSON.stringify({ fear: fear.value, morphotype: morphotype.value, environment: environment.value }),
+      JSON.stringify({ homeStage: homeStage.value, fear: fear.value, morphotype: morphotype.value, environment: environment.value }),
     )
   } catch {
     /* ignore */
@@ -88,6 +99,7 @@ watch([fear, morphotype, environment], () => {
 })
 
 function reset() {
+  homeStage.value = null
   fear.value = null
   morphotype.value = null
   environment.value = null
@@ -99,7 +111,24 @@ function reset() {
     <!-- Questions -->
     <form class="space-y-7" @submit.prevent>
       <fieldset>
-        <legend class="text-sm font-semibold">1. How is your dog on a lead?</legend>
+        <legend class="text-sm font-semibold">1. How long has your dog been home?</legend>
+        <div class="mt-3 grid gap-2 sm:grid-cols-2">
+          <label
+            v-for="o in stageOptions"
+            :key="o.value"
+            class="option relative cursor-pointer rounded-lg border p-3"
+            :class="homeStage === o.value ? 'border-[var(--color-brand)] bg-[var(--color-brand-soft)]' : 'border-[var(--color-line)] hover:bg-[var(--color-subtle)]'"
+          >
+            <input v-model="homeStage" type="radio" name="stage" :value="o.value" class="sr-only" />
+            <span v-if="homeStage === o.value" class="check">✓</span>
+            <span class="block pr-5 text-sm font-medium">{{ o.label }}</span>
+            <span class="block text-xs text-[var(--color-muted)]">{{ o.hint }}</span>
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend class="text-sm font-semibold">2. How is your dog on a lead?</legend>
         <div class="mt-3 grid gap-2 sm:grid-cols-2">
           <label
             v-for="o in fearOptions"
@@ -116,7 +145,7 @@ function reset() {
       </fieldset>
 
       <fieldset>
-        <legend class="text-sm font-semibold">2. What's your dog's build?</legend>
+        <legend class="text-sm font-semibold">3. What's your dog's build?</legend>
         <div class="mt-3 grid gap-2 sm:grid-cols-3">
           <label
             v-for="o in morphoOptions"
@@ -133,7 +162,7 @@ function reset() {
       </fieldset>
 
       <fieldset>
-        <legend class="text-sm font-semibold">3. Where will you mostly walk?</legend>
+        <legend class="text-sm font-semibold">4. Where will you mostly walk?</legend>
         <div class="mt-3 grid gap-2 sm:grid-cols-3">
           <label
             v-for="o in envOptions"
@@ -152,7 +181,7 @@ function reset() {
 
     <!-- Prompt until answered -->
     <p v-if="!answered" class="mt-8 rounded-lg bg-[var(--color-subtle)] px-4 py-3 text-sm text-[var(--color-muted)]">
-      Answer the three questions above to see a recommended setup.
+      Answer the four questions above to see a recommended setup.
     </p>
 
     <!-- Result -->

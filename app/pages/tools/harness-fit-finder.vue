@@ -54,7 +54,7 @@ const crumbs = [
       <p class="eyebrow">Free tool · Beta</p>
       <h1 class="display mt-3 text-[2.2rem] sm:text-[2.8rem]">Bolt-Risk Harness Finder</h1>
       <p class="lede mt-4">
-        Answer three questions about your dog and get a safety-led gear setup —
+        Answer four questions about your dog and get a safety-led gear setup —
         built for the one fear every overseas-rescue adopter shares: your dog
         slipping its harness and bolting.
       </p>
@@ -75,6 +75,13 @@ const crumbs = [
         out how much redundancy your dog needs — from a single well-fitted
         harness for a settled dog, up to the "triple-contact" setup (harness +
         martingale collar + double-ended lead) for a genuine flight risk.
+      </p>
+      <p>
+        If your dog is newly arrived, the tool starts at "high security" whatever else you answer.
+        Some rescues, including
+        <a href="https://www.pawprints2freedom.co.uk/info-packs" target="_blank" rel="noopener">Pawprints to Freedom</a>,
+        require a harness with a waist strap and double-leading for every dog they rehome. Your rescue’s
+        rules always come first.
       </p>
       <p>
         It pairs with the advice in

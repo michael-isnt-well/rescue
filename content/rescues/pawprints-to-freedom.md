@@ -29,7 +29,11 @@ Pawprints to Freedom is a UK-registered charity (charity no. 1194754) that began
 
 ## The fee and what it covers
 
-The standard adoption fee for mainland UK is **around £520**, though it can vary depending on the individual dog and your location. It covers **transport to the UK, vaccinations, microchip, pet passport, and spay/neuter** — so the figure is close to the true all-in cost, not a starting point.
+The standard adoption fee for mainland UK is **around £520**, though it can vary depending on the individual dog and your location. It covers **transport to the UK, vaccinations and tests, microchip (and changing it to you), pet passport, import customs, and spay/neuter for dogs over 9 months old**, so the figure is close to the true all-in cost, not a starting point.
+
+- **Puppies under 9 months:** an extra **£100 neutering deposit**, refunded if you have the dog neutered within 6 months of arrival.
+- **Older dogs:** the rescue offers **reduced fees**, fundraising the difference, to give older dogs a better chance of a home.
+- **Cancelling:** £175 of the fee is non-refundable if you cancel before the dog boards the transport (it pays the rescuer to prepare the dog), and all of it once the dog has boarded.
 
 **Fostering is free.** You can foster a dog (with the option to adopt later) at no cost, which is a good route in if you're not ready to commit to the full fee up front.
 

@@ -14,6 +14,8 @@
 export type Fear = 0 | 1 | 2 | 3
 export type Morphotype = 'deep-chested' | 'standard' | 'bully-broad'
 export type Environment = 0 | 1 | 2
+/** 'new' = not arrived yet or home under ~3 months; 'settled' = longer. */
+export type HomeStage = 'new' | 'settled'
 export type Tier = 'standard' | 'high' | 'maximum'
 export type GearCategory = 'harness' | 'collar' | 'lead' | 'longline' | 'tracker' | 'id-tag'
 export type GearRole = 'primary' | 'backup' | 'connector' | 'addon'
@@ -22,6 +24,8 @@ export interface FinderInput {
   fear: Fear
   morphotype: Morphotype
   environment: Environment
+  /** Optional for backward compatibility; treated as 'settled' when absent. */
+  homeStage?: HomeStage
 }
 
 export interface RecommendedItem {
@@ -88,6 +92,16 @@ export function recommendSetup(input: FinderInput): Recommendation {
     rulesTriggered.push({
       id: 'deep-chested-slip',
       text: 'Deep-chested dogs can back out of gear — a snug Y-front harness plus a backup point of contact is required.',
+    })
+  }
+
+  // A newly arrived import is the classic escape risk, however calm it seems:
+  // some rescues require a waist-strap harness and double-leading for every dog.
+  if (input.homeStage === 'new') {
+    tier = mostSecure(tier, 'high')
+    rulesTriggered.push({
+      id: 'new-arrival',
+      text: 'A newly arrived rescue is in a strange country and hasn’t learned where home is. Some rescues require a harness with a waist strap and double-leading for every dog, so this is the minimum until your dog is settled. Your rescue’s own rules come first.',
     })
   }
 

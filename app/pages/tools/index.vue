@@ -21,7 +21,7 @@ const tools = [
     title: 'Bolt-Risk Harness Finder',
     to: '/tools/harness-fit-finder',
     tag: 'Beta',
-    body: "Answer three questions about your dog and get a safety-led gear setup — from a single well-fitted harness to the full triple-contact rig for a genuine flight risk.",
+    body: "Answer four questions about your dog and get a safety-led gear setup — from a single well-fitted harness to the full triple-contact rig for a genuine flight risk.",
   },
 ]
 

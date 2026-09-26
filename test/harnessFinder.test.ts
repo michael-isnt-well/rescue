@@ -104,3 +104,22 @@ describe('add-ons', () => {
     expect(categories(rec({ fear: 1, morphotype: 'standard', environment: 0 }).addons)).toContain('longline')
   })
 })
+
+describe('new arrivals', () => {
+  it('raises a calm, settled-looking new arrival to at least high security', () => {
+    const r = rec({ fear: 0, morphotype: 'standard', environment: 0, homeStage: 'new' })
+    expect(r.tier).toBe('high')
+    expect(ruleIds(r)).toContain('new-arrival')
+    expect(categories(r.essentials)).toEqual(expect.arrayContaining(['harness', 'collar', 'lead']))
+  })
+
+  it('never lowers a higher tier for a new arrival', () => {
+    expect(rec({ fear: 3, morphotype: 'standard', environment: 0, homeStage: 'new' }).tier).toBe('maximum')
+  })
+
+  it('leaves a settled dog on the standard tier', () => {
+    const r = rec({ fear: 0, morphotype: 'standard', environment: 0, homeStage: 'settled' })
+    expect(r.tier).toBe('standard')
+    expect(ruleIds(r)).not.toContain('new-arrival')
+  })
+})
