@@ -16,7 +16,7 @@ Romania is where the largest number of overseas rescue dogs coming to the UK ori
 
 ## Getting a Romanian dog to the UK
 
-Romania is an EU country, so the entry requirements are the standard ones — microchip, rabies vaccination, a 21-day wait, and tapeworm treatment before arrival. See the [rabies and 21-day guide](/guides/rabies-titre-test-timeline) for the timeline. Dogs usually travel by road, a multi-day haul across Europe; read [transport day](/guides/transport-day) for what arrival is like.
+Romania is an EU country, so the entry requirements are the standard ones — microchip, rabies vaccination, a 21-day wait, and tapeworm treatment before arrival. See the [rabies and 21-day guide](/guides/rabies-titre-test-timeline) for the timeline. Dogs usually travel by road, a multi-day haul across Europe; read [transport day](/guides/transport-day) for what arrival is like. Because rescue dogs are imported under commercial rules, your dog must be delivered to the address on its paperwork, not collected from a car park or services, and must stay there for at least 48 hours.
 
 ## The health tests that matter
 
@@ -51,6 +51,7 @@ You can’t reliably tell a mixed-breed dog’s ancestry by looking at it. In a 
 ## Sources
 
 - [GOV.UK — bringing your pet to Great Britain](https://www.gov.uk/bring-pet-to-great-britain)
+- [APHA — bringing new pets into Great Britain responsibly](https://aphascience.blog.gov.uk/2025/07/23/bringing-new-pets-into-great-britain-responsibly)
 - [ESCCAP UK & Ireland](https://www.esccapuk.org.uk/)
 - [BVA — the disease risk from imported dogs](https://www.bva.co.uk/news-and-blog/blog-article/what-is-the-disease-risk-from-imported-dogs/)
 - [Wright et al., 2023, *Veterinary Record* — exotic pathogens in imported dogs](https://bvajournals.onlinelibrary.wiley.com/doi/full/10.1002/vetr.2996)

@@ -14,6 +14,11 @@ const faqs = [
       'Register with a vet and ask about their policy for imported dogs, get escape-resistant kit and an ID tag, arrange insurance to start on arrival day, collect the pet passport and records from the rescue, and set up a safe space. Plan the handover so your dog goes straight from the van into a fully enclosed space.',
   },
   {
+    question: 'Can my rescue dog leave the house in the first 48 hours?',
+    answer:
+      'No. Rescue dogs are imported under commercial rules, and APHA says a commercially imported dog must be delivered to the address on its paperwork and stay there for at least 48 hours. Collecting from a public place such as a service station or car park is against the law.',
+  },
+  {
     question: 'When should pet insurance start for an imported rescue dog?',
     answer:
       'On arrival day. Some policies don’t begin until the dog is in your possession, and the policies we checked exclude illness that first shows in the first 14 days, so every day of delay adds risk.',

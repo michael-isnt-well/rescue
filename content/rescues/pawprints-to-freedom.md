@@ -20,8 +20,8 @@ homeCheckType: virtual
 rehomesToHomesWithCats: case-by-case
 rehomesToHomesWithChildren: case-by-case
 rehomesWithoutGarden: case-by-case
-postAdoptionSupport: Lifetime rescue back-up (RBU), post-adoption Facebook groups, and access to volunteer advice.
-lastVerifiedAt: 2026-09-05
+postAdoptionSupport: Rescue back-up (RBU) for exceptional circumstances, post-adoption Facebook groups, and access to volunteer advice.
+lastVerifiedAt: 2026-09-26
 publishedAt: 2026-09-05
 ---
 
@@ -53,12 +53,13 @@ Transport timings are approximate and rehoming decisions are made dog by dog, so
 
 ## After you adopt
 
-Adopters get **lifetime rescue back-up** (the rescue will always take a dog back if things don't work out), access to dedicated **post-adoption Facebook groups**, and ongoing advice from the rescue's volunteers.
+Adopters get **rescue back-up (RBU)**: if something serious and unforeseen happens, such as a life-changing illness, the rescue will do its best to find the dog a suitable new placement. The rescue's adoption pack is clear that it's for exceptional circumstances only, not a change of mind, and that settling can take months. Adopters also get access to dedicated **post-adoption Facebook groups** and ongoing advice from the rescue's volunteers.
 
 ## Where to find them
 
 - Website: [pawprints2freedom.co.uk](https://www.pawprints2freedom.co.uk)
 - Apply to adopt: [pawprints2freedom.co.uk/apply](https://www.pawprints2freedom.co.uk/apply)
+- Adoption pack (dogs): [pawprints2freedom.co.uk/info-packs](https://www.pawprints2freedom.co.uk/info-packs)
 - Facebook community: [facebook.com/groups/pawprints2freedom](https://www.facebook.com/groups/pawprints2freedom)
 
-*Details verified 5 September 2026. Policies and fees change — always confirm directly with the rescue.*
+*Details verified 26 September 2026. Policies and fees change — always confirm directly with the rescue.*

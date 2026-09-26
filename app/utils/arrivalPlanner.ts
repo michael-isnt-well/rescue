@@ -32,6 +32,10 @@ const LANGFORD = {
   label: 'Langford Vets — recommended testing for imported dogs',
   url: 'https://www.langfordvets.co.uk/animal-insights/dogs-puppies/recommended-testing-for-imported-dogs/',
 }
+const APHA = {
+  label: 'APHA — bringing new pets into Great Britain responsibly',
+  url: 'https://aphascience.blog.gov.uk/2025/07/23/bringing-new-pets-into-great-britain-responsibly',
+}
 const GOV_MICROCHIP = { label: 'GOV.UK — get your dog microchipped', url: 'https://www.gov.uk/get-your-dog-microchipped' }
 
 export const TASKS: TaskDef[] = [
@@ -101,8 +105,9 @@ export const TASKS: TaskDef[] = [
     offset: -1,
     title: 'Plan the handover',
     detail:
-      'Harness on and a slip lead as backup before the van door opens, then straight into a fully enclosed space. Have water ready and keep visitors away.',
+      'Your dog must be delivered to the address on the import paperwork: collecting from a service station or car park is illegal. Agree with the rescue and driver who puts the harness and slip lead on, then go straight into a fully enclosed space.',
     link: { label: 'Transport day', to: '/guides/transport-day' },
+    source: APHA,
   },
   // Arrival
   {
@@ -111,8 +116,9 @@ export const TASKS: TaskDef[] = [
     offset: 0,
     title: 'Arrival day',
     detail:
-      'Insurance starts today. Keep it quiet: no visitors, no walks beyond the garden, and on-lead in any space that isn’t fully secure.',
+      'Insurance starts today. By law your dog must stay at the delivery address for at least 48 hours, so no walks or trips out. Keep it quiet: no visitors, and on-lead in any space that isn’t fully secure.',
     link: { label: 'Transport day', to: '/guides/transport-day' },
+    source: APHA,
   },
   {
     id: 'microchip',
