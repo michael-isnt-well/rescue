@@ -3,7 +3,7 @@ title: Transport day — what to expect when your dog arrives
 seoTitle: Transport day for an overseas rescue dog — a UK adopter's guide
 description: What actually happens on the day your rescue dog arrives from overseas — the van journey, the handover, and how to make those first few hours calmer.
 publishedAt: 2026-07-24
-updatedAt: 2026-08-18
+updatedAt: 2026-09-26
 lastReviewedAt: 2026-08-18
 countries: [romania, bulgaria, greece, spain, cyprus]
 related:
@@ -52,3 +52,5 @@ Once your dog is safely inside, the goal is simple: let it decompress. Offer wat
 What happens over the following days and weeks — the hiding, the not eating, the slow thaw — is its own subject. The first three weeks have a rhythm worth understanding before you're in them.
 
 Before the dog arrives, make sure you've also sorted [insurance for an imported dog](/guides/insurance-for-imported-dogs) — cover from day one matters, and imported dogs have some specific considerations.
+
+To put all of this on a calendar, from the kit you need beforehand to the follow-up vet checks months later, try the [arrival planner](/tools/arrival-planner).

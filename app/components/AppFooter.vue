@@ -9,6 +9,7 @@ const cols = [
       { label: 'Countries', to: '/countries' },
       { label: 'Rescues', to: '/rescues' },
       { label: 'Journal', to: '/journal' },
+      { label: 'Arrival planner', to: '/tools/arrival-planner' },
       { label: 'Cost calculator', to: '/tools/adoption-cost-calculator' },
       { label: 'Harness finder', to: '/tools/harness-fit-finder' },
     ],
