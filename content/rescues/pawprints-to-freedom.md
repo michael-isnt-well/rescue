@@ -76,4 +76,4 @@ Adopters get **rescue back-up (RBU)**: if something serious and unforeseen happe
 - Adoption pack (dogs): [pawprints2freedom.co.uk/info-packs](https://www.pawprints2freedom.co.uk/info-packs)
 - Facebook community: [facebook.com/groups/pawprints2freedom](https://www.facebook.com/groups/pawprints2freedom)
 
-*Details verified 26 September 2026. Policies and fees change — always confirm directly with the rescue.*
+*Details verified 26 September 2026 from the rescue's own website, adoption pack and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*

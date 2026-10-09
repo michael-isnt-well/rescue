@@ -148,6 +148,8 @@ function reset() {
         “Not stated” rather than guessed.
       </p>
       <p>
+        Every profile is compiled in good faith and to the best of our knowledge, but rescues change
+        their fees and policies, so always confirm the details directly with a rescue before you apply.
         Listing is free and isn’t an endorsement. Nobody pays to appear here or to be ranked higher.
         If you run a rescue and something is wrong or out of date,
         <NuxtLink to="/takedown">let us know</NuxtLink>.

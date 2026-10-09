@@ -140,6 +140,8 @@ const externalLinks = computed(() =>
       </dl>
     </section>
 
+    <RescueDisclaimer :name="r.name" :verified-at="r.lastVerifiedAt" class="mt-4" />
+
     <div v-if="externalLinks.length" class="mt-6 flex flex-wrap gap-3">
       <a
         v-for="link in externalLinks"
@@ -182,8 +184,8 @@ const externalLinks = computed(() =>
     </section>
 
     <p class="mt-10 text-xs text-[var(--color-muted)]">
-      Details verified {{ formatDate(r.lastVerifiedAt) }}. Policies change —
-      always confirm with the rescue directly. Something out of date?
+      Details verified {{ formatDate(r.lastVerifiedAt) }}, to the best of our knowledge. Policies and
+      fees change, so always confirm with the rescue directly. Something out of date?
       <NuxtLink to="/takedown" class="underline">Let me know</NuxtLink>.
     </p>
 

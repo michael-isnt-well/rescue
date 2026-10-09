@@ -56,4 +56,4 @@ The rescue offers **rescue back-up for 3 months** after adoption, and says it wi
 
 We couldn't find a charity number on the rescue's website, and we found no matching entry on the Charity Commission's register for England and Wales (checked 9 October 2026). Not every rescue group is a registered charity, so ask the rescue directly about its status if it matters to you.
 
-*Details verified 9 October 2026 from the rescue's own website. Fees and policies change, so always confirm directly with the rescue.*
+*Details verified 9 October 2026 from the rescue's own website, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*

@@ -124,8 +124,8 @@ const crumbs = [
     <section class="mt-12" aria-labelledby="sources-heading">
       <h2 id="sources-heading" class="display text-2xl">Sources</h2>
       <p class="mt-2 text-sm text-[var(--color-muted)]">
-        All checked on {{ formatDate(SOURCES_CHECKED) }}. Fees and prices change, so always
-        confirm with the rescue or practice directly.
+        All checked on {{ formatDate(SOURCES_CHECKED) }} and accurate to the best of our knowledge.
+        Fees and prices change, so always confirm with the rescue or practice directly.
       </p>
       <ul class="mt-4 space-y-1.5 text-sm">
         <li v-for="src in sources" :key="src.url">

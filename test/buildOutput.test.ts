@@ -84,6 +84,11 @@ describe.skipIf(!built)('generated pages', () => {
       expect(body, `stray null on ${route}`).not.toMatch(/>\s*(null|undefined)\s*</)
     })
 
+    it.runIf(route.startsWith('/rescues/'))('rescue profiles carry the good-faith notice', () => {
+      expect(html).toContain('Compiled in good faith, to the best of our knowledge.')
+      expect(html).toMatch(/confirm[^<]*directly with the rescue/)
+    })
+
     it('has only valid JSON-LD', () => {
       const blocks = all(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g, html)
       for (const [, json] of blocks) {

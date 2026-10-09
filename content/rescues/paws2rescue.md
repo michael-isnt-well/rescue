@@ -54,4 +54,4 @@ The rescue says the vaccinations and passport usually take around a month to com
 
 The rescue says it keeps in contact with adopters and is there to support them after adoption.
 
-*Details verified 9 October 2026 from the rescue's own website and the Charity Commission register. Fees and policies change, so always confirm directly with the rescue.*
+*Details verified 9 October 2026 from the rescue's own website and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*
