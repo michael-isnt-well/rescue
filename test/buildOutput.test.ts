@@ -64,6 +64,7 @@ describe.skipIf(!built)('generated pages', () => {
 
     it('has a non-empty <title> and meta description', () => {
       expect(html).toMatch(/<title>[^<]{5,}<\/title>/)
+      expect(html, `title on ${route}`).not.toMatch(/<title>[^<]*(\[object|undefined|null)[^<]*<\/title>/)
       expect(html).toMatch(/<meta name="description" content="[^"]{20,}"/)
     })
 
