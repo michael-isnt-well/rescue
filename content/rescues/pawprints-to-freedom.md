@@ -8,7 +8,7 @@ regionsCovered:
   - Scotland
   - Wales
 charityNumber: "1194754"
-charityRegisterUrl: null
+charityRegisterUrl: https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5171025
 websiteUrl: https://www.pawprints2freedom.co.uk
 facebookUrl: https://www.facebook.com/groups/pawprints2freedom
 applicationUrl: https://www.pawprints2freedom.co.uk/apply
@@ -21,6 +21,16 @@ rehomesToHomesWithCats: case-by-case
 rehomesToHomesWithChildren: case-by-case
 rehomesWithoutGarden: case-by-case
 postAdoptionSupport: Rescue back-up (RBU) for exceptional circumstances, post-adoption Facebook groups, and access to volunteer advice.
+feeIncludesTransport: "true"
+charityStatus: registered
+charityCheckedAt: 2026-10-09
+sources:
+  - label: Pawprints to Freedom — adopt page
+    url: https://www.pawprints2freedom.co.uk/adopt
+  - label: Pawprints to Freedom — adoption pack (dogs)
+    url: https://www.pawprints2freedom.co.uk/_files/ugd/3a38a8_e4a18f64e02b419293fdd868c0bc4062.pdf
+  - label: Charity Commission register — Pawprints to Freedom Limited (1194754)
+    url: https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5171025
 lastVerifiedAt: 2026-09-26
 publishedAt: 2026-09-05
 ---

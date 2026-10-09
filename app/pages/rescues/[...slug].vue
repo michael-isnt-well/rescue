@@ -63,8 +63,25 @@ const feeDisplay = computed(() => {
   return r.value.adoptionFeeNote ? `${fee.value} — ${r.value.adoptionFeeNote}` : fee.value
 })
 
+// The content DB can hand back missing values as the string "null"; treat
+// those (and the "Not stated" policy label) as genuinely missing.
+const clean = (v: unknown): string | null => {
+  if (v == null) return null
+  const s = String(v).trim()
+  return s === '' || s === 'null' || s === 'undefined' || s === 'Not stated' ? null : s
+}
+
+// Result of checking the official charity register, with the date checked.
+const charityCheck = computed(() => {
+  const when = r.value.charityCheckedAt ? ` (checked ${formatDate(r.value.charityCheckedAt)})` : ''
+  if (r.value.charityStatus === 'registered') return `Registered charity${when}`
+  if (r.value.charityStatus === 'not-found') return `No registration found${when}`
+  return null
+})
+
 // The structured, verifiable facts block. Nulls are rendered as "Not stated".
-const facts = computed(() => [
+const facts = computed(() => rawFacts.value.map((f) => ({ ...f, value: clean(f.value) })))
+const rawFacts = computed(() => [
   { label: 'Rehomes from', value: (r.value.countries || []).map(countryLabel).join(', ') || null },
   { label: 'UK regions covered', value: (r.value.regionsCovered || []).join(', ') || null },
   { label: 'Adoption fee', value: feeDisplay.value },
@@ -74,7 +91,9 @@ const facts = computed(() => [
   { label: 'Rehomes to homes with children', value: policyLabel(r.value.rehomesToHomesWithChildren) },
   { label: 'Rehomes without a garden', value: policyLabel(r.value.rehomesWithoutGarden) },
   { label: 'Post-adoption support', value: r.value.postAdoptionSupport },
+  { label: 'Fee includes transport', value: policyLabel(r.value.feeIncludesTransport) },
   { label: 'Charity number', value: r.value.charityNumber },
+  { label: 'Charity register check', value: charityCheck.value },
 ])
 
 const externalLinks = computed(() =>
@@ -83,7 +102,7 @@ const externalLinks = computed(() =>
     { label: 'Apply to adopt', url: r.value.applicationUrl },
     { label: 'Facebook', url: r.value.facebookUrl },
     { label: 'Charity register entry', url: r.value.charityRegisterUrl },
-  ].filter((l) => l.url),
+  ].filter((l) => clean(l.url)),
 )
 </script>
 
@@ -137,6 +156,15 @@ const externalLinks = computed(() =>
     <div class="prose mt-10">
       <ContentRenderer :value="doc" />
     </div>
+
+    <section v-if="r.sources?.length" class="mt-10" aria-labelledby="sources-heading">
+      <h2 id="sources-heading" class="display text-xl">Sources</h2>
+      <ul class="mt-3 space-y-1.5 text-sm">
+        <li v-for="src in r.sources" :key="src.url">
+          <a :href="src.url" target="_blank" rel="noopener nofollow" class="underline">{{ src.label }}</a>
+        </li>
+      </ul>
+    </section>
 
     <section
       v-if="relatedGuides?.length"

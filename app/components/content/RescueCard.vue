@@ -14,6 +14,8 @@ const props = defineProps<{
     adoptionFeeMin?: number | null
     adoptionFeeMax?: number | null
     homeCheckType?: string | null
+    feeIncludesTransport?: string | null
+    charityStatus?: string | null
     lastVerifiedAt?: string
   }
 }>()
@@ -49,7 +51,13 @@ const countries = computed(() =>
     <dl class="mt-5 grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
       <div v-if="fee">
         <dt class="text-xs uppercase tracking-wide text-[var(--color-faint)]">Adoption fee</dt>
-        <dd class="mt-0.5 font-semibold">{{ fee }} (approx / varies)</dd>
+        <dd class="mt-0.5 font-semibold">{{ fee }}</dd>
+        <dd v-if="rescue.feeIncludesTransport === 'true'" class="text-xs text-[var(--color-muted)]">incl. transport</dd>
+        <dd v-else-if="rescue.feeIncludesTransport === 'false'" class="text-xs text-[var(--color-muted)]">transport extra</dd>
+      </div>
+      <div v-if="rescue.charityStatus">
+        <dt class="text-xs uppercase tracking-wide text-[var(--color-faint)]">Charity register</dt>
+        <dd class="mt-0.5 font-semibold">{{ rescue.charityStatus === 'registered' ? 'Registered ✓' : 'Not found' }}</dd>
       </div>
       <div v-if="rescue.homeCheckType">
         <dt class="text-xs uppercase tracking-wide text-[var(--color-faint)]">Home check</dt>

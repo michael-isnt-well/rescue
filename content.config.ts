@@ -89,6 +89,14 @@ export default defineContentConfig({
           .nullable()
           .default(null),
         postAdoptionSupport: z.string().nullable().default(null),
+        // Does the published fee include transport to the UK? 'false' = quoted separately.
+        feeIncludesTransport: z.enum(['true', 'false']).nullable().default(null),
+        // Result of checking the official charity registers (CCEW / OSCR / CCNI).
+        // 'not-found' is a neutral fact, not an accusation: small groups aren't always registered.
+        charityStatus: z.enum(['registered', 'not-found']).nullable().default(null),
+        charityCheckedAt: isoDate.nullable().default(null),
+        // Where each fact came from — rendered as a Sources list on the profile.
+        sources: z.array(z.object({ label: z.string(), url: z.string().url() })).default([]),
         lastVerifiedAt: isoDate, // REQUIRED — rendered on the page
       }),
     }),
