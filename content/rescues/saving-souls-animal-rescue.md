@@ -62,4 +62,4 @@ The rescue says a home check will be arranged using a volunteer home-checking se
 
 The rescue says: "We are always on hand for a chat to discuss any questions or queries you may have", and that there is "full UK rescue back up should it be required". Adopters are also invited to join a private Facebook group to share updates and photos.
 
-*Details verified 9 October 2026 from the rescue's own website and the Charity Commission register. Fees and policies change, so always confirm directly with the rescue.*
+*Details verified 9 October 2026 from the rescue's own website and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*
