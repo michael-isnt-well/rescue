@@ -8,6 +8,40 @@ Qualifying bar: total >= 22/30, no score below 3, demand >= 4.
 
 ---
 
+## 2026-10-14 (weekly run)
+
+**Verdict: nothing qualifies.**
+
+**Angles tested:** (1) pet-passport / import paperwork tracking; (2) transport / arrival-day communication; (3) decompression / 3-3-3 first weeks; (4) behaviour-change tracking to share with a behaviourist; (5) multi-dog introductions; (6) adopter-to-rescue updates (re-test, new wording).
+
+**Effort:** 13 WebSearch calls; 4 pages opened with WebFetch (App Store: Focus Canine, Dogtales, Dogo, BauBau). **Blocked / unreachable (DNS or proxy):** reddit.com, mumsnet.com, dogwelfareproject.org, rescuedogs101.com, wamiz.co.uk. **Zero real-person discussions were opened**, so demand is **unverified**, not proven absent. Search snippets surfaced no adopter asking for any of these tools either.
+
+### Ideas considered
+- **Behaviour log shareable with a behaviourist** - saturated. BauBau now includes behaviourist sharing in its *free* plan, Pro $3.99/mo or $34.99/yr, v1.13.3, no ratings yet (https://apps.apple.com/app/id6757988336). Focus Canine: free, behaviour log + PDF vet reports, no ratings (https://apps.apple.com/us/app/-/id6756831382). Dogtales: free, Unlimited $3.99/mo or $24.99/yr, vet-visit logs, iCloud sharing costs extra, no ratings (https://apps.apple.com/app/id6468829982). Overlaps the queued nervous-dog diary. **Rejected.**
+- **3-3-3 / decompression tracker** - plenty of explainer content (https://rescuedogs101.com/bringing-new-dog-home-3-3-3-rule, snippet only, page blocked); no tracker found, but no one found asking for one, and the nervous-dog diary already covers it. **Rejected: no demand evidence, overlaps queue.**
+- **Import paperwork / health-record "adopter file"** (passport, titre, tapeworm, retest dates in one place) - guidance is spread across vendor PDFs (e.g. https://www.tailharbor.eu/pdfs/bringing-your-dog-from-spain-to-united-kingdom.pdf; GOV.UK AHC PDF https://assets.publishing.service.gov.uk/media/69a54a73286b6fdc85daeb24/2580NFG.pdf, not opened). No dedicated app found, but generic record apps exist (Dogtales above; Animark/VetKit from last week). Rules change and vary by origin, so a tool would carry accuracy and health-advice risk. Better as a checklist article. **Rejected for now.**
+- **Transport / arrival-day tracking** - flight-nanny and transporter listings already advertise live tracking and updates (https://citizenshipper.com/drivers/765335, marketing, unverified; https://travel.yahoo.com/advice/lifestyle/articles/cant-fly-pet-flight-nanny-090150433.html). Transport is run by rescues/third parties, so a tool depends on their cooperation. **Rejected: not controllable by Mike, no demand evidence.**
+- **Multi-dog introduction planner** - guidance abundant and sound (https://www.Muttville.org/pdfs/resources/IntroducingYourNewMuttvilleDogToYourResidentDog.pdf, https://pasadenahumane.org/introducing-a-new-dog-to-your-resident-dog/); only generic Doggy Time-style pet trackers (https://pottywhiz.app/furry-friends-forever-introducing-your-new-puppy-to-your-home-s-pet-family, a blog page, app unverified). No import-specific angle. **Rejected: weak fit, no demand; content only.**
+- **Adopter-to-rescue update channel** - re-tested; still no adopter or UK overseas rescue found asking for a tool. A Mumsnet thread (snippet only, https://www.mumsnet.com/talk/the_doghouse/2699226-Adopting-a-dog-from-an-overseas-rescue-centre-WWYD) argues overseas rescues give less post-adoption support, which is a content angle ("what to ask your rescue for"), not evidence of tool demand. **Rejected.**
+- **Dogo** (generic training) for context: 4.8 from 17K ratings, v10.53.0, paywall complaints in reviews (https://apps.apple.com/app/id1153294767). Confirms generic training is saturated.
+
+### Best candidate scorecard: import paperwork / health-record file
+| Criterion | Score | Evidence |
+|---|---|---|
+| Audience fit | 5 | Only imported dogs need this paperwork (tailharbor/GOV.UK links above). |
+| Evidenced demand | 1 | No real person asking found; all discussion sites blocked. |
+| Competition gap | 3 | No import-specific tool found; generic record apps exist (Dogtales). |
+| Solo feasibility | 5 | Client-side Nuxt tool, no backend. |
+| Honest monetisation | 2 | No clear path; lab/insurer affiliates would bias health/legal-adjacent content. |
+| Risk (5 = low) | 3 | Import rules and retest timing are legal/veterinary; must defer to GOV.UK and vet. |
+| **Total** | **19/30** | Below 22; demand below 4. **Does not qualify.** |
+
+**Suggested follow-up:** the blocked discussion sites are the main gap. If access is not fixed, further scouting of demand is not meaningful; consider checking with Mike whether Reddit/Mumsnet can be allow-listed.
+
+NO QUALIFYING OPPORTUNITY THIS WEEK
+
+---
+
 ## 2026-10-09 (weekly run)
 
 **Verdict: nothing qualifies.**
