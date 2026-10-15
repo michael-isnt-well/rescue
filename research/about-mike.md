@@ -26,6 +26,13 @@ published: it lives only on the `research/app-scout` branch. Last updated: 2026-
   that can't scale past a hobby.
 - Honesty first: no hype, no dark patterns, no invented demand.
 
+## Chosen direction (2026-10-15)
+
+**Monthly app-care retainers for established UK SMEs**: managing a few modest apps
+part-time. **Stack preference:** native iOS (Swift/SwiftUI) and native Android (Kotlin)
+first, since AI tools make doing both natively realistic. Cross-platform and web-based apps
+are also fine. The working plan and evidence live in `research/sme-app-care.md`.
+
 ## What this opens up (angles to test, not conclusions)
 
 - **Native mobile is in scope** for products. A web-first version is still preferred
