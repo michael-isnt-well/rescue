@@ -22,7 +22,7 @@ published: it lives only on the `research/app-scout` branch. Last updated: 2026-
 ## Goal and time
 
 - **Now:** part-time, in evenings and weekends, alongside a full-time corporate job.
-- **Long term:** this could become his ONLY work, at **25–30 hours a week**. So favour
+- **Long term:** this could become his ONLY work, at **24–28 hours a week**. So favour
   ideas that can grow into recurring, sustainable income (retainers, subscriptions,
   repeatable productised services, a product with recurring revenue) over one-off gigs
   that can't scale past a hobby.
@@ -51,7 +51,11 @@ are also fine. The working plan and evidence live in `research/sme-app-care.md`.
 
 To replace his job, Mike needs about **£2,500 a month after tax** (stated 2026-10-15). As a
 sole trader that's roughly £36k a year of profit before tax, or about £3,000–£3,500 a month of
-revenue once business costs are included (Claude's rough estimate, not tax advice). Use this
+revenue once business costs are included (Claude's rough estimate, not tax advice). Mike agrees he needs **more than** that, to make up for the loss of
+employer pension, paid holiday and sick pay. A working target is about **£42–45k profit a year,
+or roughly £45–48k revenue** (Claude's estimate, to be refined). Ideal hours: **24–28 a week**.
+Over about 46 working weeks, with perhaps 60–70% of the time billable, that's about 700–900
+billable hours a year, which implies an effective rate of about **£50–65 an hour**. Use this
 when judging pricing evidence: for example, how many retainers at a given price it would take.
 
 ## Location: Wrexham, North Wales
