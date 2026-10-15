@@ -20,7 +20,7 @@ rehomesWithoutGarden: case-by-case
 postAdoptionSupport: The rescue says it is always on hand for advice after adoption, has full UK rescue back-up if required, and invites adopters to a private Facebook group.
 feeIncludesTransport: "true"
 charityStatus: registered
-charityCheckedAt: 2026-10-09
+charityCheckedAt: 2026-10-15
 sources:
   - label: Saving Souls — Dog Adoption Policy and Procedure
     url: https://savingsoulsrescue.org/dog-adoption-policy/
@@ -30,7 +30,7 @@ sources:
     url: https://savingsoulsrescue.org/dogs-available-for-adoption/
   - label: Charity Commission register — Saving Souls Animal Rescue (1209645)
     url: https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5242267
-lastVerifiedAt: 2026-10-09
+lastVerifiedAt: 2026-10-15
 publishedAt: 2026-10-09
 ---
 
@@ -62,4 +62,4 @@ The rescue says a home check will be arranged using a volunteer home-checking se
 
 The rescue says: "We are always on hand for a chat to discuss any questions or queries you may have", and that there is "full UK rescue back up should it be required". Adopters are also invited to join a private Facebook group to share updates and photos.
 
-*Details verified 9 October 2026 from the rescue's own website and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*
+*Details verified 15 October 2026 from the rescue's own website and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*

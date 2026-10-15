@@ -20,7 +20,7 @@ rehomesWithoutGarden: null
 postAdoptionSupport: "The rescue's application page says: \"We offer full rescue backup and can be contacted at any time about anything.\""
 feeIncludesTransport: "true"
 charityStatus: registered
-charityCheckedAt: 2026-10-14
+charityCheckedAt: 2026-10-15
 sources:
   - label: Santerpaws — adoption information
     url: https://santerpawsbulgarianrescue.com/adoption-information
@@ -32,7 +32,7 @@ sources:
     url: https://santerpawsbulgarianrescue.com/adopt
   - label: Charity Commission register — Santerpaws Bulgarian Rescue (1183401)
     url: https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5114451
-lastVerifiedAt: 2026-10-14
+lastVerifiedAt: 2026-10-15
 publishedAt: 2026-10-14
 ---
 
@@ -71,4 +71,4 @@ The pages we read don't state the rescue's policies on homes with cats, children
 
 The application page says: "We offer full rescue backup and can be contacted at any time about anything." It also says the rescue's terms include that "all future rehoming must be arranged through them, even if the dog is going to friends or family".
 
-*Details verified 14 October 2026 from the rescue's own website and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*
+*Details verified 15 October 2026 from the rescue's own website and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*

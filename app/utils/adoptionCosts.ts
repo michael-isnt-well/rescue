@@ -12,7 +12,7 @@
 export type Country = 'romania' | 'cyprus' | 'bulgaria' | 'greece' | 'spain'
 export type DogSize = 'small' | 'medium' | 'large'
 
-export const SOURCES_CHECKED = '2026-09-25'
+export const SOURCES_CHECKED = '2026-10-15'
 
 // ---------------------------------------------------------------------------
 // Rescue fees — each from the rescue's own website. `fee` is the all-in cost
@@ -122,13 +122,13 @@ export const RESCUE_FEES: RescueFee[] = [
     rescue: 'Jodie’s Cyprus Dogs Rehoming',
     country: 'cyprus',
     variant: 'Any dog',
-    fee: 705,
+    fee: 720,
     parts: [
-      { label: 'Deposit (non-refundable)', amount: 220 },
+      { label: 'Reservation deposit (non-refundable)', amount: 235 },
       { label: 'Adoption fee', amount: 385 },
       { label: 'TRACES & customs', amount: 100 },
     ],
-    note: 'Total rehoming fee of £705. The deposit is only refunded if the home check fails.',
+    note: 'Total rehoming fee of £720. The reservation fee is only refunded if the home check fails.',
     sourceUrl: 'https://www.jodiescyprusdogsrehoming.co.uk/adopt-or-foster/how-to-adopt',
   },
   {
@@ -141,7 +141,7 @@ export const RESCUE_FEES: RescueFee[] = [
       { label: 'Adoption fee', amount: 225 },
       { label: 'Flights, transport & paperwork', amount: 385 },
     ],
-    note: 'Adoption fee covers neutering, vaccinations, microchip, parasite treatment, fit-to-fly check and passport.',
+    note: 'Adoption fee covers neutering, vaccinations, microchip, parasite treatment, fit-to-fly check and passport. The rescue’s adoption page quotes a different split (minimum £300 plus £485 for flights and onward travel, £785 in total).',
     sourceUrl: 'https://www.dalidogrescue.uk/help-advice/how-much-to-rescue-dog-abroad',
   },
   {
@@ -154,7 +154,7 @@ export const RESCUE_FEES: RescueFee[] = [
       { label: 'Adoption fee', amount: 155 },
       { label: 'Flights, transport & paperwork', amount: 385 },
     ],
-    note: 'Puppy adoption fee is lower; travel costs are the same.',
+    note: 'Puppy adoption fee is lower; travel costs are the same. The rescue’s adoption page quotes a different split (minimum £180 plus £485 for flights and onward travel, £665 in total).',
     sourceUrl: 'https://www.dalidogrescue.uk/help-advice/how-much-to-rescue-dog-abroad',
   },
   // Bulgaria
@@ -168,7 +168,7 @@ export const RESCUE_FEES: RescueFee[] = [
       { label: 'Deposit (non-refundable)', amount: 40 },
       { label: 'Balance when transport is booked', amount: 390 },
     ],
-    note: 'Total adoption fee of £430, including transport to the UK.',
+    note: 'Total adoption fee of £430, including transport to the UK, per the rescue’s application page. Its adoption information page says £450 (£60 deposit plus £390).',
     sourceUrl: 'https://santerpawsbulgarianrescue.com/adoption-application/',
   },
   {
