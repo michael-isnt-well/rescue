@@ -61,6 +61,16 @@ const crumbs = [
         life with Barnie, published as it happens rather than tidied up
         afterwards.
       </p>
+      <h2>Why it matters</h2>
+      <p>
+        Romania has one of the largest stray dog populations in Europe, roughly half a million dogs by
+        welfare groups' estimates. Public shelters there have been found overcrowded and neglected, and
+        since a 2013 law, councils have been allowed to put down dogs nobody adopts or claims within 14
+        working days. Barnie started out as a puppy behind a supermarket. Every dog a UK family adopts is one life changed
+        completely, and the better prepared adopters are, the more of those adoptions stick. That's what
+        this site is for. (The sources are on the
+        <NuxtLink to="/countries/romania">Romania page</NuxtLink>.)
+      </p>
       <h2>Why trust it</h2>
       <p>
         I'm not a vet and I'm not a charity. I say so plainly. Guides carry the

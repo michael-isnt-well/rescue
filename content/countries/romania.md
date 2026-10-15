@@ -8,11 +8,28 @@ distanceKm: 1900
 transport:
   - Long road haul across Europe
   - or by air
-lastReviewedAt: 2026-09-26
+lastReviewedAt: 2026-10-15
 description: What's different about adopting a rescue dog from Romania — entry rules, the health tests that matter for Eastern European dogs, and the dogs themselves.
 ---
 
 Romania is where the largest number of overseas rescue dogs coming to the UK originate, and it's the country we're adopting from ourselves — so it's the one we can speak to first-hand. Most dogs come from public shelters or the street, via UK-registered rescues that handle the paperwork and transport.
+
+## Why so many Romanian dogs need homes
+
+Nobody knows exactly how many dogs live on Romania's streets, because there's no official count. Four Paws puts it at roughly 500,000, one of the largest stray populations in the EU. Humane Society International estimates between 500,000 and a million. HSI says many street dogs suffer from malnutrition and disease, and that dogs taken into shelters are often put down if nobody claims them.
+
+That last part has a history. In September 2013, days after a four-year-old boy was killed by a pack of stray dogs in Bucharest, Romania's parliament passed a law letting local authorities euthanise dogs that hadn't been adopted or claimed after **14 working days** in a public shelter. Animal welfare groups protested in the chamber as the vote went through. Four Paws said in 2023 that killing strays is still legal and frequently practised in Romania, "without lasting results but with enormous suffering".
+
+Public shelters are where many dogs end up. In January 2026, Four Paws investigators visited nine of them and reported "systemic neglect":
+
+- overcrowded, dirty kennels and dogs with untreated open wounds
+- frozen water buckets in half the shelters they visited
+- dogs that weren't routinely vaccinated against rabies or neutered
+- at one shelter run as no-kill, about 40% of its 1,035 dogs died in 2024
+
+Behind all of that is a population that keeps replacing itself while dogs aren't neutered, which is why welfare groups argue for catch-neuter-vaccinate-return programmes instead of mass sheltering and culling. Romanian vets, volunteers and councils are part of that work too. HSI runs free neutering and vaccination clinics with Ilfov County Council, near Bucharest.
+
+Adopting one dog doesn't fix any of this, and it isn't meant to. But for that one dog, it changes everything. Barnie was found as a tiny puppy, one of a litter, behind a supermarket, and grew up in a shelter. He's the reason this site exists. If you can't adopt, sharing a rescue's dogs, fostering, or giving to a [registered rescue](/rescues) all help, and so does supporting neutering work in Romania itself.
 
 ## Getting a Romanian dog to the UK
 
@@ -50,6 +67,10 @@ You can’t reliably tell a mixed-breed dog’s ancestry by looking at it. In a 
 
 ## Sources
 
+- [Four Paws — investigation uncovers systemic neglect in public dog shelters (May 2026)](https://www.four-paws.org/our-stories/press-releases/may-2026/new-investigation-uncovers-systemic-neglect-in-public-dog-shelters)
+- [Four Paws UK — stray animal care in Romania (2023)](https://www.four-paws.org.uk/campaigns-topics/topics/help-for-strays/stray-animal-care-in-romania)
+- [Humane World for Animals (HSI) — global expertise in Romania](https://www.humaneworld.org/en/news/humane-society-international-brings-global-expertise-romania)
+- [The Sofia Globe — Romanian parliament passes stray dogs euthanasia law (September 2013)](https://sofiaglobe.com/2013/09/10/romanian-parliament-passes-stray-dogs-euthanasia-law/)
 - [GOV.UK — bringing your pet to Great Britain](https://www.gov.uk/bring-pet-to-great-britain)
 - [APHA — bringing new pets into Great Britain responsibly](https://aphascience.blog.gov.uk/2025/07/23/bringing-new-pets-into-great-britain-responsibly)
 - [ESCCAP UK & Ireland](https://www.esccapuk.org.uk/)
