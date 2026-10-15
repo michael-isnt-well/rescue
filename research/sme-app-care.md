@@ -8,6 +8,31 @@ Every claim has a source URL or is marked "unverified".
 
 Not published: this lives only on the `research/app-scout` branch.
 
+## Best-case positioning (Mike, 2026-10-15)
+
+**New native apps for businesses that already have a web service or API, then a monthly
+retainer to look after the app.** The client's existing supplier keeps owning the back end;
+Mike owns the app and its connection to that API. This avoids the "one-person IT department"
+trap by design.
+
+Things to check before relying on it (all unverified until researched):
+- **Who has a usable API:** SMEs on platforms with public APIs (e-commerce, booking, membership,
+  gym or class software, CRMs), and SMEs with a custom web app whose agency exposed an API.
+  Check each platform's API terms allow a third-party branded app.
+- **Ready-made substitutes:** many platforms sell their own white-label or "branded app"
+  add-ons, and there are app-builder services for e-commerce. Find out which platforms have
+  them, what they cost, and where they fall short (that gap is the sale).
+- **Apple's minimum-functionality rule:** Apple's App Review Guidelines (4.2) reject apps that are
+  little more than a repackaged website. A WebView wrapper of an existing site is a real
+  rejection risk, so a native app needs genuine app value (push notifications, offline use,
+  device features, a faster native experience). Verify the current wording at
+  https://developer.apple.com/app-store/review/guidelines/. This is also a selling point for
+  native over wrappers. (The PeoplePerHour "WordPress to app via WebView" post from 2026-10-15
+  is exactly this case.)
+- **API change risk:** when the client's API supplier changes something, the app breaks. The
+  retainer should cover adapting to API changes up to the included hours, with bigger rework
+  quoted, and the responsibility list should say the API supplier owns the API.
+
 ## Stack focus
 
 - **First choice:** native iOS (Swift/SwiftUI) and native Android (Kotlin). AI coding tools make
@@ -228,6 +253,10 @@ exclusions: new features, platform fees, third-party renewals, cloud overage and
 
 ## Next step
 
+- Next run (priority): for the best-case positioning, find (a) which common SME platforms
+  (booking, e-commerce, membership, gym or class software) have public APIs that allow branded
+  third-party apps, (b) which already sell white-label apps, their prices and their weaknesses,
+  and (c) the current wording of Apple guideline 4.2 on minimum functionality, from Apple.
 - Next run: find 2–3 real UK app-maintenance terms or proposals that list what's *excluded*
   (backend, hosting, IT), to model Mike's responsibility list on. Also find Wrexham and North
   Wales IT support companies that don't do apps, as possible referral partners (verify names).
@@ -247,3 +276,4 @@ exclusions: new features, platform fees, third-party renewals, cloud overage and
 - 2026-10-15 (run 2): workstreams Deadlines, Pricing, Competitors, Prospects, Demand. 15 searches, 6 pages opened (Apple upcoming-requirements, Android developer-verification, Foresight, Magora, Xablu, Wrexham Council). No blocked domains. Apple SDK date now verified; added iOS 13 target (9 Sep 2026); UK solo-freelancer prices and UK-owner demand still unevidenced.
 - 2026-10-15: added small builds with care included, and the portfolio gap, to Offer ideas.
 - 2026-10-15: added the Scope boundaries section (responsibility list, tiers, no general IT) and the 15–25%-of-build-cost pricing warning.
+- 2026-10-15: added Best-case positioning (new native apps on existing web services or APIs) and its checks.
