@@ -1,12 +1,46 @@
 # App opportunity log
 
-Weekly scout of app/tool ideas on two tracks: (A) dogs and rescue (overseas-rescue
-adopters, nervous/reactive dog owners; built-in audience via rescuejourney.co.uk) and
-(B) open niches (spreadsheet-run communities, abandoned apps, hard-to-use UK open data,
-confusing UK life admin, small club/volunteer admin). Newest entry first. Lives on branch
+Weekly scout of side-business opportunities on two tracks: (P) products Mike owns (apps,
+sites, APIs, data tools, directories, including dog/rescue ideas for the rescuejourney.co.uk
+audience) and (S) productised services for UK SMEs (fixed scope, fixed price, remote and
+asynchronous). See `about-mike.md` for skills and constraints. Newest entry first. Lives on branch
 `research/app-scout`, not on main, not published. Rule: every demand/competition claim
 has a source URL or is marked "unverified". A week with no finding is a good, honest result.
 Qualifying bar: total >= 22/30, no score below 3, demand >= 4.
+
+---
+
+## 2026-10-15 (weekly run, products + services tracks)
+
+**Verdict: nothing qualifies.**
+
+**Angles tested:** (S1, services) app care for SMEs whose agency/freelancer left, store-policy deadlines; (S2, services) trade-niche websites (plumbers/electricians) and monthly pricing; (S3, services) integrations and spreadsheet replacement (Xero/Shopify, tradesperson quotes); (S4, services) MTD for Income Tax bridging/software; (S5, services) abandoned agency-hosted websites; (P1, product) UK registers/open data lacking an API.
+
+**Effort:** 18 WebSearch calls; 8 pages opened successfully with WebFetch (appsops.store, B4A forum thread, Foresight Mobile pricing, Whito plumber-site guide, Xero product-ideas forum, two Apple Developer Forum threads, stora.sh). **Blocked/empty:** upwork.com job pages (403, twice), peopleperhour.com job and hourlie pages (empty body); Reddit not fetchable, so no r/smallbusinessuk threads (searched once, nothing found). Real-person posts actually read: 3 (B4A thread, two Apple forum threads), all from developers, not SME owners, so SME demand is **unverified**.
+
+### Ideas considered
+- **App care retainer for SMEs (store deadlines)** - Real forcing events: Apple requires the iOS 26 SDK for uploads from 28 Apr 2026 (https://stora.sh/blog/2026-04-26-ios-26-sdk-deadline-48-hours-triage, opened, third-party blog); Google Play API 36 target, extension to 1 Nov 2026, sources disagree on consequences (https://appsops.store/news/google-play-november-2026-api36-existing-apps-deadline, opened, dated 25 Aug 2026; https://www.b4x.com/android/forum/threads/app-must-target-android-16-api-level-36-or-higher.171610/, opened, developers). Price anchors: Foresight Mobile (Manchester) retainers from £675/mo, onboarding £500-1,000, 3-month minimum (https://foresightmobile.com/services/app-support-and-maintenance, opened, vendor page); a PPH takeover job of an iOS app at about £27/hr with 23 proposals (https://www.peopleperhour.com/freelance-jobs/technology-programming/mobile-app-development/an-existing-live-ios-app-needs-a-new-developer-to-take-over-2419939, search snippet only, page empty). Apple forum threads show rebuilt/handed-over apps hitting Guideline 4.3 rejection (https://developer.apple.com/forums/thread/773963, https://developer.apple.com/forums/thread/847079; posters are developer teams, unanswered or Apple-staff only). **Not qualified: closest lead.** The retainer price is real and fits Mike's skills, but no SME owner asking for it was found, there is no obvious list to find clients (apps with stale SDKs are not publicly searchable by me), and the PPH example suggests a low-price race. The deadlines are real; demand from SMEs is not evidenced.
+- **Trade-niche websites (plumbers etc.)** - Freelancer builds £800-3,000, hosting/updates £100-300/yr (https://whito.co.uk/plumbers/guides/plumber-website-cost-uk/, opened, single vendor guide). Crowded, price-competitive, one vendor source; no complaints found. **Rejected: saturated, no demand evidence.**
+- **Tradesperson quote/spreadsheet tool** - QuoteMaster Google Sheets add-on already targets tradespeople (https://workspace.google.com/marketplace/app/quotemaster/163701876040, snippet; no reviews shown). **Rejected: existing tool, no demand evidence.**
+- **Xero/Shopify integration work** - Xero's own app is 3.1/5 from 129 users, from £12/mo (https://apps.xero.com/uk/industry/retail/app/shopify, snippet); A2X, Link My Books, Dext well established (https://www.elverecommerceaccountants.co.uk/best-shopify-xero-integrations/, snippet, biased). Xero ideas forum (opened, https://productideas.xero.com/forums/939198-for-small-businesses/suggestions/44988754-create-an-in-house-xero-shopify-integration-ie-n) shows invoice-template gripes (e.g. 103 votes to revert theme; 123 votes for DOCX modernisation), a possible niche for invoice template customisation, but Xero says it does not plan more DOCX work. No budgets found. **Rejected for now: no budgets; template customisation is worth one follow-up.**
+- **MTD for Income Tax bridging software** - Phased from 6 Apr 2026 (>£50k), 2027 (>£30k), 2028 (>£20k) (https://hwfisher.co.uk/top-tips-choosing-the-right-software-for-making-tax-digital/, snippet; https://www.gov.uk/guidance/choose-the-right-software-for-making-tax-digital-for-income-tax, snippet). Bridging tools exist and HMRC recognition is required; tax-adjacent liability and HMRC software recognition process are heavy. **Rejected: regulated-adjacent, crowded, high liability.**
+- **Agency-hosted site rescue** - Only old generic forum advice found (https://seotraininglondon.org/never-let-your-web-developers-host-your-website/, snippet). **Nothing found.**
+- **UK registers API** - Companies House has a free API and bulk data; the gap is PDF accounts (https://zephira.ai/companies-house-data-whats-available-whats-missing-and-how-to-use-it-in-2026/, snippet, commercial blog). legislation.gov.uk, EA flood APIs exist (https://guidance.data.gov.uk/get_data, snippet). No developer asking for a missing UK API found. **Nothing found.**
+
+### Best candidate scorecard: fixed-price app-care retainer for UK SMEs
+| Criterion | Score | Evidence |
+|---|---|---|
+| Evidenced demand | 2 | Real store deadlines (stora.sh, appsops.store) and agency retainers exist, but no SME owner request or budget found; Upwork/PPH pages blocked. |
+| Competition gap | 3 | Agencies charge £675+/mo (Foresight); a cheaper solo option is plausible but unproven. |
+| Part-time feasibility | 4 | Async, fixed-scope maintenance fits evenings, matches his mobile day-job skills. |
+| Distribution | 2 | No defined list of target businesses found; PPH takeover job at about £27/hr suggests a low-price board. |
+| Honest monetisation | 3 | £675/mo anchor (Foresight); dishonest if SLAs promised without capacity. |
+| Risk (5 = low) | 4 | Low regulatory risk; flag possible overlap with employer's mobile work (about-mike.md). |
+| **Total** | **18/30** | Below 22; demand below 4. **Does not qualify.** |
+
+**Suggested follow-up:** Test demand directly: find real SME-owner posts (Upwork/PPH/Bark are blocked here, so Mike could check them manually for "take over existing app" jobs and note budgets). Check the employer-conflict question before pursuing anything mobile.
+
+NO QUALIFYING OPPORTUNITY THIS WEEK
 
 ---
 
