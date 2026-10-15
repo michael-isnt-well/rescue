@@ -2,7 +2,7 @@
 
 The plan (chosen by Mike on 2026-10-15): take on a few established UK SMEs and look after
 their modest iOS and Android apps on **monthly retainers**, part-time at first, possibly growing
-to 25–30 hours a week. The weekly scout keeps this file up to date. Each section is a living
+to 24–28 hours a week. The weekly scout keeps this file up to date. Each section is a living
 summary; update it in place. The dated changelog at the bottom records what changed each week.
 Every claim has a source URL or is marked "unverified".
 
