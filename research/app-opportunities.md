@@ -10,6 +10,44 @@ Qualifying bar: total >= 22/30, no score below 3, demand >= 4.
 
 ---
 
+## 2026-10-15 (manual check by Claude, PeoplePerHour via Mike's browser)
+
+Not a scout run. The scout couldn't open PeoplePerHour, so Claude read the public listing at
+https://www.peopleperhour.com/freelance-jobs/technology-programming/mobile-app-development
+in Mike's browser on 2026-10-15: 11 live jobs and 9 recent past jobs, posted over the last month or so.
+
+**General picture:** heavy competition, with most jobs drawing **25–93 proposals**. Budgets for full
+app builds are often unrealistically low (£100–£400 for complete apps), so generic app building
+on this board is a race to the bottom. Avoid it.
+
+**Distinct pattern worth testing: "finish, ship and look after an app someone built with AI or
+inherited."** At least five posts in about a month fit it:
+- **Skippers Online** (UK sailing school), £1.5K, 93 proposals: Swift source "written with
+  Claude", never compiled. Wants it built, tested on real devices, through TestFlight and App
+  Store review, **plus a price for Apple's yearly rebuild**. Prefers UK hours.
+- **Craig S.**, £50/hr, 69 proposals: a small web app for builders. Wants an independent code and
+  security review, testing on real iOS and Android devices (PWA deep-link behaviour), agreed
+  fixes, and **an annual maintenance price**. Says "we are not looking for the cheapest quote".
+- **Gerry C.**, £100, 49 proposals: a complete Flutter survey app for UK air-conditioning
+  installers. Needs building into a release APK, testing on devices, and optionally publishing.
+- **Jess A.**, £200, 45 proposals: acquiring a live Expo/Supabase app. Needs account set-up,
+  checks on the transfer, rotating credentials and a release, with **possible recurring monthly
+  maintenance from January 2027**.
+- **Lee G.**, £50 ("we're not even sure it's live"), and **Daniel A.**, £15 (lost signing key):
+  owners of apps whose developers have gone.
+
+**Why it fits Mike:** store releases, OS-update rebuilds, device testing and automated testing are
+his day job, and he uses AI coding tools himself, so he can work *with* AI-written code instead of
+rewriting it. Not telephony.
+**Evidence of demand:** real budgets, and two posts explicitly ask for recurring or annual
+maintenance. **Against:** proposal counts show plenty of supply, and many budgets are tiny.
+**Next for the scout:** test whether this works as a fixed-price package found through search
+rather than the boards. Look for owners asking "how do I publish my AI-built app", "Claude or
+ChatGPT wrote my app, now what", or "App Store rejected my app", and for existing services
+already offering this. Score it properly next run.
+
+---
+
 ## 2026-10-15 (weekly run, products + services tracks)
 
 **Verdict: nothing qualifies.**
