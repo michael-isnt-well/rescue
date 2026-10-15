@@ -14,6 +14,10 @@ Not published: this lives only on the `research/app-scout` branch.
   maintaining both natively realistic for one person.
 - **Also fine:** cross-platform (Flutter, React Native/Expo, .NET MAUI), and web-based apps
   (PWAs, WebView wrappers).
+- **Quality edge:** Mike builds automated UI test suites with **Maestro** (iOS and Android
+  flows) to find bugs and catch regressions, and raises unit-test coverage. Most small apps
+  inherited from an agency or freelancer likely have little or no automated testing
+  (unverified; check how competitors describe their testing).
 - **.NET edge:** Xamarin support ended on 1 May 2024
   (https://dotnet.microsoft.com/en-us/apps/xamarin). Microsoft recommends moving to .NET MAUI.
   SMEs with old Xamarin apps may need a migration, then ongoing care.
@@ -62,6 +66,9 @@ and Microsoft.
 
 ## Competitors and positioning
 
+- To research: do UK competitors advertise automated UI testing or regression suites in their
+  maintenance plans? If few do, "every release is tested before it ships" is a clear
+  differentiator.
 - To research: UK freelancers and small studios offering app maintenance retainers, what they
   include, and the gaps (for example: no native work, agency minimums, no Xamarin/MAUI).
 
@@ -74,8 +81,14 @@ and Microsoft.
 
 ## Offer ideas
 
-- Fixed-price "health check" (audit, build, test on devices, report) leading into a monthly
-  retainer.
+- Fixed-price "health check": audit the code and dependencies, build it, test on real
+  devices, write a Maestro suite for the app's critical flows (sign-in, purchase or booking,
+  core journey), produce a baseline unit-test coverage report, and send a written findings
+  report. This leads into a monthly retainer.
+- **Quality-led retainer:** run the Maestro regression suite before every store release, raise
+  unit-test coverage a little each month, and send a short monthly report (OS and SDK
+  readiness, crashes, coverage, tests passed). It protects the client's app and shows the
+  value of the retainer each month.
 - Retainer scope: OS and SDK updates, store policy compliance, crash monitoring, store releases,
   and a set number of hours of small fixes. New features quoted separately. **Next-working-day
   response, never on-call** while Mike is employed.
@@ -91,3 +104,4 @@ and Microsoft.
 
 - 2026-10-15: file created by Claude from the PeoplePerHour check, the verified Google Play rule,
   Xamarin end of support and the Foresight pricing benchmark.
+- 2026-10-15: added Mike's testing edge (Maestro UI suites, unit-test coverage) to Stack focus, Offer ideas and Competitors.
