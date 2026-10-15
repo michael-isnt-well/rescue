@@ -13,7 +13,7 @@ adoptionFeeMin: 430
 adoptionFeeMax: 450
 adoptionFeeNote: "The rescue's adoption information page says £450; its application page says £430 (£40 deposit plus £390)"
 transportFrequency: null
-homeCheckType: null
+homeCheckType: both
 rehomesToHomesWithCats: null
 rehomesToHomesWithChildren: null
 rehomesWithoutGarden: null
@@ -57,7 +57,7 @@ The same page says: "There are no additional costs or fundraising required outsi
 
 ## Home checks and the process
 
-The rescue's website describes four steps: Browse, Apply, Review and Transport. The adoption information page says: "We will review you application and arrange a home check." The application page says: "All forever homes are subject to a home check which you agree to by enquiring" and "We also carry out follow up checks once the pet is in your possesion." The pages we read don't say whether home checks are virtual or in person.
+The rescue's website describes four steps: Browse, Apply, Review and Transport. The adoption information page says: "We will review you application and arrange a home check." The application page says: "All forever homes are subject to a home check which you agree to by enquiring" and "We also carry out follow up checks once the pet is in your possesion." It adds that checks "are performed on our behalf by a volunteer or a virtual home check may be arranged dependant on circumstances."
 
 ## Transport and collection
 
