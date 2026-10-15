@@ -1,10 +1,49 @@
 # App opportunity log
 
-Weekly scout of niche dog app/tool ideas for the overseas-rescue-adopter audience
-(rescuejourney.co.uk). Newest entry first. Lives on branch `research/app-scout`,
-not on main, not published. Rule: every demand/competition claim has a source URL
-or is marked "unverified". A week with no finding is a good, honest result.
+Weekly scout of app/tool ideas on two tracks: (A) dogs and rescue (overseas-rescue
+adopters, nervous/reactive dog owners; built-in audience via rescuejourney.co.uk) and
+(B) open niches (spreadsheet-run communities, abandoned apps, hard-to-use UK open data,
+confusing UK life admin, small club/volunteer admin). Newest entry first. Lives on branch
+`research/app-scout`, not on main, not published. Rule: every demand/competition claim
+has a source URL or is marked "unverified". A week with no finding is a good, honest result.
 Qualifying bar: total >= 22/30, no score below 3, demand >= 4.
+
+---
+
+## 2026-10-15 (weekly run)
+
+**Verdict: nothing qualifies.**
+
+**Angles tested:** (A1, dogs) renting with a rescue dog / pet-request paperwork under the Renters' Rights Act; (A2, dogs) secure fields / quiet places for nervous dogs; (A3, dogs) overseas-adopter pain points and "wish there was" asks; (B1, club admin) volunteer rotas and village-hall bookings; (B2, club admin) allotment societies; (B3, club admin) grassroots football and running-club admin; (B4, open data) hard-to-search UK registers/OGL datasets; (B5, abandoned apps) discontinued/badly reviewed apps with users.
+
+**Effort:** 17 WebSearch calls; 6 pages opened with WebFetch successfully (Wamiz forum thread, Rovva Product Hunt, Scribe Allotments, Property118 article, Pembee club-software roundup, Dogs Trust renting page). **Blocked/failed:** fetcheveryone.com (403), apps.apple.com/ca offlead (429), a Reddit mirror lr.ggtyler.dev (503), dogparksnearme.co.uk (empty body). Only ~2 real-person discussions were readable (Wamiz thread; Product Hunt comments), below the 3 target, so demand findings are partly **unverified**. B4 and B5 searches returned generic results; no specific dataset or abandoned app emerged.
+
+### Ideas considered
+- **Pet-request / "pet CV" tool for renters with rescue dogs** - Renters' Rights Act pet-request rules in force from 1 May 2026, landlord has 28 days (https://www.gov.uk/guidance/renting-out-your-property-guidance-for-landlords-and-letting-agents/if-a-tenant-wants-a-pet-to-live-with-them, via search summary). Dogs Trust already offers a fillable Pet CV and an email template (https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/at-home/pet-friendly-rentals, opened); NRLA published free landlord pet documents (https://www.nrla.org.uk/news/renters-rights-act-pet-documents, snippet). Legal-adjacent (rights, deadlines), free competition from a major charity, no adopter asking found. **Rejected: saturated, legal-advice risk.** Content angle only ("renting with an imported dog").
+- **Secure dog field finder for nervous dogs** - directories exist: Dog Parks Near Me (https://www.dogparksnearme.co.uk/, page empty on fetch), offlead app (https://apps.apple.com/ca/app/offlead/id6751276903, blocked), DogFriendly listings (one listing last updated 2021: https://dogfriendly.co.uk/days-out/listing/bromsgrove-field-hire-76290). Staleness is plausible but one example is not evidence, and listings depend on scraping or field-owner cooperation (marketplace-like). **Rejected: no demand evidence; data-sourcing problem.**
+- **Overseas-adopter pain points** - Wamiz thread (opened, https://wamiz.co.uk/dog/forum/advice-needed-romanian-rescue-dogs-73355.html) shows complaints about rescue vetting and transport stops, no tool mentioned; Veterinary Record survey of adopters found information gaps on import rules (via https://dogwelfareproject.org/research/how-was-my-overseas-adoption-experience-uk-adopters-share-their-thoughts/, snippet). Information gap, not a tool request. **Rejected: content, not an app.**
+- **Volunteer rota tool for clubs** - Rovva launched 2026, 6 points, 14 followers, no reviews, no WhatsApp integration; maker claims messy spreadsheets/WhatsApp (https://www.producthunt.com/products/rovva, opened, marketing). Also Three Rings, Redder (snippets). Crowded with funded tools. **Rejected: saturated.**
+- **Village hall booking** - Village Hall Hub, Hallmaster (1500+ venues, vendor claim), MIDAS, LemonBooking, Chobble at £25/yr (https://lemonbooking.com/en-GB/solutions/village-hall-booking-system, snippet). **Rejected: saturated, vendor claims only.**
+- **Allotment society admin** - Scribe Allotments (demo-only pricing, councils and societies; https://www.scribeaccounts.com/scribe-allotments, opened); Blyth Town Council said Word/Excel folders were error-prone and moved to software (https://blythtowncouncil.gov.uk/widescopecms/resources/blyth-meetings/agenda-item-7-decision-report-1.pdf, snippet); Saltash TC sought quotes (https://modern.saltash.gov.uk/documents/s8376/ - snippet). Gap might exist for small independent societies who cannot afford quote-led software, but no society saying so was found, and it stores tenants' personal data. **Not qualified; closest B-track lead. Worth one follow-up (allotment forums, NSALG) with evidence of price complaints.**
+- **Grassroots football admin** - FA Matchday (free, official), Spond, Pitchero, TeamStats from £5/mo (https://www.pembee.app/blog/best-football-club-management-software, opened, vendor-biased). **Rejected: saturated.**
+- **parkrun/running club volunteer tooling** - a single forum complaint about volunteer-recruitment guidance (https://www.fetcheveryone.com/forum/parkrun-thread-26887/5202, snippet; fetch 403). Official ecosystem; no evidence. **Rejected.**
+- **UK registers hard to search** - Companies House bulk CSVs are ~400MB each (https://resources.companieshouse.gov.uk/infoAndGuide/faq/publicDataProduct.shtml, snippet) but Companies House already offers search and API; no specific underserved register found. **Nothing found.**
+- **Abandoned apps** - searches only returned generic abandonment statistics (Appfigures: 30% of App Store apps not updated in 2 years, https://appfigures.com/resources/insights/20230217/5-opportunity-time-more-than-30-percent-of-apps-on-the-app-store-&-google-play-are-abandoned) - not a niche. **Nothing found.**
+
+### Best candidate scorecard: affordable admin tool for small allotment societies
+| Criterion | Score | Evidence |
+|---|---|---|
+| Evidenced demand | 2 | One council report (snippet) of spreadsheet pain; no society asking found. |
+| Competition gap | 3 | Scribe is quote-led and council-oriented; cheaper options not checked. |
+| Solo feasibility | 3 | Needs accounts, persistence, and a backend for tenant data. |
+| Distribution | 3 | Searches like "allotment waiting list software" plausible; unmeasured. |
+| Honest monetisation | 3 | Small subscription to societies; fine if transparent. |
+| Risk (5 = low) | 3 | Stores personal data of tenants (GDPR). |
+| **Total** | **17/30** | Below 22; demand below 4. **Does not qualify.** |
+
+**Suggested follow-up:** Reddit/Fetcheveryone/Apple store fetches are unreliable from this environment; real-person demand evidence remains the bottleneck.
+
+NO QUALIFYING OPPORTUNITY THIS WEEK
 
 ---
 
