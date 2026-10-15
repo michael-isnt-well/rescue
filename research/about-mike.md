@@ -40,9 +40,9 @@ published: it lives only on the `research/app-scout` branch. Last updated: 2026-
 
 ## Constraints
 
-- Nothing that conflicts with his current employer, such as competing products, the same
-  clients, or work that uses his employer's IP. If an idea sits close to his employer's
-  sector, flag it.
+- His employer is a **telephony business**. Mike's view (2026-10-15) is that outside work is
+  fine as long as it isn't a rival telephony business. Flag any idea in telephony, VoIP, call
+  handling or contact-centre software. Never use his employer's IP or clients.
 - While he's employed: no on-call support or response-time promises; asynchronous,
   fixed-scope work is best.
 - No regulated advice (tax, legal, financial, medical or veterinary).
