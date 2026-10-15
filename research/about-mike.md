@@ -47,6 +47,13 @@ are also fine. The working plan and evidence live in `research/sme-app-care.md`.
 - **Quality as a service:** automated testing or release set-up for small software teams
   that have none, if evidence shows they will pay for it.
 
+## Income target
+
+To replace his job, Mike needs about **£2,500 a month after tax** (stated 2026-10-15). As a
+sole trader that's roughly £36k a year of profit before tax, or about £3,000–£3,500 a month of
+revenue once business costs are included (Claude's rough estimate, not tax advice). Use this
+when judging pricing evidence: for example, how many retainers at a given price it would take.
+
 ## Location: Wrexham, North Wales
 
 Mike is based in **Wrexham**. SMEs in his region **score higher**: they're within reach for
