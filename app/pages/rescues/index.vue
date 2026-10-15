@@ -14,6 +14,7 @@ const { data: rescues } = await useAsyncData('rescues-index', () =>
       'adoptionFeeMax',
       'homeCheckType',
       'feeIncludesTransport',
+      'feeSourcesDiffer',
       'charityStatus',
       'rehomesToHomesWithCats',
       'rehomesToHomesWithChildren',

@@ -91,6 +91,9 @@ export default defineContentConfig({
         postAdoptionSupport: z.string().nullable().default(null),
         // Does the published fee include transport to the UK? 'false' = quoted separately.
         feeIncludesTransport: z.enum(['true', 'false']).nullable().default(null),
+        // The rescue's own pages give different prices; the fee shows the range and a
+        // "Pages differ" tag instead of us picking one.
+        feeSourcesDiffer: z.boolean().default(false),
         // Result of checking the official charity registers (CCEW / OSCR / CCNI).
         // 'not-found' is a neutral fact, not an accusation: small groups aren't always registered.
         charityStatus: z.enum(['registered', 'not-found']).nullable().default(null),

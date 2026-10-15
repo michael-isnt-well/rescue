@@ -89,6 +89,10 @@ describe.skipIf(!built)('generated pages', () => {
       expect(html).toMatch(/confirm[^<]*directly with the rescue/)
     })
 
+    it.runIf(route.startsWith('/rescues/'))('rescue fees carry an "As published" or "Pages differ" tag', () => {
+      expect(html).toMatch(/fee-check-tag[\s\S]*?(As published|Pages differ)/)
+    })
+
     it('has only valid JSON-LD', () => {
       const blocks = all(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g, html)
       for (const [, json] of blocks) {

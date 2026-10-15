@@ -15,6 +15,7 @@ const props = defineProps<{
     adoptionFeeMax?: number | null
     homeCheckType?: string | null
     feeIncludesTransport?: string | null
+    feeSourcesDiffer?: boolean
     charityStatus?: string | null
     lastVerifiedAt?: string
   }
@@ -54,6 +55,9 @@ const countries = computed(() =>
         <dd class="mt-0.5 font-semibold">{{ fee }}</dd>
         <dd v-if="rescue.feeIncludesTransport === 'true'" class="text-xs text-[var(--color-muted)]">incl. transport</dd>
         <dd v-else-if="rescue.feeIncludesTransport === 'false'" class="text-xs text-[var(--color-muted)]">transport extra</dd>
+        <dd class="mt-1.5">
+          <FeeCheck :checked="rescue.lastVerifiedAt" :differs="rescue.feeSourcesDiffer" />
+        </dd>
       </div>
       <div v-if="rescue.charityStatus">
         <dt class="text-xs uppercase tracking-wide text-[var(--color-faint)]">Charity register</dt>

@@ -19,6 +19,7 @@ rehomesToHomesWithChildren: null
 rehomesWithoutGarden: null
 postAdoptionSupport: The rescue says it has "a team of volunteers with experience in settling rescue dogs into their own homes", and adopters can ask for help in the Dali Help and Advice Group.
 feeIncludesTransport: "false"
+feeSourcesDiffer: true
 charityStatus: registered
 charityCheckedAt: 2026-10-15
 sources:

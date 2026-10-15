@@ -19,6 +19,7 @@ rehomesToHomesWithChildren: null
 rehomesWithoutGarden: null
 postAdoptionSupport: "The rescue's application page says: \"We offer full rescue backup and can be contacted at any time about anything.\""
 feeIncludesTransport: "true"
+feeSourcesDiffer: true
 charityStatus: registered
 charityCheckedAt: 2026-10-15
 sources:

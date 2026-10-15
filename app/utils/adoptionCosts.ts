@@ -27,6 +27,7 @@ export interface RescueFee {
   variant: string // "Adult dog", "Puppy"...
   fee: number
   approx?: boolean // rescue itself says "around" / "approximately" / "minimum"
+  sourcesDiffer?: boolean // the rescue's own pages give different prices; shown with a "Pages differ" tag
   parts: { label: string; amount: number }[]
   note: string
   sourceUrl: string
@@ -137,6 +138,7 @@ export const RESCUE_FEES: RescueFee[] = [
     country: 'cyprus',
     variant: 'Adult dog',
     fee: 610,
+    sourcesDiffer: true,
     parts: [
       { label: 'Adoption fee', amount: 225 },
       { label: 'Flights, transport & paperwork', amount: 385 },
@@ -150,6 +152,7 @@ export const RESCUE_FEES: RescueFee[] = [
     country: 'cyprus',
     variant: 'Puppy',
     fee: 540,
+    sourcesDiffer: true,
     parts: [
       { label: 'Adoption fee', amount: 155 },
       { label: 'Flights, transport & paperwork', amount: 385 },
@@ -164,6 +167,7 @@ export const RESCUE_FEES: RescueFee[] = [
     country: 'bulgaria',
     variant: 'Any dog',
     fee: 430,
+    sourcesDiffer: true,
     parts: [
       { label: 'Deposit (non-refundable)', amount: 40 },
       { label: 'Balance when transport is booked', amount: 390 },

@@ -84,7 +84,7 @@ const facts = computed(() => rawFacts.value.map((f) => ({ ...f, value: clean(f.v
 const rawFacts = computed(() => [
   { label: 'Rehomes from', value: (r.value.countries || []).map(countryLabel).join(', ') || null },
   { label: 'UK regions covered', value: (r.value.regionsCovered || []).join(', ') || null },
-  { label: 'Adoption fee', value: feeDisplay.value },
+  { label: 'Adoption fee', value: feeDisplay.value, feeCheck: true },
   { label: 'Transport frequency', value: r.value.transportFrequency },
   { label: 'Home check', value: r.value.homeCheckType },
   { label: 'Rehomes to homes with cats', value: policyLabel(r.value.rehomesToHomesWithCats) },
@@ -135,6 +135,12 @@ const externalLinks = computed(() =>
           <dt class="text-sm font-medium text-[var(--color-muted)]">{{ fact.label }}</dt>
           <dd class="text-sm sm:col-span-2" :class="fact.value ? 'font-medium' : 'text-[var(--color-faint)]'">
             {{ fact.value || 'Not stated' }}
+            <FeeCheck
+              v-if="fact.feeCheck && fact.value"
+              :checked="r.lastVerifiedAt"
+              :differs="r.feeSourcesDiffer"
+              class="mt-1.5 block"
+            />
           </dd>
         </div>
       </dl>

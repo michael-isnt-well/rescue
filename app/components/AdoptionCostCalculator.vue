@@ -367,6 +367,7 @@ function scrollToSummary() {
               </li>
             </ul>
             <p class="text-[var(--color-muted)]">{{ selectedFee.note }}</p>
+            <FeeCheck :checked="SOURCES_CHECKED" :differs="selectedFee.sourcesDiffer" class="mt-2" />
             <p class="mt-2 text-xs">
               <a :href="selectedFee.sourceUrl" target="_blank" rel="noopener" class="underline">Source: {{ selectedFee.rescue }}</a>
               <template v-if="selectedFee.profilePath">
