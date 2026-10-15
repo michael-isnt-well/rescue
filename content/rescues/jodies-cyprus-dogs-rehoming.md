@@ -20,7 +20,7 @@ rehomesWithoutGarden: null
 postAdoptionSupport: "The rescue's aftercare page offers a free printable PDF new adoptions pack, and says: \"If you have any other questions, please don't hesitate to contact us.\""
 feeIncludesTransport: null
 charityStatus: registered
-charityCheckedAt: 2026-10-13
+charityCheckedAt: 2026-10-15
 sources:
   - label: Jodie's Cyprus Dogs Rehoming — How to Adopt
     url: https://www.jodiescyprusdogsrehoming.co.uk/adopt-or-foster/how-to-adopt
@@ -32,7 +32,7 @@ sources:
     url: https://www.jodiescyprusdogsrehoming.co.uk
   - label: Charity Commission register — Jodies Cyprus Dog Rehoming (1156497)
     url: https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5043905
-lastVerifiedAt: 2026-10-13
+lastVerifiedAt: 2026-10-15
 publishedAt: 2026-10-13
 ---
 
@@ -82,4 +82,4 @@ The rescue says dogs receive a pet passport, microchip and rabies vaccination, a
 
 According to the How to Adopt page, aftercare checks take place about 7 days and 1 month after adoption. The Aftercare page offers a free printable "new adoptions pack" PDF and says: "If you have any other questions, please don't hesitate to contact us."
 
-*Details verified 13 October 2026 from the rescue's own website and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*
+*Details verified 15 October 2026 from the rescue's own website and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*

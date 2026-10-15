@@ -23,7 +23,7 @@ rehomesWithoutGarden: case-by-case
 postAdoptionSupport: Rescue back-up (RBU) for exceptional circumstances, post-adoption Facebook groups, and access to volunteer advice.
 feeIncludesTransport: "true"
 charityStatus: registered
-charityCheckedAt: 2026-10-09
+charityCheckedAt: 2026-10-15
 sources:
   - label: Pawprints to Freedom — adopt page
     url: https://www.pawprints2freedom.co.uk/adopt
@@ -31,7 +31,7 @@ sources:
     url: https://www.pawprints2freedom.co.uk/_files/ugd/3a38a8_e4a18f64e02b419293fdd868c0bc4062.pdf
   - label: Charity Commission register — Pawprints to Freedom Limited (1194754)
     url: https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5171025
-lastVerifiedAt: 2026-09-26
+lastVerifiedAt: 2026-10-15
 publishedAt: 2026-09-05
 ---
 
@@ -43,7 +43,7 @@ The standard adoption fee for mainland UK is **around £520**, though it can var
 
 - **Puppies under 9 months:** an extra **£100 neutering deposit**, refunded if you have the dog neutered within 6 months of arrival.
 - **Older dogs:** the rescue offers **reduced fees**, fundraising the difference, to give older dogs a better chance of a home.
-- **Cancelling:** £175 of the fee is non-refundable if you cancel before the dog boards the transport (it pays the rescuer to prepare the dog), and all of it once the dog has boarded.
+- **Cancelling:** the rescue's adoption pack says £175 of the fee is non-refundable if you cancel before the dog boards the transport, and all of it once the dog has boarded. Its adopt page says "£175 of the fee is non-refundable if you cancel your reservation", whether the dog is already in the UK or has started its journey. The two pages are worded differently, so confirm the terms with the rescue before paying.
 
 **Fostering is free.** You can foster a dog (with the option to adopt later) at no cost, which is a good route in if you're not ready to commit to the full fee up front.
 
@@ -76,4 +76,4 @@ Adopters get **rescue back-up (RBU)**: if something serious and unforeseen happe
 - Adoption pack (dogs): [pawprints2freedom.co.uk/info-packs](https://www.pawprints2freedom.co.uk/info-packs)
 - Facebook community: [facebook.com/groups/pawprints2freedom](https://www.facebook.com/groups/pawprints2freedom)
 
-*Details verified 26 September 2026 from the rescue's own website, adoption pack and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*
+*Details verified 15 October 2026 from the rescue's own website, adoption pack and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*

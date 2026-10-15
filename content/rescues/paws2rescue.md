@@ -20,13 +20,13 @@ rehomesWithoutGarden: case-by-case
 postAdoptionSupport: The rescue says it keeps in contact with adopters and is there to support them after adoption.
 feeIncludesTransport: "true"
 charityStatus: registered
-charityCheckedAt: 2026-10-09
+charityCheckedAt: 2026-10-15
 sources:
   - label: Paws2Rescue — the adoption process
     url: https://paws2rescue.com/adoption/
   - label: Charity Commission register — Paws2Rescue (1156882)
     url: https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5046046
-lastVerifiedAt: 2026-10-09
+lastVerifiedAt: 2026-10-15
 publishedAt: 2026-10-09
 ---
 
@@ -54,4 +54,4 @@ The rescue says the vaccinations and passport usually take around a month to com
 
 The rescue says it keeps in contact with adopters and is there to support them after adoption.
 
-*Details verified 9 October 2026 from the rescue's own website and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*
+*Details verified 15 October 2026 from the rescue's own website and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*
