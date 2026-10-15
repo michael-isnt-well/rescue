@@ -181,4 +181,4 @@ and Microsoft.
   Xamarin end of support and the Foresight pricing benchmark.
 - 2026-10-15: added Mike's testing edge (Maestro UI suites, unit-test coverage) to Stack focus, Offer ideas and Competitors.
 - 2026-10-15: added location priority (Wrexham, North Wales and the nearby border region) to prospects and next step.
-- 2026-10-15 (run 2): workstreams Deadlines, Pricing, Competitors, Prospects, Demand. 17 searches, 7 pages opened (Apple upcoming-requirements, Android developer-verification, Foresight, Magora, Xablu, Wrexham Council). No blocked domains. Apple SDK date now verified; added iOS 13 target (9 Sep 2026); UK solo-freelancer prices and UK-owner demand still unevidenced.
+- 2026-10-15 (run 2): workstreams Deadlines, Pricing, Competitors, Prospects, Demand. 15 searches, 6 pages opened (Apple upcoming-requirements, Android developer-verification, Foresight, Magora, Xablu, Wrexham Council). No blocked domains. Apple SDK date now verified; added iOS 13 target (9 Sep 2026); UK solo-freelancer prices and UK-owner demand still unevidenced.
