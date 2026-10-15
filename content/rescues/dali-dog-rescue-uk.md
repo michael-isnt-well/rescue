@@ -9,9 +9,9 @@ charityRegisterUrl: https://register-of-charities.charitycommission.gov.uk/en/ch
 websiteUrl: https://dalidogrescue.uk
 facebookUrl: https://www.facebook.com/groups/419849664749439
 applicationUrl: https://dalidogrescue.uk/adoption-application-form
-adoptionFeeMin: 180
-adoptionFeeMax: null
-adoptionFeeNote: "minimum £300 for adult dogs, minimum £180 for puppies; flights and onward travel £485 on top, according to the rescue"
+adoptionFeeMin: 665
+adoptionFeeMax: 785
+adoptionFeeNote: "total including transport: a minimum £180 (puppies) or £300 (adults) contribution plus £485 for flights and onward travel, as quoted by the rescue"
 transportFrequency: null
 homeCheckType: null
 rehomesToHomesWithCats: null
@@ -44,7 +44,7 @@ According to its adoption page, for adult dogs "we ask for a minimum of £300 to
 
 The adoption page lists an "EU Pet Passport"; testing "for heartworm, Ehrlichia, Lyme disease, Anaplasmosis and Leishmaniasis"; spaying/neutering "providing that this is medically viable for health and age reasons"; microchipping ("and we'll help you change the details when they arrive at their new home"); and de-worming and flea treatment. The rescue says it will follow up to check neutering has been done.
 
-On transport, the same page says: "you are responsible for paying for flights and onward travel at a cost of £485." Its FAQs say: "If you're overseas we'll also provide pre-flight vets checks, a pet passport and arrange transportation for your new dog." The website doesn't say how often dogs travel.
+On transport, the same page says: "you are responsible for paying for flights and onward travel at a cost of £485." Added together, that makes a total of at least £665 for a puppy or £785 for an adult dog, based on the rescue's published minimums. Its FAQs say: "If you're overseas we'll also provide pre-flight vets checks, a pet passport and arrange transportation for your new dog." The website doesn't say how often dogs travel.
 
 ## Who they rehome to
 
