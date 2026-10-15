@@ -159,6 +159,23 @@ const externalLinks = computed(() =>
       <ContentRenderer :value="doc" />
     </div>
 
+    <!-- Same general note on every profile: it explains the law, it isn't a comment on this rescue. -->
+    <section class="mt-10 rounded-[var(--radius-lg)] border border-[var(--color-line)] px-5 py-4" aria-labelledby="collection-heading">
+      <h2 id="collection-heading" class="display text-xl">Collecting your dog: what the rules say</h2>
+      <p class="mt-2 text-sm">
+        Rescue dogs come into Great Britain under commercial import rules. The government's Animal and
+        Plant Health Agency (APHA) says a commercially imported dog must be delivered to the address on
+        its import paperwork, not collected from a public place such as a car park or service station,
+        and must then stay at that address for at least 48 hours. Whichever rescue you adopt from, ask
+        where and how your dog will be handed over before the day.
+      </p>
+      <p class="mt-2 text-sm">
+        <NuxtLink to="/guides/transport-day#where-the-handover-happens" class="font-semibold text-[var(--color-brand-dark)]">
+          More in our transport day guide →
+        </NuxtLink>
+      </p>
+    </section>
+
     <section v-if="r.sources?.length" class="mt-10" aria-labelledby="sources-heading">
       <h2 id="sources-heading" class="display text-xl">Sources</h2>
       <ul class="mt-3 space-y-1.5 text-sm">
