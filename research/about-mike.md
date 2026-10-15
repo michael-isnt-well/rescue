@@ -10,7 +10,9 @@ published: it lives only on the `research/app-scout` branch. Last updated: 2026-
 - **Front-end web:** builds and maintains websites. Side projects use Nuxt/Vue static sites
   and interactive tools (see rescuejourney.co.uk).
 - **Back end:** .NET APIs. Uses a document database occasionally.
-- **Quality:** uses automated test tooling; tests and CI are part of how he works.
+- **Quality:** uses automated test tooling, including **Maestro** for mobile UI suites that
+  find bugs and catch regressions, and raises unit-test coverage. Tests and CI are part of
+  how he works.
 - **Data and content:** has built a directory from verified UK open data (the Charity
   Commission register) and writes sourced, SEO-led content.
 - **Ways of working:** develops quickly with AI coding tools. Experienced in corporate
@@ -29,7 +31,7 @@ published: it lives only on the `research/app-scout` branch. Last updated: 2026-
 ## Chosen direction (2026-10-15)
 
 **Monthly app-care retainers for established UK SMEs**: managing a few modest apps
-part-time. **Stack preference:** native iOS (Swift/SwiftUI) and native Android (Kotlin)
+part-time. The ideal is a few manageable SME apps, each on a retainer. **Stack preference:** native iOS (Swift/SwiftUI) and native Android (Kotlin)
 first, since AI tools make doing both natively realistic. Cross-platform and web-based apps
 are also fine. The working plan and evidence live in `research/sme-app-care.md`.
 
