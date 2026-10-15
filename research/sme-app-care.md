@@ -165,6 +165,18 @@ and Microsoft.
   Account Holder/admin. Cheap first step, and a trust-builder.
 - "Built your app with AI? I'll get it into the store and keep it there." (search-led)
 - Xamarin to .NET MAUI migration, then a retainer.
+- **Small builds as the way in** (Mike's idea, 2026-10-15): build small, tightly scoped apps for
+  SMEs, with care included from day one (a build fee plus a minimum 6–12 months of retainer
+  written into the deal), so every build becomes a retainer. Risks: builds are where board
+  prices race down (PeoplePerHour full-app budgets were £100–£400 on 2026-10-15), plus scope
+  creep and fixed-price overruns on part-time hours. Honest qualifier: some SMEs don't need a
+  native app (a website or PWA may do), and saying so builds trust.
+- **Portfolio gap:** almost every serious PeoplePerHour post on 2026-10-15 asked for links to 2–3
+  published apps. Mike's day-job app may not be citable (employer's name or NDA), so 1–2 small
+  published apps of his own, or one discounted build for a friendly local business in exchange
+  for a case study, may be a prerequisite. To research: what local SMEs actually ask apps for
+  (bookings, loyalty, ordering, job sheets), and typical UK small-build prices from published
+  price lists, not boards.
 
 ## Next step
 
@@ -182,3 +194,4 @@ and Microsoft.
 - 2026-10-15: added Mike's testing edge (Maestro UI suites, unit-test coverage) to Stack focus, Offer ideas and Competitors.
 - 2026-10-15: added location priority (Wrexham, North Wales and the nearby border region) to prospects and next step.
 - 2026-10-15 (run 2): workstreams Deadlines, Pricing, Competitors, Prospects, Demand. 15 searches, 6 pages opened (Apple upcoming-requirements, Android developer-verification, Foresight, Magora, Xablu, Wrexham Council). No blocked domains. Apple SDK date now verified; added iOS 13 target (9 Sep 2026); UK solo-freelancer prices and UK-owner demand still unevidenced.
+- 2026-10-15: added small builds with care included, and the portfolio gap, to Offer ideas.
