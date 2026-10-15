@@ -99,6 +99,16 @@ and Microsoft.
 - Gap: no published solo-freelancer UK app-retainer price found in 4 searches this week; only agencies.
   Day rates in a search snippet for a Laravel freelancer (£375–£500/day, https://rockingtech.co.uk/blog/what-a-laravel-support-retainer-actually-covers)
   are not mobile. Treat agency prices as a ceiling, not Mike's price.
+- **Rule of thumb from build cost:** UK agency guides put yearly upkeep at **15–25% of the
+  original build cost** (Softomate example: a £60k app works out at £9k–£15k a year,
+  https://www.softomatesolutions.com/blog/mobile-app-maintenance-support-uk/; Arch says the same,
+  https://wearearch.com/blog/app-maintenance-and-support; both read 2026-10-15). **This is a
+  warning for small builds:** a £10k app implies only about £125–£210/month on that rule. To reach
+  about £450–£500/month per client, the retainer has to be sold on value (store compliance,
+  tested releases, monthly report, a set number of fix hours), not as a percentage of build cost.
+  Agency rule of thumb only, not a standard.
+- Arch's guide cites typical UK tiers of about £675 (basic) and about £1,495 (premium) a month,
+  matching Foresight's, plus on-demand £75–£150/hr (2025 reference).
 - PeoplePerHour takeover job at about £27/hr (search snippet only). This is the board floor, not
   a target.
 
@@ -147,6 +157,44 @@ and Microsoft.
   listings. **No bulk scraping** of the App Store or Google Play (against their terms). Business
   information only, never personal data. Outreach decisions are Mike's.
 
+## Scope boundaries: not becoming a one-person IT department
+
+Mike's concern (2026-10-15): SME clients may assume "the app" includes APIs, databases,
+servers, hosting and general IT. **The evidence supports the worry.** Some UK maintenance guides
+list "cloud servers, databases, storage, bandwidth, scaling, uptime monitoring" and third-party
+services (payments, maps, push, SMS, email) as part of "app maintenance" (Softomate, link above),
+and Arch's covers "hosting, security, dependencies, bug fixes, APIs and compliance work". A client
+who has read those will expect it unless the scope says otherwise. Both guides also list common
+exclusions: new features, platform fees, third-party renewals, cloud overage and out-of-hours cover.
+
+**Proposed approach (Claude's suggestion, to refine):**
+- **A one-page responsibility list in every proposal,** in three columns: *Mike* (the iOS and
+  Android apps, their builds and store listings, the app's connection to the backend), *the
+  client* (accounts, hosting bills, content, its own staff), and *third parties* (the backend or
+  API supplier, the website host, the IT support company). Anything not in Mike's column is out
+  of scope by default.
+- **Tiers:**
+  1. **App Care**: the app only. OS and SDK updates, store compliance, Maestro regression
+     before each release, crash monitoring, a set number of fix hours. The app talks to the
+     client's existing API, and Mike maintains the *integration*, not the server.
+  2. **App and Backend Care** (optional add-on): a managed backend (Firebase or Supabase) **in
+     the client's own account**. Mike maintains its configuration (schema, auth, functions); the
+     client pays hosting directly. No self-managed servers or VMs.
+  3. **Not offered:** general IT (email, Microsoft 365 or Google Workspace, PCs, printers, Wi-Fi,
+     on-premise servers, websites unless separately agreed). Refer it to a local IT support
+     company instead, ideally one that refers app work back.
+- **The health check maps the architecture first:** what backend exists, who hosts it, who owns
+  each account, which third-party services are in use. That decides the tier, or tells Mike to
+  decline.
+- **For new builds, design for a small maintenance surface:** use the client's existing systems
+  through their APIs, or a managed backend in the client's account. Mike can build a .NET API,
+  but every bespoke server is long-term maintenance, so price it as the separate tier.
+- **Change requests:** anything outside the list is quoted separately before work starts
+  (standard freelance practice; e.g. https://www.withmoxie.com/blog/3-ways-to-avoid-scope-creep-in-freelance-projects).
+- **Managed backends:** Supabase is standard Postgres (portable, easier to hand over); Firebase is
+  more proprietary. Either way, the project lives in the client's account (general comparisons,
+  e.g. https://bytebase.com/blog/supabase-vs-firebase; unverified detail).
+
 ## Offer ideas
 
 - Fixed-price "health check": audit the code and dependencies, build it, test on real
@@ -180,6 +228,9 @@ and Microsoft.
 
 ## Next step
 
+- Next run: find 2–3 real UK app-maintenance terms or proposals that list what's *excluded*
+  (backend, hosting, IT), to model Mike's responsibility list on. Also find Wrexham and North
+  Wales IT support companies that don't do apps, as possible referral partners (verify names).
 - Mike: attend or contact one of the Wrexham business groups (e.g. Connect Wrexham, last Thursday
   of the month, or the 22 Oct North Wales Social Expo if it is confirmed) and ask owners whether they
   have an app and who looks after it. This is the only route to real demand evidence.
@@ -195,3 +246,4 @@ and Microsoft.
 - 2026-10-15: added location priority (Wrexham, North Wales and the nearby border region) to prospects and next step.
 - 2026-10-15 (run 2): workstreams Deadlines, Pricing, Competitors, Prospects, Demand. 15 searches, 6 pages opened (Apple upcoming-requirements, Android developer-verification, Foresight, Magora, Xablu, Wrexham Council). No blocked domains. Apple SDK date now verified; added iOS 13 target (9 Sep 2026); UK solo-freelancer prices and UK-owner demand still unevidenced.
 - 2026-10-15: added small builds with care included, and the portfolio gap, to Offer ideas.
+- 2026-10-15: added the Scope boundaries section (responsibility list, tiers, no general IT) and the 15–25%-of-build-cost pricing warning.
