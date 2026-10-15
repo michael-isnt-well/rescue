@@ -47,6 +47,14 @@ are also fine. The working plan and evidence live in `research/sme-app-care.md`.
 - **Quality as a service:** automated testing or release set-up for small software teams
   that have none, if evidence shows they will pay for it.
 
+## Location: Wrexham, North Wales
+
+Mike is based in **Wrexham**. SMEs in his region **score higher**: they're within reach for
+face-to-face meetings, and local trust and referrals count for a lot with small businesses.
+Priority area: Wrexham and North Wales (Flintshire, Denbighshire, Conwy, Gwynedd, Anglesey),
+then nearby England across the border (Chester and Cheshire West, the Wirral, Liverpool and
+Merseyside, Shropshire). Remote UK clients are still fine.
+
 ## Constraints
 
 - His employer is a **telephony business**. Mike's view (2026-10-15) is that outside work is
