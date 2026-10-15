@@ -74,6 +74,15 @@ and Microsoft.
 
 ## Ways to find prospects (methods, not mass outreach)
 
+- **Local first:** Mike is in Wrexham. SMEs in Wrexham and North Wales, then Chester and
+  Cheshire West, the Wirral, Merseyside and Shropshire, rank above equivalent remote leads,
+  because he can meet them face to face. To research: local business networks and support
+  bodies (verify names and links, don't assume), local tech or digital meetups, and public
+  listings of apps by businesses in the area.
+- To research (unverified idea): do Welsh businesses' apps need, or benefit from, Welsh-language
+  support? Bilingual apps could be a local niche. Check what actually applies to private SMEs
+  rather than public bodies before claiming anything.
+
 - To research: public signals of UK SME apps that look neglected (last-updated date, old OS
   support, trader details shown on store listings), found through web search and individual
   listings. **No bulk scraping** of the App Store or Google Play (against their terms). Business
@@ -97,6 +106,8 @@ and Microsoft.
 
 ## Next step
 
+- Start the local angle: find 2 or 3 verified North Wales and Cheshire business networks or
+  meetups, and look for public listings of apps by businesses in the region.
 - Confirm the Apple SDK deadline from Apple. Collect 3 or more more UK retainer prices. Look for
   SME-owner demand outside freelance boards.
 
@@ -105,3 +116,4 @@ and Microsoft.
 - 2026-10-15: file created by Claude from the PeoplePerHour check, the verified Google Play rule,
   Xamarin end of support and the Foresight pricing benchmark.
 - 2026-10-15: added Mike's testing edge (Maestro UI suites, unit-test coverage) to Stack focus, Offer ideas and Competitors.
+- 2026-10-15: added location priority (Wrexham, North Wales and the nearby border region) to prospects and next step.
