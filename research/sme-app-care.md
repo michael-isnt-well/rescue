@@ -33,6 +33,30 @@ Things to check before relying on it (all unverified until researched):
   retainer should cover adapting to API changes up to the included hours, with bigger rework
   quoted, and the responsibility list should say the API supplier owns the API.
 
+**Checked 2026-10-21 (run 3), what the evidence says so far:**
+- **Apple 4.2 (read at https://developer.apple.com/app-store/review/guidelines/):** "Your app should
+  include features, content, and UI that elevate it beyond a repackaged website." 4.2.2: apps
+  shouldn't primarily be "marketing materials, advertisements, web clippings, content aggregators,
+  or a collection of links" (catalogs excepted). **4.2.6:** apps from "a commercialized template or app
+  generation service will be rejected unless they are submitted directly by the provider of the app's
+  content", with a single "picker" binary as the other allowed route. This supports native-with-real-value
+  over wrappers and is a sales point against template builders that submit on clients' behalf. The page
+  text showed no "last updated" date.
+- **Shopify (official):** native iOS/Android/React Native storefronts are supported via the Storefront
+  API (token from the Headless channel) plus Checkout Kit for payment
+  (https://shopify.dev/docs/storefronts/mobile/about-mobile-storefronts). Shopify's headless overview warns
+  that a headless storefront costs more to build and run than a theme and that the merchant needs
+  developers to maintain it (https://shopify.dev/docs/storefronts/headless/overview.md, via search
+  snippet). So Shopify is a workable API; the maintenance warning is the retainer's selling point.
+- **Mindbody (gym/class software), a caution:** its API terms (read via fetch summary, verify in full
+  before relying: https://developers.mindbodyonline.com/Resources/DeveloperAgreement) bar competing
+  products and, per the summary, use "on behalf of any third party" (§8.11), cap data caching at 48 hours
+  and allow revocation without notice. Its own Branded App is run by Mindbody, with the customer holding the
+  Apple developer account and Mindbody loading the code
+  (https://www.mindbodyonline.com/company/legal/terms-of-service/supplemental-terms-branded-app). Platform
+  terms can block a third-party app; check each platform before pitching.
+- **Not yet checked:** other common UK booking, membership and CRM platforms' API terms.
+
 ## Stack focus
 
 - **First choice:** native iOS (Swift/SwiftUI) and native Android (Kotlin). AI coding tools make
@@ -72,6 +96,17 @@ Things to check before relying on it (all unverified until researched):
 - Weakening: a search for UK business-forum threads ("developer left", "take over my app") returned
   nothing relevant (searches 2026-10-15). UK SME-owner demand in their own words outside freelance
   boards is still NOT evidenced. Reddit not fetchable; no Reddit snippets found this week.
+- Re-searched 2026-10-21 (4 more queries on "developer disappeared", "app no longer works", "built with
+  ChatGPT, how do I publish"): results were developer forums and advice blogs, **no UK SME owner posts**.
+  Advice pages (e.g. https://gtstu.com/?p=5772, unverified commercial blog) say to confirm owner-level access
+  to repo, store accounts, hosting and API keys first; same ownership-handover check as in Offer ideas.
+- Apple removes apps with no update in three years plus low downloads, after an email warning to the account
+  holder; removed apps keep working on devices that already have them (news coverage, e.g.
+  https://www.thurrott.com/?p=266499; primary Apple source not opened, unverified).
+- AI-built-app publishing guides are plentiful (e.g. https://theneuron.ai/explainer-articles/how-to-publish-an-ai-built-iphone-app-to-the-app-store/)
+  and claim Apple enforces guideline 2.5.2 (no runtime-downloaded code) strictly since March 2026: third-party
+  claim, unverified. Plenty of supply of how-to content means the "AI-built" angle is crowded for search;
+  the service, not the guide, is the offer.
 - Still missing: UK SME owners (not developers) describing this pain in their own words outside
   freelance boards.
 
@@ -100,8 +135,15 @@ and Microsoft.
   protections start 30 Sep 2026 in Brazil, Indonesia, Singapore and Thailand; global expansion "in 2027".
   Google Play automatically registers 99% of apps. The page does not mention the UK. Low forcing power
   for Play-distributed UK SME apps; mainly affects apps distributed outside Play.
-- **Google Play extension window:** the 1 Nov 2026 extension limit above is about two weeks away
-  (as of 2026-10-15), a possible conversation opener for apps still on API 34 or lower.
+- **Google Play extension window:** the 1 Nov 2026 extension limit above is **11 days away as of
+  2026-10-21**; a search of the official page on 2026-10-21 repeated the same text (new apps target API 36;
+  API 35 apps are compliant). A possible conversation opener for apps still on API 34 or lower.
+- **Apple page re-read 2026-10-21** (https://developer.apple.com/news/upcoming-requirements/): nothing newer
+  than the 9 Sep 2026 iOS 13 target. No new forcing event from Apple since last week.
+- **Google Play new-account testing rule (official, https://support.google.com/googleplay/android-developer/answer/14151465):**
+  personal accounts created after 13 Nov 2023 need a closed test with 12 testers opted in for 14 continuous
+  days before production access. The page doesn't say whether organisation accounts are exempt (third-party
+  guides say they are: unverified). Relevant when an SME must re-publish under a new account.
 - **Xamarin end of support:** 1 May 2024 (see above).
 
 ## UK pricing benchmarks
@@ -134,6 +176,18 @@ and Microsoft.
   Agency rule of thumb only, not a standard.
 - Arch's guide cites typical UK tiers of about £675 (basic) and about £1,495 (premium) a month,
   matching Foresight's, plus on-demand £75–£150/hr (2025 reference).
+- 2026-10-21: two more searches for a solo UK freelancer retainer price found **nothing**, only the same
+  agencies. A side-hustle calculator gives £30–£130/hr for UK app development, typical £60
+  (https://www.uktaxcalculators.co.uk/side-hustles/app-development/, not a survey). **Honest read: after
+  three weeks' searching, published solo-UK app-retainer prices don't exist in search; pricing must be set
+  from value and Mike's £50–65/hr target, tested with real quotes.**
+- Substitutes' prices (USD, third-party reviews, unverified, confirm on vendor pages): Shopify app builders
+  Tapcart from $250/month, Shopney $99–$149, MageNative from $99
+  (https://wiserreview.com/blog/tapcart-alternatives/, https://easysellapp.com/blogs/wiki/best-shopify-mobile-app-builder-apps-2026).
+  UK booking tools: Gymcatch base plan £10+VAT/month with web/iOS/Android client apps listed (white-label
+  status not stated, https://gymcatch.com/?p=6); PRESS $2 per member per month for a white-label app
+  (https://mystrengthbook.com/pricing-press). **A custom-app retainer of £400+ competes with £10–£250/month
+  ready-made apps, so the pitch needs a reason the off-the-shelf app falls short.**
 - PeoplePerHour takeover job at about £27/hr (search snippet only). This is the board floor, not
   a target.
 
@@ -148,6 +202,14 @@ and Microsoft.
 - Xamarin to MAUI: the firms found (Xablu, Netherlands, no prices: https://www.xablu.com/net-maui-migration-service/;
   Innowise; Softweb; UKAD, location not stated) are not clearly UK-based. No UK-based small MAUI
   migration specialist surfaced in one search; this looks like a gap (weak evidence).
+- 2026-10-21: a search for UK providers advertising automated UI/regression testing per release in
+  maintenance retainers returned only Maestro tool pages, no providers. Still weak evidence, not a
+  confirmed gap.
+- Xamarin to MAUI, re-searched: still only non-UK or unlocated firms (Xablu, Innowise, UKAD, Rishabhsoft); a UK
+  job ad leading a Xamarin-to-MAUI migration exists (https://www.itjobswatch.co.uk/jv/Fynity/Senior-Net-MAUI-Developer-United-Kingdom-Job-Guernsey-UK-3vjqz1?jr=8n4-w2-1ck),
+  showing some UK migrations are happening, but in-house.
+- **Real competitor class is ready-made branded apps** (Mindbody Branded App, Gymcatch, Shopify app
+  builders), not only agencies. See Pricing.
 - To research: UK freelancers and small studios offering app maintenance retainers, what they
   include, and the gaps (for example: no native work, agency minimums, no Xamarin/MAUI).
 
@@ -172,7 +234,15 @@ and Microsoft.
 - ITJobsWatch shows only 3 contract vacancies citing mobile app skills in Wrexham in six months to
   Nov 2025 (snippet): local developer supply is thin, which cuts both ways (less competition, but
   little evidence of local demand).
-- No neglected-listing examples noted yet (none checked this week).
+- Local apps seen 2026-10-21 (search snippets, none judged neglected; not opened): Wrexham Eats
+  (food ordering, 70+ takeaways: https://wrexham.com/news/wrexham-eats-app-celebrates-first-birthday-local-startup-helps-save-local-businesses-500k-in-commissions-209624.html),
+  and council/tourism apps built on platforms (Near Me Now, Viro Media/Bookry Ltd). Local business apps are
+  mostly platform-hosted, which fits the "ready-made substitutes" caution above.
+- Connect Wrexham: only an older announcement found, last-Thursday schedule not confirmed for 2026
+  (https://businessnewswales.com/new-monthly-networking-event-launches-for-wrexham-professionals).
+  **North Wales Social Autumn Expo is tomorrow, Thu 22 Oct 2026**, 10am–2:30pm, Deeside Leisure Centre, 70+
+  stands (search result and Eventbrite listing; organiser not opened).
+- No neglected-listing examples noted yet (none checked; individual store pages not opened this week).
 - To research (unverified idea): do Welsh businesses' apps need, or benefit from, Welsh-language
   support? Bilingual apps could be a local niche. Check what actually applies to private SMEs
   rather than public bodies before claiming anything.
@@ -214,6 +284,14 @@ exclusions: new features, platform fees, third-party renewals, cloud overage and
 - **For new builds, design for a small maintenance surface:** use the client's existing systems
   through their APIs, or a managed backend in the client's account. Mike can build a .NET API,
   but every bespoke server is long-term maintenance, so price it as the separate tier.
+- **Contract wording sources (UK, general, not legal advice; have a solicitor review):** Sprintlaw says
+  agreements should state services, exclusions and service levels
+  (https://sprintlaw.co.uk/articles/support-and-maintenance-agreements-key-terms-for-uk-saas-and-tech-businesses/);
+  WebLaw notes excusing failures of third-party providers
+  (https://www.weblaw.co.uk/articles/website-maintenance-agreements/); a G-Cloud contract excludes
+  degradation from work by the client's other contractors
+  (https://assets.applytosupply.digitalmarketplace.service.gov.uk/g-cloud-14/documents/708005/687402306131679-terms-and-conditions-2024-05-03-1355.pdf).
+  Summaries from search results only, pages not opened.
 - **Change requests:** anything outside the list is quoted separately before work starts
   (standard freelance practice; e.g. https://www.withmoxie.com/blog/3-ways-to-avoid-scope-creep-in-freelance-projects).
 - **Managed backends:** Supabase is standard Postgres (portable, easier to hand over); Firebase is
@@ -253,19 +331,15 @@ exclusions: new features, platform fees, third-party renewals, cloud overage and
 
 ## Next step
 
-- Next run (priority): for the best-case positioning, find (a) which common SME platforms
-  (booking, e-commerce, membership, gym or class software) have public APIs that allow branded
-  third-party apps, (b) which already sell white-label apps, their prices and their weaknesses,
-  and (c) the current wording of Apple guideline 4.2 on minimum functionality, from Apple.
-- Next run: find 2–3 real UK app-maintenance terms or proposals that list what's *excluded*
-  (backend, hosting, IT), to model Mike's responsibility list on. Also find Wrexham and North
-  Wales IT support companies that don't do apps, as possible referral partners (verify names).
-- Mike: attend or contact one of the Wrexham business groups (e.g. Connect Wrexham, last Thursday
-  of the month, or the 22 Oct North Wales Social Expo if it is confirmed) and ask owners whether they
-  have an app and who looks after it. This is the only route to real demand evidence.
-- Next run: find a solo-UK-freelancer app-maintenance price (Bark/Upwork/Contra/own sites), check
-  3 more agency pages for whether they mention automated testing, and note up to 5 neglected public
-  listings from individual store pages in North Wales/Cheshire.
+- Mike (urgent, tomorrow Thu 22 Oct): if free, go to the North Wales Social Autumn Expo (Deeside Leisure
+  Centre, 10am–2:30pm) and ask owners whether they have an app and who looks after it. Confirm the time with
+  the organiser first. Otherwise pick one Wrexham group from the Prospects list.
+- Next run: demand is the weakest link after three weeks (no UK owner voices; no solo retainer prices). Try
+  Bark/Trustpilot/Facebook-group-style sources, fetch the PeoplePerHour listing in full if possible, and open
+  3 individual store listings of North Wales/Cheshire businesses to note up to 5 neglected examples. Also read
+  the full Mindbody §8.11 and 1–2 other platforms' API terms (booking/CRM) before relying on the API angle.
+- Next run: decide with Mike whether to keep the plan as "retainer on existing apps" (evidence thin) or lead
+  with the health check; find 2–3 real UK maintenance contracts listing exclusions.
 
 ## Changelog
 
@@ -277,3 +351,4 @@ exclusions: new features, platform fees, third-party renewals, cloud overage and
 - 2026-10-15: added small builds with care included, and the portfolio gap, to Offer ideas.
 - 2026-10-15: added the Scope boundaries section (responsibility list, tiers, no general IT) and the 15–25%-of-build-cost pricing warning.
 - 2026-10-15: added Best-case positioning (new native apps on existing web services or APIs) and its checks.
+- 2026-10-21 (run 3): workstreams Offer/positioning (white-label, Apple 4.2), Deadlines, Pricing, Competitors, Demand, Prospects. 22 searches, 8 pages opened (Apple guidelines, Apple upcoming-requirements, Mindbody branded-app terms, Mindbody API terms, Shopify mobile storefronts, Google Play testing page, plus Google Play target-API via search). No blocked domains; WebFetch summaries are model-condensed, so quoted clauses should be verified in full. Evidence weakening: no UK solo retainer prices, no UK owner demand, and cheap ready-made branded apps compete.
