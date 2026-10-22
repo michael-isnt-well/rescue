@@ -18,7 +18,7 @@ rehomesToHomesWithCats: null
 rehomesToHomesWithChildren: case-by-case
 rehomesWithoutGarden: null
 postAdoptionSupport: "The rescue says it will work closely with adopters \"throughout the whole process (and after adoption) to support and advise you\"."
-feeIncludesTransport: "true"
+feeIncludesTransport: "false"
 charityStatus: registered
 charityCheckedAt: 2026-10-20
 sources:
