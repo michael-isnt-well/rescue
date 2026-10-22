@@ -53,9 +53,10 @@ const sections = [
         Bringing a rescue dog home from overseas
       </h1>
       <p class="lede mt-6">
-        We're going through the process — adopting Barnie, a 16-month-old boy from
-        Romania — and I built this site to be the resource I wished existed:
-        clear, honest, and specific to the UK process.
+        We've been through the process ourselves — adopting Barnie, a young
+        rescue dog from Romania, who came home in September 2026 — and I built
+        this site to be the resource I wished existed: clear, honest, and
+        specific to the UK process.
       </p>
       <p class="mt-5 text-[var(--color-ink)]">
         Everything here covers dogs coming from Romania, Cyprus, Bulgaria,

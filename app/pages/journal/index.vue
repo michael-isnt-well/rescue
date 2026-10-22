@@ -9,7 +9,7 @@ const { data: entries } = await useAsyncData('journal-index', () =>
 usePageSeo({
   title: 'The journal — adopting Barnie from Romania',
   description:
-    'A first-person, dated account of adopting Barnie, a 16-month-old rescue dog from Romania — published honestly, as it happens.',
+    'A first-person, dated account of adopting Barnie, a young rescue dog from Romania — published honestly, as it happens.',
 })
 
 const crumbs = [
@@ -25,7 +25,7 @@ const crumbs = [
       <p class="eyebrow">Journal</p>
       <h1 class="display mt-3 text-[2.2rem] sm:text-[2.8rem]">Barnie, week by week</h1>
       <p class="lede mt-4">
-        Adopting a 16-month-old boy from Romania — written as it happens, the
+        Adopting a young rescue dog from Romania — written as it happens, the
         good days and the hard ones.
       </p>
     </header>
