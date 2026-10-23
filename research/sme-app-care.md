@@ -8,6 +8,38 @@ Every claim has a source URL or is marked "unverified".
 
 Not published: this lives only on the `research/app-scout` branch.
 
+## Direction update (2026-10-23): local first
+
+After three research runs, the national market looks crowded: agencies at £675+/month above, and
+ready-made branded apps at £10–£250/month below. **Mike's edge is local trust**: face-to-face
+meetings and referrals in Wrexham, North Wales and the Cheshire border region. The offer leads
+with **problems, not technology** (clunky booking or ordering, spreadsheets, an app nobody looks
+after); the fix can be a native app (his speciality), a web app, a booking portal or a small
+internal tool. The hard boundary against general IT work stays. Caution: there may be few local
+businesses with apps, which is why the offer is broadened beyond native apps. Local dog businesses
+are a natural first niche, given rescuejourney.co.uk.
+
+## Local: Wrexham and North Wales
+
+### Competition and search
+- Not yet researched.
+
+### Networking calendar
+- Connect Wrexham: monthly, last Thursday, so next would be **29 Oct 2026**. Unconfirmed for 2026;
+  only an older announcement was found.
+- Others from Wrexham Council's list (BNI, Chamber, FSB, Wrexham University breakfast, Networx 4
+  Business): dates unconfirmed.
+
+### Referral partners
+- Not yet researched.
+
+### Prospect signals
+- Not yet researched. Wrexham Eats (a local food-ordering platform) was noted on 2026-10-21.
+
+### Local offer
+- Starting idea: a fixed-price "digital health check" for local businesses (bookings, ordering, any
+  app), leading into a build or a retainer.
+
 ## Best-case positioning (Mike, 2026-10-15)
 
 **New native apps for businesses that already have a web service or API, then a monthly
@@ -331,15 +363,11 @@ exclusions: new features, platform fees, third-party renewals, cloud overage and
 
 ## Next step
 
-- Mike (urgent, tomorrow Thu 22 Oct): if free, go to the North Wales Social Autumn Expo (Deeside Leisure
-  Centre, 10am–2:30pm) and ask owners whether they have an app and who looks after it. Confirm the time with
-  the organiser first. Otherwise pick one Wrexham group from the Prospects list.
-- Next run: demand is the weakest link after three weeks (no UK owner voices; no solo retainer prices). Try
-  Bark/Trustpilot/Facebook-group-style sources, fetch the PeoplePerHour listing in full if possible, and open
-  3 individual store listings of North Wales/Cheshire businesses to note up to 5 neglected examples. Also read
-  the full Mindbody §8.11 and 1–2 other platforms' API terms (booking/CRM) before relying on the API angle.
-- Next run: decide with Mike whether to keep the plan as "retainer on existing apps" (evidence thin) or lead
-  with the health check; find 2–3 real UK maintenance contracts listing exclusions.
+- Mike (this week): if possible, go to Connect Wrexham on Thu 29 Oct (confirm with the organiser
+  first) and ask "Do your customers book, order or log in on your website?"
+- Next run: confirm networking dates; map local competition for "app developer Wrexham / North
+  Wales / Chester"; find 3–5 local web or IT firms without app development as referral partners;
+  note up to 8 local prospect signals, starting with dog businesses.
 
 ## Changelog
 
@@ -352,3 +380,4 @@ exclusions: new features, platform fees, third-party renewals, cloud overage and
 - 2026-10-15: added the Scope boundaries section (responsibility list, tiers, no general IT) and the 15–25%-of-build-cost pricing warning.
 - 2026-10-15: added Best-case positioning (new native apps on existing web services or APIs) and its checks.
 - 2026-10-21 (run 3): workstreams Offer/positioning (white-label, Apple 4.2), Deadlines, Pricing, Competitors, Demand, Prospects. 22 searches, 8 pages opened (Apple guidelines, Apple upcoming-requirements, Mindbody branded-app terms, Mindbody API terms, Shopify mobile storefronts, Google Play testing page, plus Google Play target-API via search). No blocked domains; WebFetch summaries are model-condensed, so quoted clauses should be verified in full. Evidence weakening: no UK solo retainer prices, no UK owner demand, and cheap ready-made branded apps compete.
+- 2026-10-23: direction changed to local first; added the 'Local: Wrexham and North Wales' section and rewrote the next step.
