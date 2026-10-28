@@ -21,24 +21,114 @@ are a natural first niche, given rescuejourney.co.uk.
 
 ## Local: Wrexham and North Wales
 
+Last updated 2026-10-28 (run 4). Honest headline: local evidence is thin on both sides. Few local
+app specialists are visible, but also no sign yet of local owners asking for apps; the dog businesses
+checked already use ready-made booking tools. Plan implication: lead with the free conversation
+and a small, cheap first job, not with an expectation of many local native-app clients.
+
 ### Competition and search
-- Not yet researched.
+- **Searched 2026-10-28:** "app developer Wrexham", "app developer North Wales", "web app developer Chester",
+  "mobile app developer Cheshire", "freelance app developer Wrexham/Flintshire/Denbighshire". Result pages were
+  dominated by **directories (Sortlist, TechBehemoths, Twine) and job boards (ITJobsWatch)**, not local
+  firms' own sites. No Google Business Profile / map pack results appeared in the search tool's output
+  (the tool does not show map packs, so this is **unverified**; Mike should check in a normal browser).
+- **No named local freelancer or small studio** offering native app work surfaced for Wrexham, Flintshire or
+  Denbighshire in these searches. Sortlist's "Wrexham" app page lists 24 agencies
+  (https://www.sortlist.co.uk/s/app-development/wrexham-wales-gb), but the page does not say which are
+  Wrexham-based: those with locations stated are London, Hardwick, Warwickshire, Swindon, St Albans and
+  overseas. Sortlist "from" prices are €1,000–€50,000 for mobile app projects, build prices, not
+  retainers. Directory prices are indicative only.
+- Nearest named app firms are in Manchester and Liverpool (Apadmi, Apposing; search result, unopened
+  https://www.prolificnorth.co.uk/news/award-iplayer-radio-app-developer-apadmi/). Local examples seen:
+  "Come To Wales" tourism app, developer listed as an individual (App Store listing, unopened).
+- Local demand signal is low: ITJobsWatch counts 3 contract jobs citing mobile app in North Wales in six
+  months to 2 Nov 2025 and 1 in Cheshire in six months to Aug 2025 (search snippets,
+  https://www.itjobswatch.co.uk/contracts/north%20wales/mobile%20app.do).
+- **Ranking difficulty (judgement):** probably *low* for "app developer Wrexham" / "North Wales" because
+  the results are directories and the region has few visible specialists, so a simple local landing page
+  plus a Google Business Profile could plausibly appear. Chester/Cheshire is more contested (Sortlist
+  lists dozens of agencies). Not tested with a real ranking tool; unverified.
 
 ### Networking calendar
-- Connect Wrexham: monthly, last Thursday, so next would be **29 Oct 2026**. Unconfirmed for 2026;
-  only an older announcement was found.
-- Others from Wrexham Council's list (BNI, Chamber, FSB, Wrexham University breakfast, Networx 4
-  Business): dates unconfirmed.
+Confirmed upcoming dates (organiser's own page or listing):
+- **Wed 11 Nov 2026, 09:00–10:45, Chamber "Round Table Networking"**, Cheshire College South & West,
+  Ellesmere Port. Source: West Cheshire & North Wales Chamber event page
+  https://wcnwchamber.org.uk/chamber-events/round-table-networking-cheshire-college-south-west/
+  (seen via search snippet only: the site returned 403 to the fetch tool, so Mike should open it to
+  confirm price and whether non-members can attend).
+
+Recurring groups, **exact dates unconfirmed** (organiser pages state the pattern but no dated listing):
+- **Connect Wrexham**: last Thursday of each month, from 5pm, Hotel Wrexham and Savvy Fox, Holt LL13 9SW
+  (https://connectwrexham.co.uk/). By that rule the next are **Thu 29 Oct** and **Thu 26 Nov 2026**
+  (calculated, not listed). Booking was via Skiddle; that event link now returns "410 Gone", so
+  **book via the organiser's site and confirm before travelling**. A launch article gave £5 and "no sales
+  presentations" (undated, https://businessnewswales.com/new-monthly-networking-event-launches-for-wrexham-professionals).
+- **Networx 4 Business Wrexham**: every two weeks, Tuesday 9–11am, Maesgwyn Hall, Mold Road, Wrexham
+  LL11 2AF; first visit free; Eventbrite shows "multiple dates" with none listed
+  (https://www.eventbrite.co.uk/e/networx-wrexham-tickets-1396644113139).
+- **360 Networking (Wrexham Council)**: second Tuesday monthly, 5–6:45pm, Redwither Tower (council page
+  lists 2024 dates, so unconfirmed for 2026; https://wrexham.gov.uk/service/business-and-investment-support/360-networking).
+  Next by that rule: Tue 10 Nov 2026 (calculated).
+- BNI chapters, FSB (only the 8 Jul 2026 Llandudno conference found, past), Wrexham University breakfast,
+  Theatr Clwyd breakfast, Business 2 Go (fortnightly Thu, Rossett Hall Hotel, via search snippet): unconfirmed.
+- Removed as past: North Wales Social Autumn Expo (22 Oct 2026).
 
 ### Referral partners
-- Not yet researched.
+IT and web firms whose own pages (opened 2026-10-28) do **not** mention app or custom software
+development. Business information only; Mike's rule: he refers general IT to them, asks for app work back.
+- **Pro-Networks Ltd**, Sandycroft, Deeside CH5 2QS: co-managed IT, helpdesk, Microsoft 365, cyber security,
+  managed VoIP phones. Covers Wrexham, Chester, Wirral, North West. https://pro-networks.co.uk/it-support/wrexham
+  **Telephony flag:** sells VoIP, so it overlaps Mike's employer's market; a referral relationship is fine
+  but Mike should be open about his day job.
+- **Flotek**, Wrexham service from a St Asaph hub (national, ten hubs): managed IT, cyber security, Microsoft
+  365/Azure, hosted VoIP, managed print. https://www.flotek.io/location/it-support-wrexham
+  **Telephony flag:** hosted VoIP / Teams Phone / "AI Receptionist". Larger firm, probably less personal.
+- **EngageWeb**, Wrexham-focused (address not stated on the page): web design, WordPress plugins, SEO, ads,
+  hosting; no mobile apps listed. https://www.engageweb.co.uk/wrexham/web-design
+- Seen in search only, own sites not opened (unverified): Unknwn.agency (new Wrexham creative/web/marketing
+  agency, https://www.prolificnorth.co.uk/news/welcome-to-wrexham-experienced-trio-launch-new-full-service-creative-and-marketing-agency/),
+  Rowe & Bear (North Wales branding/web), baabaa design (Wrexham), First Phase IT (Wrexham, managed IT and VoIP),
+  IT-Pro Support (Llangollen), Advatek ICT Solutions (Wrexham).
+- Excluded: Thrive Agency's "Wrexham" page is a US company's location page, not local.
 
 ### Prospect signals
-- Not yet researched. Wrexham Eats (a local food-ordering platform) was noted on 2026-10-21.
+Checked 2026-10-28; neutral observations from public pages.
+- **Result: none of the dog businesses checked showed a clear problem.** Thin evidence, stated plainly.
+  - The Pretty Puppy Parlour, 38 Victoria Road, Wrexham: its website has a "Book An Appointment Now"
+    button linking to an external booking portal (portal.shakeyourtail.com). Already served by an
+    off-the-shelf tool. https://prettypuppyparlour.co.uk
+  - Bubbles Dog Grooming, People's Market, Wrexham: per a 2024 local article, walk-in with no appointments
+    required; no website mentioned. Not a booking problem. https://www.love-wrexham.com/2024/05/27/pampered-paws-a-look-at-wrexhams-best-dog-groomers/
+  - Borras Barks (grooming within Borras Vets, Wrexham): phone number listed in the same article; its
+    website could not be opened (domain not in this session's allowed network). Unverified.
+- **Wrexham University Sports Centre**: its classes page says "for more details please call 01978 293275 or
+  email sports.bookings@wrexham.ac.uk"; no online booking stated on that page
+  (https://wrexham.ac.uk/campuses-and-facilities/sport/classes/). A university, so probably a procurement
+  route rather than a quick local sale; noted only as an example of phone/email booking.
+- Wrexham Waterworld (Freedom Leisure) already has an app (MyWellness) plus phone booking, and PureGym
+  uses its own app (search snippets). The larger operators are covered; the gap, if any, is among small
+  independent clubs and studios, not yet found.
+- Dog walker/daycare marketplaces (Gudog, Pawshake) dominate searches for Wrexham, Mold and Chester
+  daycare, so independents there are mainly on those platforms (search snippets).
+- Earlier note: Wrexham Eats (local food-ordering platform), not assessed.
+- Method note: web search is poor at finding "problem" sites. Better route: Mike browses 10 local
+  businesses' sites himself, or asks at networking events.
 
 ### Local offer
-- Starting idea: a fixed-price "digital health check" for local businesses (bookings, ordering, any
-  app), leading into a build or a retainer.
+- Starting idea unchanged: fixed-price "digital health check" for a local business: how customers book,
+  order or enquire today, any app or booking tool already in use, what it costs, what is clunky, and a
+  written one-page recommendation (which may be "keep your current tool"). Leads into a build or retainer.
+  Price not set; test £150–£250 against Mike's £50–65/hr target (unverified suggestion).
+- **Evidence-based tweak:** since small dog businesses already use tools like Shake Your Tail, the
+  pitch should **not** assume "you need an app". Lead with: "Are you happy with how customers book and how
+  you chase them? I'll look at it for free for 20 minutes."
+- **Networking-event wording (draft, for Mike to adapt):** "I'm a local developer. I look after mobile apps
+  and build small booking and ordering tools for Wrexham businesses. If your customers still ring or email
+  to book, or you have an app nobody looks after, I'll take a look. I'm not an IT firm, so for email and
+  computers I'd send you to [local IT firm]." Include the rescuejourney.co.uk credibility line for dog
+  businesses.
+- One-page pitch outline: problem (3 bullets), what Mike checks, what you get (written report), price,
+  what is out of scope (general IT), next step.
 
 ## Best-case positioning (Mike, 2026-10-15)
 
@@ -363,11 +453,14 @@ exclusions: new features, platform fees, third-party renewals, cloud overage and
 
 ## Next step
 
-- Mike (this week): if possible, go to Connect Wrexham on Thu 29 Oct (confirm with the organiser
-  first) and ask "Do your customers book, order or log in on your website?"
-- Next run: confirm networking dates; map local competition for "app developer Wrexham / North
-  Wales / Chester"; find 3–5 local web or IT firms without app development as referral partners;
-  note up to 8 local prospect signals, starting with dog businesses.
+- Mike (this week): go to **Connect Wrexham on Thu 29 Oct** (tomorrow; last-Thursday rule, confirm on
+  https://connectwrexham.co.uk/ first) and ask "How do your customers book or order, and are you happy
+  with it?" Also search "app developer Wrexham" in a normal browser and note whether map-pack results appear.
+- Mike (before 11 Nov): open the Chamber page for Wed 11 Nov Round Table Networking (Ellesmere Port) and check
+  price and guest access.
+- Next run: find 8 prospects by opening local business sites directly (hospitality, trades, clubs, dog
+  walkers/trainers); verify one or two more networking dates (BNI, Networx dated listings); open 2-3 more
+  referral-partner sites (Unknwn, Rowe & Bear, First Phase IT).
 
 ## Changelog
 
@@ -381,3 +474,4 @@ exclusions: new features, platform fees, third-party renewals, cloud overage and
 - 2026-10-15: added Best-case positioning (new native apps on existing web services or APIs) and its checks.
 - 2026-10-21 (run 3): workstreams Offer/positioning (white-label, Apple 4.2), Deadlines, Pricing, Competitors, Demand, Prospects. 22 searches, 8 pages opened (Apple guidelines, Apple upcoming-requirements, Mindbody branded-app terms, Mindbody API terms, Shopify mobile storefronts, Google Play testing page, plus Google Play target-API via search). No blocked domains; WebFetch summaries are model-condensed, so quoted clauses should be verified in full. Evidence weakening: no UK solo retainer prices, no UK owner demand, and cheap ready-made branded apps compete.
 - 2026-10-23: direction changed to local first; added the 'Local: Wrexham and North Wales' section and rewrote the next step.
+- 2026-10-28 (run 4): workstreams Competition and search, Networking calendar, Referral partners, Prospect signals, Local offer. 16 searches, 15 page-open attempts (10 read). Blocked/failed: wcnwchamber.org.uk (403), jollyes.co.uk (403), skiddle.com (410 gone), borrasbarks.co.uk (not resolvable in this session). Evidence thin: no named local app developers found, no clear prospect among dog businesses checked; one confirmed dated event (Chamber, 11 Nov).
