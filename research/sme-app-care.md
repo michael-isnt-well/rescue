@@ -21,7 +21,7 @@ are a natural first niche, given rescuejourney.co.uk.
 
 ## Local: Wrexham and North Wales
 
-Last updated 2026-10-28 (run 4). Honest headline: local evidence is thin on both sides. Few local
+Last updated 2026-11-04 (run 5). Honest headline: local evidence is thin on both sides. Few local
 app specialists are visible, but also no sign yet of local owners asking for apps; the dog businesses
 checked already use ready-made booking tools. Plan implication: lead with the free conversation
 and a small, cheap first job, not with an expectation of many local native-app clients.
@@ -49,29 +49,40 @@ and a small, cheap first job, not with an expectation of many local native-app c
   plus a Google Business Profile could plausibly appear. Chester/Cheshire is more contested (Sortlist
   lists dozens of agencies). Not tested with a real ranking tool; unverified.
 
+- **Added 2026-11-04:** two Wrexham-area firms that mention apps. **Webboss** has a "Wrexham" app-development
+  page in search results (https://webboss.co.uk/services/app-development/wrexham); the page returned
+  HTTP 410 to the fetch tool, so its location and prices are **unverified** (its marketing claims "500+ builds",
+  not checked). **Baabaa Design Limited**, New Broughton, Wrexham: Sortlist lists "from €1,000 for Mobile App"
+  (https://www.sortlist.co.uk/s/app-development/wrexham-wales-gb?page=2); directories describe it mainly as a
+  design/branding/web agency (own site not opened). Neither looks like a retainer-focused native app specialist,
+  but both are local names that clients may already know. Still no local solo native-app freelancer found.
+
 ### Networking calendar
 Confirmed upcoming dates (organiser's own page or listing):
+- **Tue 10 Nov 2026, 5–6:45pm, 360 Networking (Wrexham Council)**, Atrium Suite, Redwither Tower, Wrexham
+  Industrial Estate LL13 9XT. Free; book each meeting through the council's online form. The council page lists
+  2026 dates: 10 Nov and **Tue 8 Dec 2026** (no August meeting).
+  https://wrexham.gov.uk/service/business-and-investment-support/360-networking (opened 2026-11-04).
 - **Wed 11 Nov 2026, 09:00–10:45, Chamber "Round Table Networking"**, Cheshire College South & West,
-  Ellesmere Port. Source: West Cheshire & North Wales Chamber event page
-  https://wcnwchamber.org.uk/chamber-events/round-table-networking-cheshire-college-south-west/
-  (seen via search snippet only: the site returned 403 to the fetch tool, so Mike should open it to
-  confirm price and whether non-members can attend).
+  Ellesmere Port. https://wcnwchamber.org.uk/chamber-events/round-table-networking-cheshire-college-south-west/
+  (seen via search snippet only; the site returns 403 to the fetch tool, so Mike should confirm price and
+  whether non-members can attend).
 
-Recurring groups, **exact dates unconfirmed** (organiser pages state the pattern but no dated listing):
-- **Connect Wrexham**: last Thursday of each month, from 5pm, Hotel Wrexham and Savvy Fox, Holt LL13 9SW
-  (https://connectwrexham.co.uk/). By that rule the next are **Thu 29 Oct** and **Thu 26 Nov 2026**
-  (calculated, not listed). Booking was via Skiddle; that event link now returns "410 Gone", so
-  **book via the organiser's site and confirm before travelling**. A launch article gave £5 and "no sales
-  presentations" (undated, https://businessnewswales.com/new-monthly-networking-event-launches-for-wrexham-professionals).
-- **Networx 4 Business Wrexham**: every two weeks, Tuesday 9–11am, Maesgwyn Hall, Mold Road, Wrexham
-  LL11 2AF; first visit free; Eventbrite shows "multiple dates" with none listed
-  (https://www.eventbrite.co.uk/e/networx-wrexham-tickets-1396644113139).
-- **360 Networking (Wrexham Council)**: second Tuesday monthly, 5–6:45pm, Redwither Tower (council page
-  lists 2024 dates, so unconfirmed for 2026; https://wrexham.gov.uk/service/business-and-investment-support/360-networking).
-  Next by that rule: Tue 10 Nov 2026 (calculated).
-- BNI chapters, FSB (only the 8 Jul 2026 Llandudno conference found, past), Wrexham University breakfast,
-  Theatr Clwyd breakfast, Business 2 Go (fortnightly Thu, Rossett Hall Hotel, via search snippet): unconfirmed.
-- Removed as past: North Wales Social Autumn Expo (22 Oct 2026).
+Recurring groups, **exact dates unconfirmed** (council directory
+https://www.wrexham.gov.uk/service/business-and-investment-support/networking-groups-wrexham states patterns only):
+- **Connect Wrexham**: last Thursday monthly, 5–7:30pm, Hotel Wrexham, Holt LL13 9SW. By the rule, **Thu 26 Nov**
+  and Thu 31 Dec (calculated, not listed). Organiser site https://connectwrexham.co.uk/ lists no dates; booking
+  link on it is Skiddle (previous Skiddle link gave 410). Confirm before travelling.
+- **Networx 4 Business**: fortnightly, Tue 9–11am at Maesgwyn Hall (LL11 2AF) and Thu 7–9am at Caffi Cwtch,
+  Chester Road (LL11 2SJ) per the council. Council says guests can attend up to two meetings free. Eventbrite shows
+  "multiple dates" with none visible (https://www.eventbrite.co.uk/e/networx-wrexham-tickets-1396644113139).
+- **BNI Deadpool**: Tuesdays 9–11am, Hotel Wrexham, Holt (council directory); guest policy not stated, so contact the
+  chapter. Other chapters seen in search snippets (unverified): BNI Chester (Thu 6:45am, Grosvenor Pulford),
+  Deeside (Fri 6:45am, Holiday Inn, A55).
+- Theatr Clwyd Business Breakfast (quarterly, free, William Aston Hall), Wrexham University (roughly bimonthly, free),
+  Mersey Dee Alliance (guest booking, no membership): dates not listed.
+- FSB: only past 2026 events found (Connect North Wales 17 Mar, Bangor; conference 8 Jul, Llandudno). No upcoming date found.
+- Removed as past: Connect Wrexham 29 Oct, North Wales Social Autumn Expo (22 Oct), Chamber Ynys Môn Network (13 Oct).
 
 ### Referral partners
 IT and web firms whose own pages (opened 2026-10-28) do **not** mention app or custom software
@@ -90,6 +101,16 @@ development. Business information only; Mike's rule: he refers general IT to the
   Rowe & Bear (North Wales branding/web), baabaa design (Wrexham), First Phase IT (Wrexham, managed IT and VoIP),
   IT-Pro Support (Llangollen), Advatek ICT Solutions (Wrexham).
 - Excluded: Thrive Agency's "Wrexham" page is a US company's location page, not local.
+- **Added 2026-11-04 (own pages opened):**
+  - **TST**, Office 43, Coworkz Block B, Minerva Avenue, Chester CH1 4QL: managed IT, cyber security, Microsoft 365,
+    web hosting/design/SEO, hosted VoIP; no app or custom software mentioned. Covers Chester, Cheshire, North Wales, Wirral.
+    https://tst.uk.com/managed-it-chester/ **Telephony flag:** sells hosted VoIP.
+  - **Palmer Creative** ("Web Design Wrexham"; network of freelance experts; no street address): website design, WordPress
+    support, promotion; no apps or custom software mentioned. https://www.palmercreative.co.uk/
+  - **baabaa design** (New Broughton, Wrexham): see Competition; it lists mobile app "from €1,000" on Sortlist, so
+    treat as a possible competitor rather than a referral partner.
+- Seen in search only (unverified): SigWeb (offices in Chester and Wrexham, e-commerce/web development), a5 multimedia
+  (North Wales web/CMS), Populi Media, Wardtech (Chester IT), eJIGSAW (Chester/London digital agency).
 
 ### Prospect signals
 Checked 2026-10-28; neutral observations from public pages.
@@ -114,6 +135,23 @@ Checked 2026-10-28; neutral observations from public pages.
 - Method note: web search is poor at finding "problem" sites. Better route: Mike browses 10 local
   businesses' sites himself, or asks at networking events.
 
+Added 2026-11-04 (opened business's own page; neutral observations). **Still no strong prospect; 4 weak signals only.**
+- **Pawfect Puppy Classes**, Penycae (Wrexham): classes are booked via Bookwhen (an off-the-shelf tool; a 26 Mar 2026
+  course was £85); its schedule shows "No events" from 4 Nov 2026; phone and email also listed.
+  Already served by a booking tool. https://bookwhen.com/justpawfectdogtraining
+- **Bay Grill II**, 29 Queens Road, Llandudno: order via "click to order" buttons or phone 01492 874875, for pickup or
+  delivery. Has online ordering, so not an obvious gap. https://sites.google.com/view/baygrillpizzas
+- **Wrexham Waterworld (Freedom Leisure)**: group classes bookable via the MyWellness app or by phone; its page has a "Book
+  Online" button, with a notice that online booking is currently unavailable for that activity due to technical
+  limitations (as of 2026-11-04). A large operator, so a procurement route rather than a quick local sale.
+  https://www.freedom-leisure.co.uk/centres/wrexham-waterworld/group-exercise/
+- **Powerzone Gym**, Rivulet Road, Wrexham: listed on Fresha with a "Call to book" option (search snippet; own site not
+  found, unverified). https://www.fresha.com/fi/lvp/powerzone-gym-rivulet-road-zn7kjo
+- Dog walkers/daycares around Mold (Waggy Tails, Meadow View, Wild Paws) appear in directories (thegooddogguide.com) and
+  on Rover/Pawshake/Gudog marketplaces; own sites not opened.
+- Pattern: local small businesses mostly already use Bookwhen, Shake Your Tail, Fresha or marketplaces. The opportunity
+  is probably in finding owners unhappy with these, which needs conversation, not web search.
+
 ### Local offer
 - Starting idea unchanged: fixed-price "digital health check" for a local business: how customers book,
   order or enquire today, any app or booking tool already in use, what it costs, what is clunky, and a
@@ -127,6 +165,9 @@ Checked 2026-10-28; neutral observations from public pages.
   to book, or you have an app nobody looks after, I'll take a look. I'm not an IT firm, so for email and
   computers I'd send you to [local IT firm]." Include the rescuejourney.co.uk credibility line for dog
   businesses.
+- **Run 5 tweak:** because most small local operators already use a booking tool, add a second hook: "I'll check whether
+  your booking tool, website and any app are working together, and what customers can't do online." Keep "keep your
+  current tool" as a valid recommendation; it builds trust.
 - One-page pitch outline: problem (3 bullets), what Mike checks, what you get (written report), price,
   what is out of scope (general IT), next step.
 
@@ -453,14 +494,13 @@ exclusions: new features, platform fees, third-party renewals, cloud overage and
 
 ## Next step
 
-- Mike (this week): go to **Connect Wrexham on Thu 29 Oct** (tomorrow; last-Thursday rule, confirm on
-  https://connectwrexham.co.uk/ first) and ask "How do your customers book or order, and are you happy
-  with it?" Also search "app developer Wrexham" in a normal browser and note whether map-pack results appear.
-- Mike (before 11 Nov): open the Chamber page for Wed 11 Nov Round Table Networking (Ellesmere Port) and check
-  price and guest access.
-- Next run: find 8 prospects by opening local business sites directly (hospitality, trades, clubs, dog
-  walkers/trainers); verify one or two more networking dates (BNI, Networx dated listings); open 2-3 more
-  referral-partner sites (Unknwn, Rowe & Bear, First Phase IT).
+- Mike (this week): go to **360 Networking, Tue 10 Nov, 5–6:45pm, Redwither Tower** (free; book through the form on
+  https://wrexham.gov.uk/service/business-and-investment-support/360-networking). Ask three owners: "How do your customers
+  book or order, and are you happy with it?" Also search "app developer Wrexham" in a normal browser and note whether map
+  pack results appear.
+- Mike (before Wed 11 Nov): open the Chamber page for Round Table Networking (Ellesmere Port) and check price and guest access.
+- Next run: open baabaadesign.co.uk and the Webboss site to confirm they are competitors; find 8 prospects by opening
+  local hospitality, trades and club sites directly; confirm Connect Wrexham's 26 Nov listing.
 
 ## Changelog
 
@@ -475,3 +515,4 @@ exclusions: new features, platform fees, third-party renewals, cloud overage and
 - 2026-10-21 (run 3): workstreams Offer/positioning (white-label, Apple 4.2), Deadlines, Pricing, Competitors, Demand, Prospects. 22 searches, 8 pages opened (Apple guidelines, Apple upcoming-requirements, Mindbody branded-app terms, Mindbody API terms, Shopify mobile storefronts, Google Play testing page, plus Google Play target-API via search). No blocked domains; WebFetch summaries are model-condensed, so quoted clauses should be verified in full. Evidence weakening: no UK solo retainer prices, no UK owner demand, and cheap ready-made branded apps compete.
 - 2026-10-23: direction changed to local first; added the 'Local: Wrexham and North Wales' section and rewrote the next step.
 - 2026-10-28 (run 4): workstreams Competition and search, Networking calendar, Referral partners, Prospect signals, Local offer. 16 searches, 15 page-open attempts (10 read). Blocked/failed: wcnwchamber.org.uk (403), jollyes.co.uk (403), skiddle.com (410 gone), borrasbarks.co.uk (not resolvable in this session). Evidence thin: no named local app developers found, no clear prospect among dog businesses checked; one confirmed dated event (Chamber, 11 Nov).
+- 2026-11-04 (run 5): workstreams Networking calendar, Competition, Referral partners, Prospect signals. 15 searches, 12 page-open attempts (10 read). Blocked/failed: wcnwchamber.org.uk (403), webboss.co.uk (410). Two new confirmed dates (360 Networking 10 Nov, 8 Dec); Connect Wrexham 29 Oct removed as past. Evidence still thin: no strong prospect.
