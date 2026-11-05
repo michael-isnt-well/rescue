@@ -21,7 +21,7 @@ postAdoptionSupport: "The rescue's about page says: \"We provide lifetime suppor
 feeIncludesTransport: "true"
 feeSourcesDiffer: true
 charityStatus: not-found
-charityCheckedAt: 2026-10-19
+charityCheckedAt: 2026-11-05
 sources:
   - label: Rescue Dogs For Adoption — adoption process
     url: https://rescuedogsforadoption.co.uk/adoption-process
@@ -31,13 +31,13 @@ sources:
     url: https://rescuedogsforadoption.co.uk/pet-transport-bulgaria
   - label: Rescue Dogs For Adoption — home page
     url: https://rescuedogsforadoption.co.uk
-lastVerifiedAt: 2026-10-19
+lastVerifiedAt: 2026-11-05
 publishedAt: 2026-10-19
 ---
 
 Rescue Dogs For Adoption gives its location as "Varna, Bulgaria & United Kingdom". According to its about page, its dogs "are in small foster home rescues in Bulgaria NOT living in public shelters", and it says its centre "has been rehoming dogs for the last 16 years in Bulgaria", with most adoptions going to homes in the UK and Europe.
 
-We couldn't find a charity number on the rescue's website, and found no matching entry on the Charity Commission's register for England and Wales (checked 19 October 2026). Not every rescue group is a registered charity, so ask the rescue directly about its status if it matters to you.
+We couldn't find a charity number on the rescue's website, and found no matching entry on the Charity Commission's register for England and Wales (checked 5 November 2026). Not every rescue group is a registered charity, so ask the rescue directly about its status if it matters to you.
 
 ## The fee and what it covers
 
@@ -74,4 +74,4 @@ The rescue's pet transport page lists "NEXT DEPARTURE - 13th March 2026" and des
 
 The adoption process page says: "We continue to support you when your dog arrives." The about page says the rescue provides "lifetime support and rescue backup".
 
-*Details verified 19 October 2026 from the rescue's own website, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*
+*Details verified 5 November 2026 from the rescue's own website, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*

@@ -23,13 +23,13 @@ rehomesWithoutGarden: null
 postAdoptionSupport: Rescue back-up for 3 months after adoption.
 feeIncludesTransport: "false"
 charityStatus: not-found
-charityCheckedAt: 2026-10-09
+charityCheckedAt: 2026-11-05
 sources:
   - label: All Dogs Great and Small Rescue — adoption process
     url: https://www.all-dogs-great-and-small-rescue.com/adoption-process
   - label: All Dogs Great and Small Rescue — home page
     url: https://www.all-dogs-great-and-small-rescue.com
-lastVerifiedAt: 2026-10-15
+lastVerifiedAt: 2026-11-05
 publishedAt: 2026-10-09
 ---
 
@@ -54,6 +54,6 @@ The rescue offers **rescue back-up for 3 months** after adoption, and says it wi
 
 ## Charity status
 
-We couldn't find a charity number on the rescue's website, and we found no matching entry on the Charity Commission's register for England and Wales (checked 9 October 2026). Not every rescue group is a registered charity, so ask the rescue directly about its status if it matters to you.
+We couldn't find a charity number on the rescue's website, and we found no matching entry on the Charity Commission's register for England and Wales (checked 5 November 2026). Not every rescue group is a registered charity, so ask the rescue directly about its status if it matters to you.
 
-*Details verified 15 October 2026 from the rescue's own website, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*
+*Details verified 5 November 2026 from the rescue's own website, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*

@@ -21,7 +21,7 @@ postAdoptionSupport: The rescue says it has "a team of volunteers with experienc
 feeIncludesTransport: "false"
 feeSourcesDiffer: true
 charityStatus: registered
-charityCheckedAt: 2026-10-15
+charityCheckedAt: 2026-11-05
 sources:
   - label: Dali Dog Rescue UK — the adoption process
     url: https://dalidogrescue.uk/adopt-dog-cyprus
@@ -35,7 +35,7 @@ sources:
     url: https://www.dalidogrescue.uk/help-advice/how-much-to-rescue-dog-abroad
   - label: Charity Commission register — Dali Dog Rescue UK (1198532)
     url: https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5192007
-lastVerifiedAt: 2026-10-15
+lastVerifiedAt: 2026-11-05
 publishedAt: 2026-10-12
 ---
 
@@ -59,4 +59,4 @@ The pages we read don't state a policy on cats, children or homes without a gard
 
 The FAQs say: "We have a team of volunteers with experience in settling rescue dogs into their own homes." Adopters can request help by posting in the Dali Help and Advice Group, and the page recommends a qualified behaviourist or trainer for further support.
 
-*Details verified 15 October 2026 from the rescue's own website and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*
+*Details verified 5 November 2026 from the rescue's own website and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*

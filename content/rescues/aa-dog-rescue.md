@@ -20,7 +20,7 @@ rehomesWithoutGarden: null
 postAdoptionSupport: "The rescue says: \"Ourselves and our behaviourist are also available to speak to at any time after adoption.\" It also advertises \"lifetime rescue backup\"."
 feeIncludesTransport: "true"
 charityStatus: not-found
-charityCheckedAt: 2026-10-21
+charityCheckedAt: 2026-11-05
 sources:
   - label: AA Dog Rescue — How to adopt
     url: https://www.aadogrescue.org.uk/how-to-adopt
@@ -32,7 +32,7 @@ sources:
     url: https://www.aadogrescue.org.uk/about-aa-dog-rescue-spain-uk-dog-adoption
   - label: AA Dog Rescue — Dogs for adoption
     url: https://www.aadogrescue.org.uk/rescue-dogs-for-adoption-uk
-lastVerifiedAt: 2026-10-21
+lastVerifiedAt: 2026-11-05
 publishedAt: 2026-10-21
 ---
 
@@ -66,6 +66,6 @@ The rescue says: "Ourselves and our behaviourist are also available to speak to 
 
 ## Charity status
 
-We couldn't find a UK charity number on the rescue's website, and found no matching entry on the Charity Commission's register for England and Wales (checked 21 October 2026). The website lists Spanish identifiers instead (a registered association number and a tax code). Not every rescue group is a registered charity, so ask the rescue directly about its status if it matters to you.
+We couldn't find a UK charity number on the rescue's website, and found no matching entry on the Charity Commission's register for England and Wales (checked 5 November 2026). The website lists Spanish identifiers instead (a registered association number and a tax code). Not every rescue group is a registered charity, so ask the rescue directly about its status if it matters to you.
 
-*Details verified 21 October 2026 from the rescue's own website, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*
+*Details verified 5 November 2026 from the rescue's own website, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*
