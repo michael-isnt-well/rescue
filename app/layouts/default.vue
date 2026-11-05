@@ -5,5 +5,8 @@
       <slot />
     </main>
     <AppFooter />
+    <!-- Seasonal effects: hidden unless the root has data-season (see main.css). -->
+    <div class="season-fx season-snow" aria-hidden="true" />
+    <div class="season-fx season-fireworks" aria-hidden="true"><span /><span /><span /><span /></div>
   </div>
 </template>

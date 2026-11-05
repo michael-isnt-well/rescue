@@ -71,6 +71,183 @@
   border: 1px solid var(--color-line);
 }
 
+/* ---------------------------------------------------------------------------
+   Seasonal themes — accent tokens plus a decorative strip under the header
+   and a small badge by the logo. Applied when the root carries data-season,
+   set by the date script in nuxt.config. Purely decorative: every colour
+   keeps WCAG AA contrast against the page and on buttons.
+--------------------------------------------------------------------------- */
+:root[data-season='halloween'] {
+  --color-brand: #b0480c;
+  --color-brand-dark: #8a370a;
+  --color-brand-soft: #fbeadd;
+  --season-strip: repeating-linear-gradient(-45deg, #e8751a 0 12px, #1c1a17 12px 24px);
+  --season-badge: '🎃';
+}
+:root[data-season='bonfire'] {
+  --color-brand: #5b3a8c;
+  --color-brand-dark: #45296e;
+  --color-brand-soft: #eee8f6;
+  --season-strip: linear-gradient(90deg, #2a1846, #5b3a8c, #e8751a, #f5c542, #e8751a, #5b3a8c, #2a1846);
+  --season-badge: '✨';
+}
+:root[data-season='christmas'] {
+  --color-brand: #a51c30;
+  --color-brand-dark: #7e1524;
+  --color-brand-soft: #f8e6e8;
+  --season-strip: repeating-linear-gradient(-45deg, #a51c30 0 10px, #fffefb 10px 20px, #1f6f5c 20px 30px, #fffefb 30px 40px);
+  --season-badge: '🎄';
+}
+:root[data-theme='dark'][data-season='halloween'] {
+  --color-brand: #f08a3c;
+  --color-brand-dark: #f6b07a;
+  --color-brand-soft: #33210f;
+}
+:root[data-theme='dark'][data-season='bonfire'] {
+  --color-brand: #b48be0;
+  --color-brand-dark: #d3bdf0;
+  --color-brand-soft: #261c36;
+}
+:root[data-theme='dark'][data-season='christmas'] {
+  --color-brand: #e8707f;
+  --color-brand-dark: #f3a5ae;
+  --color-brand-soft: #351a1e;
+}
+.season-strip {
+  display: none;
+}
+:root[data-season] .season-strip {
+  display: block;
+  height: 4px;
+  background: var(--season-strip);
+}
+:root[data-season] .season-badge::after {
+  content: var(--season-badge);
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+/* Seasonal effects — snow (Christmas) and fireworks (Bonfire Night).
+   CSS only, transform/opacity animations (GPU-composited, no JS, no
+   images), behind content and never clickable. They run for about half a
+   minute after the page loads, then stop, and are skipped entirely for
+   visitors who prefer reduced motion. */
+.season-fx {
+  display: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  :root[data-season='christmas'] .season-snow,
+  :root[data-season='bonfire'] .season-fireworks {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 30;
+    overflow: hidden;
+    pointer-events: none;
+  }
+}
+.season-snow {
+  --flake: rgba(150, 170, 195, 0.55);
+  animation: season-fade 32s linear forwards;
+}
+:root[data-theme='dark'] .season-snow {
+  --flake: rgba(255, 255, 255, 0.6);
+}
+.season-snow::before,
+.season-snow::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -100%;
+  height: 200%;
+  will-change: transform;
+}
+.season-snow::before {
+  background-image:
+    radial-gradient(circle at 43% 21%, var(--flake) 0 1.8px, transparent 2.8px),
+    radial-gradient(circle at 8% 11%, var(--flake) 0 2.2px, transparent 3.2px),
+    radial-gradient(circle at 14% 48%, var(--flake) 0 2.0px, transparent 3.0px),
+    radial-gradient(circle at 66% 29%, var(--flake) 0 1.4px, transparent 2.4px),
+    radial-gradient(circle at 57% 55%, var(--flake) 0 1.5px, transparent 2.5px),
+    radial-gradient(circle at 13% 72%, var(--flake) 0 1.8px, transparent 2.8px),
+    radial-gradient(circle at 74% 17%, var(--flake) 0 2.3px, transparent 3.3px),
+    radial-gradient(circle at 82% 82%, var(--flake) 0 2.0px, transparent 3.0px),
+    radial-gradient(circle at 9% 75%, var(--flake) 0 2.0px, transparent 3.0px);
+  background-size: 340px 430px;
+  animation: season-snowfall 14s linear 2;
+}
+.season-snow::after {
+  background-image:
+    radial-gradient(circle at 8% 30%, var(--flake) 0 0.8px, transparent 1.8px),
+    radial-gradient(circle at 19% 39%, var(--flake) 0 1.1px, transparent 2.1px),
+    radial-gradient(circle at 71% 17%, var(--flake) 0 1.1px, transparent 2.1px),
+    radial-gradient(circle at 73% 89%, var(--flake) 0 0.9px, transparent 1.9px),
+    radial-gradient(circle at 76% 75%, var(--flake) 0 1.2px, transparent 2.2px),
+    radial-gradient(circle at 49% 14%, var(--flake) 0 1.1px, transparent 2.1px),
+    radial-gradient(circle at 10% 74%, var(--flake) 0 0.8px, transparent 1.8px),
+    radial-gradient(circle at 28% 65%, var(--flake) 0 1.2px, transparent 2.2px);
+  background-size: 250px 310px;
+  opacity: 0.7;
+  animation: season-snowfall 22s linear 2;
+}
+@keyframes season-snowfall {
+  from { transform: translateY(0); }
+  to { transform: translateY(50%); }
+}
+@keyframes season-fade {
+  0%, 85% { opacity: 1; }
+  100% { opacity: 0; visibility: hidden; }
+}
+.season-fireworks span {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow:
+    60px 0px 0 1px #f5c542,
+    55px 23px 0 1px #e8751a,
+    42px 42px 0 1px #ff6b8b,
+    23px 55px 0 1px #b48be0,
+    0px 60px 0 1px #7fd6ff,
+    -23px 55px 0 1px #f5c542,
+    -42px 42px 0 1px #e8751a,
+    -55px 23px 0 1px #ff6b8b,
+    -60px 0px 0 1px #b48be0,
+    -55px -23px 0 1px #7fd6ff,
+    -42px -42px 0 1px #f5c542,
+    -23px -55px 0 1px #e8751a,
+    0px -60px 0 1px #ff6b8b,
+    23px -55px 0 1px #b48be0,
+    42px -42px 0 1px #7fd6ff,
+    55px -23px 0 1px #f5c542;
+  animation: season-burst 2.4s ease-out 4 both;
+}
+.season-fireworks span:nth-child(2n) {
+  box-shadow:
+    32px 0px 0 1px #fff3c4,
+    26px 19px 0 1px #f5c542,
+    10px 30px 0 1px #ffb37a,
+    -10px 30px 0 1px #fff3c4,
+    -26px 19px 0 1px #f5c542,
+    -32px 0px 0 1px #ffb37a,
+    -26px -19px 0 1px #fff3c4,
+    -10px -30px 0 1px #f5c542,
+    10px -30px 0 1px #ffb37a,
+    26px -19px 0 1px #fff3c4;
+}
+.season-fireworks span:nth-child(1) { top: 14%; left: 12%; animation-delay: 0.4s; }
+.season-fireworks span:nth-child(2) { top: 22%; left: 82%; animation-delay: 1.3s; }
+.season-fireworks span:nth-child(3) { top: 9%; left: 55%; animation-delay: 2.1s; }
+.season-fireworks span:nth-child(4) { top: 30%; left: 30%; animation-delay: 3s; }
+@keyframes season-burst {
+  0% { transform: scale(0.1); opacity: 0; }
+  10% { opacity: 0.9; }
+  70% { opacity: 0.6; }
+  100% { transform: scale(1.4) translateY(14px); opacity: 0; }
+}
+
 /* Theme-toggle icon swap (driven purely by the root attribute). */
 .theme-sun {
   display: none;

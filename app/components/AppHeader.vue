@@ -45,6 +45,7 @@ function toggleTheme() {
         <span class="font-display text-[1.05rem] font-semibold tracking-tight text-[var(--color-ink)]">
           Rescue Journey
         </span>
+        <span class="season-badge" aria-hidden="true" />
       </NuxtLink>
 
       <div class="flex items-center gap-1">
@@ -97,6 +98,9 @@ function toggleTheme() {
         </button>
       </div>
     </div>
+
+    <!-- Seasonal strip (hidden unless the root has data-season) -->
+    <div class="season-strip" aria-hidden="true" />
 
     <!-- Mobile menu -->
     <nav

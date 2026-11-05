@@ -108,6 +108,15 @@ export default defineNuxtConfig({
           innerHTML:
             "(function(){try{var s=localStorage.getItem('theme');var d=s?s:(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',d);}catch(e){}})();",
         },
+        // Seasonal accent, from the visitor's own clock (the site is static,
+        // so this can't be decided at build time). Halloween 24–31 Oct,
+        // Bonfire Night 5 Nov, Christmas all of December. ?season=<name> or
+        // ?season=none previews a theme. See the "Seasonal themes" CSS block.
+        {
+          tagPosition: 'head',
+          innerHTML:
+            "(function(){try{var n=new Date(),m=n.getMonth()+1,d=n.getDate(),s=m===10&&d>=24?'halloween':m===11&&d===5?'bonfire':m===12?'christmas':'';var q=new URLSearchParams(location.search).get('season');if(q)s=q==='none'?'':q;if(s)document.documentElement.setAttribute('data-season',s);}catch(e){}})();",
+        },
       ],
     },
   },
