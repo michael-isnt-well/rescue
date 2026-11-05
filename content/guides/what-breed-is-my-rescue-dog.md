@@ -1,6 +1,6 @@
 ---
 title: What breed is my rescue dog from abroad?
-seoTitle: "Romanian rescue & street dog breeds: village dogs & DNA tests"
+seoTitle: "Romanian village dogs: rescue dog breeds, size & DNA tests"
 description: What breeds are Romanian street and rescue dogs? Why most are village dogs rather than any breed, how big they get, Romania's native shepherd breeds, and what a DNA test can tell you.
 publishedAt: 2026-09-26
 updatedAt: 2026-10-09
