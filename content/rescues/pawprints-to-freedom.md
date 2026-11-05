@@ -23,7 +23,7 @@ rehomesWithoutGarden: case-by-case
 postAdoptionSupport: Rescue back-up (RBU) for exceptional circumstances, post-adoption Facebook groups, and access to volunteer advice.
 feeIncludesTransport: "true"
 charityStatus: registered
-charityCheckedAt: 2026-10-15
+charityCheckedAt: 2026-11-05
 sources:
   - label: Pawprints to Freedom — adopt page
     url: https://www.pawprints2freedom.co.uk/adopt
@@ -31,7 +31,7 @@ sources:
     url: https://www.pawprints2freedom.co.uk/_files/ugd/3a38a8_e4a18f64e02b419293fdd868c0bc4062.pdf
   - label: Charity Commission register — Pawprints to Freedom Limited (1194754)
     url: https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5171025
-lastVerifiedAt: 2026-10-15
+lastVerifiedAt: 2026-11-05
 publishedAt: 2026-09-05
 ---
 
@@ -76,4 +76,4 @@ Adopters get **rescue back-up (RBU)**: if something serious and unforeseen happe
 - Adoption pack (dogs): [pawprints2freedom.co.uk/info-packs](https://www.pawprints2freedom.co.uk/info-packs)
 - Facebook community: [facebook.com/groups/pawprints2freedom](https://www.facebook.com/groups/pawprints2freedom)
 
-*Details verified 15 October 2026 from the rescue's own website, adoption pack and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*
+*Details verified 5 November 2026 from the rescue's own website, adoption pack and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*

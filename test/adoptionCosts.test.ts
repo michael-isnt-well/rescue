@@ -77,7 +77,7 @@ describe('data', () => {
   })
 
   it('computes the published fee range', () => {
-    expect(feeRange()).toEqual({ min: 425, max: 1250 })
+    expect(feeRange()).toEqual({ min: 425, max: 760 })
   })
 
   it('shows the published per-dog costs exceed the Pawprints fee', () => {

@@ -12,7 +12,7 @@
 export type Country = 'romania' | 'cyprus' | 'bulgaria' | 'greece' | 'spain'
 export type DogSize = 'small' | 'medium' | 'large'
 
-export const SOURCES_CHECKED = '2026-10-15'
+export const SOURCES_CHECKED = '2026-11-05'
 
 // ---------------------------------------------------------------------------
 // Rescue fees — each from the rescue's own website. `fee` is the all-in cost
@@ -231,12 +231,9 @@ export const RESCUE_FEES: RescueFee[] = [
     rescue: 'Project Galgo',
     country: 'spain',
     variant: 'Galgo or podenco',
-    fee: 1250,
-    parts: [
-      { label: 'Adoption fee', amount: 750 },
-      { label: 'Transport to England/Wales', amount: 500 },
-    ],
-    note: 'Fee includes a safety kit and three months’ use of a GPS tracker. Transport to Scotland is £550.',
+    fee: 750,
+    parts: [{ label: 'Adoption fee', amount: 750 }],
+    note: 'The rescue says its adoption fee includes a safety kit and three months’ use of a GPS tracker, and that it does not ask adopters to cover the full cost of bringing a dog to the UK (its own typical cost breakdown includes £500 for transport to England/Wales, £550 to Scotland). A Brucella Canis test, from approx. £100, is payable separately.',
     sourceUrl: 'https://projectgalgo.com/about-project-galgo/about-dog-adoption/',
   },
 ]

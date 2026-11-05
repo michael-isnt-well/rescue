@@ -20,7 +20,7 @@ rehomesWithoutGarden: null
 postAdoptionSupport: "The rescue says it will work closely with adopters \"throughout the whole process (and after adoption) to support and advise you\"."
 feeIncludesTransport: "false"
 charityStatus: registered
-charityCheckedAt: 2026-10-20
+charityCheckedAt: 2026-11-05
 sources:
   - label: Healing Paws — the adoption process
     url: https://healingpawsanimalrescue.com/the-adoption-process/
@@ -30,7 +30,7 @@ sources:
     url: https://healingpawsanimalrescue.com/adoptions/
   - label: Charity Commission register — Healing Paws Animal Rescue (1177945)
     url: https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5119742
-lastVerifiedAt: 2026-10-20
+lastVerifiedAt: 2026-11-05
 publishedAt: 2026-10-20
 ---
 
@@ -72,4 +72,4 @@ The rescue says it will "work closely with you throughout the whole process (and
 
 The rescue's adoption page says: "Please get in touch using the form on the contact page."
 
-*Details verified 20 October 2026 from the rescue's own website and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*
+*Details verified 5 November 2026 from the rescue's own website and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*
