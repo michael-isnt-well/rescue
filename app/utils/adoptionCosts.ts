@@ -12,7 +12,7 @@
 export type Country = 'romania' | 'cyprus' | 'bulgaria' | 'greece' | 'spain'
 export type DogSize = 'small' | 'medium' | 'large'
 
-export const SOURCES_CHECKED = '2026-11-05'
+export const SOURCES_CHECKED = '2026-11-19'
 
 // ---------------------------------------------------------------------------
 // Rescue fees — each from the rescue's own website. `fee` is the all-in cost
@@ -182,9 +182,10 @@ export const RESCUE_FEES: RescueFee[] = [
     variant: 'Most dogs',
     fee: 650,
     approx: true,
+    sourcesDiffer: true,
     parts: [{ label: 'Adoption fee (delivery included)', amount: 650 }],
-    note: '“Most adoption fees are £650”, covering passport, microchip, vaccinations, neutering if old enough, and delivery to you.',
-    sourceUrl: 'https://www.rescuedogsforadoption.co.uk/',
+    note: '“Most adoption fees are 650 U.K Pounds”, covering passport, chip, vaccinations, castration/spey if old enough, and transportation and delivery to you. The rescue’s about page says its fee “starts at £700”, so ask which applies.',
+    sourceUrl: 'https://rescuedogsforadoption.co.uk/adoption-process',
   },
   // Greece
   {

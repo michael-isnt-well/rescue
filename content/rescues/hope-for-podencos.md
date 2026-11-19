@@ -20,7 +20,7 @@ rehomesWithoutGarden: case-by-case
 postAdoptionSupport: "The rescue says it will check in a few days after arrival and that it has 'a network of people that can help with any training or behaviour issues'."
 feeIncludesTransport: "true"
 charityStatus: registered
-charityCheckedAt: 2026-10-26
+charityCheckedAt: 2026-11-19
 sources:
   - label: Hope For Podencos — Adopt with us
     url: https://hopeforpodencos.com/adoption-process
@@ -32,7 +32,7 @@ sources:
     url: https://hopeforpodencos.com/our-story
   - label: Charity Commission register — Hope For Podencos UK (1212896)
     url: https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5249378
-lastVerifiedAt: 2026-10-26
+lastVerifiedAt: 2026-11-19
 publishedAt: 2026-10-26
 ---
 
@@ -71,4 +71,4 @@ The rescue says: "We provide all passports and travel documentation and transpor
 
 The rescue says it will "check in a few days after your pod arrives" and that "HFP are always here to support you, and have a network of people that can help with any training or behaviour issues". It also says "Full rescue back up is provided for every adoption" and that it has "foster teams in place should the need arise to rehome your podenco".
 
-*Details verified 26 October 2026 from the rescue's own website and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*
+*Details verified 19 November 2026 from the rescue's own website and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*
