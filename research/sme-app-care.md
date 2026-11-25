@@ -21,7 +21,7 @@ are a natural first niche, given rescuejourney.co.uk.
 
 ## Local: Wrexham and North Wales
 
-Last updated 2026-11-18 (run 7). Honest headline: local evidence is thin on both sides. Few local
+Last updated 2026-11-25 (run 8). Honest headline: local evidence is thin on both sides. Few local
 app specialists are visible, but also no sign yet of local owners asking for apps; the dog businesses
 checked already use ready-made booking tools. Plan implication: lead with the free conversation
 and a small, cheap first job, not with an expectation of many local native-app clients.
@@ -74,6 +74,11 @@ and a small, cheap first job, not with an expectation of many local native-app c
   list UK freelancers with no North Wales location stated. A "web app developer Chester" search returned mostly US towns named Chester; the only
   Cheshire names were A Little Big and Aaron Evans Software (search snippets, unopened, unverified). Conclusion unchanged: no local solo
   native-app freelancer visible; local-ranking view unchanged (directories dominate; map pack still unchecked).
+- **Updated 2026-11-25:** a "freelance mobile app developer Flintshire / Mold / Deeside" search returned the same picture: Webboss pages (Deeside
+  variant, claims native iOS/Android and Flutter/React Native, fixed-price quotes after a scoping call; ownership and location still unverified),
+  Sortlist's Flintshire list ("from €1,000", directory data), ITJobsWatch (employed Deeside roles, not freelance) and Fiverr/Upwork/Freelancer
+  profiles with no Flintshire location. No named local solo native-app developer; local-ranking view unchanged (directories dominate; map pack
+  still unchecked).
 - **Maintenance-price anchors (directory data, indicative):** BizHub365 says Mold web designers offer monthly maintenance at £50–£200
   (https://www.bizhub365.com/find/web-designer/mold/cost/ via search); Bark gives £50–£500 a month
   (https://www.bark.com/en/gb/web-design/flintshire/mold/). So a monthly app/booking care fee at roughly web-maintenance levels is familiar;
@@ -84,21 +89,25 @@ and a small, cheap first job, not with an expectation of many local native-app c
   (BizHub365); directory figures, indicative only.
 
 ### Networking calendar
-Checked 2026-11-18. Confirmed upcoming dates (organiser's own page or listing), soonest first:
-- **Thu 19 Nov 2026, 9:30am–5pm, FTF16 Football Transfer Forum** (tomorrow), Racecourse Ground, Wrexham: see below, probably not a fit.
-- **Wed 25 Nov 2026, 10:00–14:00, Wrexham University "Board of Investment Pitch Day"** and **Wed 9 Dec 2026, 12:00–13:00, "Monthly Webinar:
-  AI Tips for Business"** (likely online): both listed on the university's entrepreneurship page, which gives no location, cost or eligibility
-  (enquiries Enhance@Wrexham.ac.uk; booking via the team's Eventbrite). Pitch Day is probably aimed at start-ups, so lower fit; the AI webinar is
-  low-effort. Student/graduate socials (3 Dec) excluded. https://wrexham.ac.uk/business/entrepreneurship-support/ (opened 2026-11-18).
+Checked 2026-11-25. Confirmed upcoming dates (organiser's own page or listing), soonest first:
+- **Wed 9 Dec 2026, 12:00–13:00, Wrexham University "Monthly Webinar: AI Tips for Business"** (likely online): listed on the university's
+  entrepreneurship page, which gives no location, cost or eligibility (enquiries Enhance@Wrexham.ac.uk; booking via the team's Eventbrite).
+  Low-effort, lower fit. The page lists no 2027 dates and nothing else for business owners (Board of Investment Pitch Day was 25 Nov, today;
+  student/graduate socials excluded). https://wrexham.ac.uk/business/entrepreneurship-support/ (opened 2026-11-25).
 - **Tue 8 Dec 2026, 5–6:45pm, 360 Networking (Wrexham Council)**, Atrium Suite, Redwither Tower, Wrexham
-  Industrial Estate LL13 9XT. Free for guests and members; book through the council's online form (annual members
-  must book each meeting too). **Best confirmed fit and the last 2026 date**; 2027 dates still not listed (re-checked 2026-11-18). The page lists
-  Tuesdays 13 Jan to 8 Dec 2026 (no August). https://wrexham.gov.uk/service/business-and-investment-support/360-networking (opened 2026-11-18).
-- FTF16 detail: Racecourse Ground, Wrexham LL11 2AH (ticketed, price not stated). Confirmed, but aimed at football agents, recruiters and
-  lawyers, so **probably not a fit** for local SME work. https://www.eventbrite.co.uk/e/ftf16-tickets-1995907438878
+  Industrial Estate LL13 9XT. Free for guests and members, free parking; book through the council's MyAccount portal ("Book to attend a 360
+  network meeting"; annual members must book each meeting too). **Best confirmed fit and the last 2026 date, now 13 days away**; 2027 dates still
+  not listed (re-checked 2026-11-25). The page lists 2026 meetings 13 Jan to 8 Dec (no August). The council's networking page says "second
+  Tuesday of each month, excluding August", which would give Tue 12 Jan 2027 (**calculated, unconfirmed**; ask the Business and Investment team,
+  01978 667000 per a search snippet). https://wrexham.gov.uk/service/business-and-investment-support/360-networking (opened 2026-11-25).
 - **Fri 27 Nov 2026, 12:00–4:00pm, Institute of Directors North Wales Winter Lunch**, Quay Hotel & Spa, Deganwy:
   **unconfirmed**. Seen in a search snippet only; the IoD page returned 403 to the fetch tool. Directors' lunch, price
-  and guest access unknown. https://www.iod.com/events/north_wales_winter_lunch694984670/
+  and guest access unknown (not re-checked 2026-11-25). https://www.iod.com/events/north_wales_winter_lunch694984670/
+- **Unconfirmed, outside the core area:** South Cheshire Chamber lists a North Cheshire Christmas Networking Lunch on 9 Dec 2026, 12:00–14:00 (search
+  snippet of https://sccci.co.uk/events, page not opened; Crewe/Nantwich-based chamber, venue not given).
+- **Digital Social Club** (community-run talk-plus-networking evenings for people in digital across North Wales, Chester and the borders, founded
+  2026): its Eventbrite organiser page shows "Nothing planned right now" (opened 2026-11-25). Peers rather than clients, but a good place to meet
+  referral partners; watch for the next date. https://www.eventbrite.ca/o/121074423558
 
 Recurring groups, **exact dates unconfirmed** (council directory
 https://www.wrexham.gov.uk/service/business-and-investment-support/networking-groups-wrexham states patterns only):
@@ -122,10 +131,17 @@ https://www.wrexham.gov.uk/service/business-and-investment-support/networking-gr
   9–11am at Maesgwyn Hall, "your first visit is free". Search snippets (unverified) mention a Gresford group (Beeches, 7–9am) and a Thursday
   7–9am group at Rossett Hall (TryBooking, June/July 2026 sessions), so the Thursday venue may have changed: ask the organiser
   (daryl@networx4business.co.uk per the council page). The council page was re-opened and lists no dated events for any group.
-- West Cheshire and North Wales Chamber: no December 2026 event found; wcnwchamber.org.uk returned 403 again, so its calendar could not be
+- Re-checked 2026-11-25: the council's networking page (opened) lists no dated events and repeats the patterns above (Networx guests: up to two
+  meetings, first free; Theatr Clwyd and Wrexham University breakfasts: no dates). Networx Wrexham Eventbrite (opened) still shows "multiple
+  dates", Tuesday 9–11am at Maesgwyn Hall, first visit free; a search snippet mentioned a Tue 6 Jan 2027 session (unverified, not visible on the
+  page). Colony Networking's Wrexham listing I opened (Thu 12 Mar, Hotel Wrexham) is marked ended. A Chester Morning Networking listing (Storyhouse,
+  Manchester Met University) and Conwy Employment Hub's annual event (St George's Hotel, Llandudno) both show 29 Jan and "ended" (year not shown).
+  Connect Wrexham: its own page still lists no dates or price; **Thu 26 Nov (tomorrow) and Thu 31 Dec are calculated only, not confirmed.**
+- West Cheshire and North Wales Chamber: no December 2026 event found (search again 2026-11-25; wcnwchamber.org.uk not retried); wcnwchamber.org.uk returned 403 again, so its calendar could not be
   read. Chamber phone 01244 669988 (per its June 2026 magazine, search snippet). Check its events page in a normal browser.
-- FSB: only past 2026 events found (Connect North Wales 17 Mar, Bangor; conference 8 Jul, Llandudno). No upcoming date found.
-- Removed as past: 360 Networking 10 Nov, Chamber Round Table 11 Nov, Development Bank of Wales "Mince pies and mingle"
+- FSB: only past 2026 events found (Connect North Wales 17 Mar, Bangor; conference 8 Jul, Llandudno). No upcoming date found (re-searched 2026-11-25).
+  Check events.fsb.org.uk in a browser.
+- Removed as past: FTF16 (19 Nov), Wrexham University Pitch Day (25 Nov, today), 360 Networking 10 Nov, Chamber Round Table 11 Nov, Development Bank of Wales "Mince pies and mingle"
   (that listing is Wed 10 Dec **2025**), Connect Wrexham 29 Oct, North Wales Social Autumn Expo (22 Oct), Chamber Ynys Môn Network (13 Oct).
 
 ### Referral partners
@@ -162,6 +178,13 @@ development. Business information only; Mike's rule: he refers general IT to the
 - Seen in search only, own sites not opened (unverified): Karen Thomas, web designer based in Llandudno covering North Wales, Denbighshire,
   Anglesey and Chester (aggregator page returned 410); Happy Shrimp Ltd and Web Spinner UK (Conwy/North Wales web design, directory snippets);
   Yoke (North Wales creative agency). Possible referral partners for the Conwy/Llandudno side; check each site for app services first.
+- **Added 2026-11-25:** **Stuff & Nonsense Ltd** (Andy Clarke), Gwaenysgor, Flintshire LL18 6EJ (own pages opened): website and digital product
+  design, improving existing products, post-launch support, content, illustration; **no app development mentioned**, no prices; works UK-wide
+  too. Likely a design-led partner rather than a volume referrer. https://stuffandnonsense.co.uk/web-design-north-wales/
+  Seen in search only, own sites not opened (unverified; check for app services first): **DoodleIT** (Ruthin; Business Wales directory entry says
+  web design/development, bilingual sites clients can update themselves, Flintshire/Denbighshire/North Wales; https://doodleit.co.uk per
+  BuiltWith), **UK Promotion** (Llandudno, since 1999, web, UX/UI, branding; themanifest.com snippet) and **Yellow Fly Design** (Llanddulas;
+  Daily Post directory snippet).
 - Seen in search only (unverified): SigWeb (offices in Chester and Wrexham, e-commerce/web development), a5 multimedia
   (North Wales web/CMS), Populi Media, Wardtech (Chester IT), eJIGSAW (Chester/London digital agency).
 
@@ -214,6 +237,19 @@ Added 2026-11-04 (opened business's own page; neutral observations). **Still no 
   problem. Facts only: Wanderin Weenies (Wrexham, dachshund-only daycare and boarding) and Wuff Wuff Doggy Daycare (Wrexham/Chester area)
   appear on DogFriendly (https://www.dogfriendly.co.uk/kennels/listing/wanderin-weenies-93640); their own booking methods were not checked.
   Fourth week running that web search has not found a clear problem site; the next-step browser exercise remains the way forward.
+- **2026-11-25: new route tried (sports clubs, trades); still no prospect with a clear problem; fifth week running.** Facts only:
+  - **Wrexham Golf Club**: its membership page (via search snippet; own page not opened) says to call the office on 01978 364268 to apply; some
+    packages closed and a full-membership waiting list; 2025/26 rates quoted. Application by phone is a fact, not necessarily a problem; the
+    club may use another system for tee times (its site is on Intelligent Golf). https://wrexham.intelligentgolf.co.uk/membership
+  - **Wrexham Lawn Tennis Club**: ClubSpark membership page with "Join now" buttons (snippet; the page returned 403 to the fetch tool).
+    Already on an off-the-shelf platform. https://clubspark.lta.org.uk/WrexhamLawnTennisClub/Membership
+  - **Wrexham Waterworld (Freedom Leisure)**, re-read 2026-11-25: classes via the MyWellness app or phone 01978 297300; the booking panel still
+    says "We cannot currently accept online bookings for this activity due to the technical limitations of our booking system". Large operator,
+    so a procurement route. https://www.freedom-leisure.co.uk/centres/wrexham-waterworld/group-exercise/
+  - Groomers: Dazzles Dog Grooming (Erddig; DogFriendly listing last updated 2018), K9 To 5 (Caergwrle) and Groomintails (Rossett) appear with
+    phone numbers in directories; their own booking methods were not checked (leads, not problems).
+    https://www.dogfriendly.co.uk/groomers/listing/dazzles-dog-grooming-32310
+  - Trades: search returned only Checkatrade, MyJobQuote and MyBuilder (lead platforms); no independent site with a visible phone-only issue.
 - Pattern: local small businesses mostly already use Bookwhen, Shake Your Tail, Fresha or marketplaces. The opportunity
   is probably in finding owners unhappy with these, which needs conversation, not web search.
 
@@ -242,6 +278,10 @@ Added 2026-11-04 (opened business's own page; neutral observations). **Still no 
   local developer in Wrexham. If customers still ring or email to book, or an app or booking page has been left unlooked-after, I'll
   review it for free for 20 minutes and tell you honestly whether to keep what you have." Pair with a referral ask to the web designers
   (they keep the website, Mike handles apps and booking tools). Prices are unverified suggestions.
+- **Run 8 tweak (clubs and membership):** the clubs seen (golf: apply by phone; tennis: ClubSpark; leisure centre: app plus phone) suggest a
+  second pitch audience: small clubs and societies that run membership, class or fixture admin through a mix of phone, spreadsheets and a
+  generic tool. Hook for them: "How do new members join and renew today, and who keeps the list?" Same free 20-minute look, same "keep your
+  current tool" honesty. Unverified as a market; test it by asking at 360 Networking on 8 Dec.
 - One-page pitch outline: problem (3 bullets), what Mike checks, what you get (written report), price,
   what is out of scope (general IT), next step.
 
@@ -568,14 +608,14 @@ exclusions: new features, platform fees, third-party renewals, cloud overage and
 
 ## Next step
 
-- Mike (this week): spend 30 minutes in a normal browser: (1) search "app developer Wrexham" and note whether map-pack results appear;
-  (2) open the websites of 10 local dog groomers, daycares, cafes or clubs you already know and list any that book by phone or email only.
-  Also check the Chamber's events page (wcnwchamber.org.uk blocks this scout). Bring the list to the next event.
-- Mike: book **360 Networking, Tue 8 Dec, 5–6:45pm, Redwither Tower** (free) at
-  https://wrexham.gov.uk/service/business-and-investment-support/360-networking, and use the Run 7 20-second line. Check whether Connect Wrexham
-  runs on Thu 26 Nov (not confirmed anywhere) via https://connectwrexham.co.uk/ or its Skiddle link before going.
-- Next run: look for 2027 dates (360 Networking, Networx, Wrexham University, Chamber); open own sites of Karen Thomas, Happy Shrimp, Web Spinner
-  and HintSpire for referral partners; try one genuinely different prospect route (for example clubs and trades on Facebook-free local sites).
+- Mike (this week, 30 minutes in a normal browser): (1) search "app developer Wrexham" and note whether map-pack results appear;
+  (2) open the websites of 10 local dog groomers, daycares, clubs or cafes you already know and list any that book or take memberships by phone or
+  email only; (3) check wcnwchamber.org.uk and events.fsb.org.uk events pages (both block this scout). Bring the list to 8 Dec.
+- Mike: book **360 Networking, Tue 8 Dec, 5-6:45pm, Redwither Tower** (free) at
+  https://wrexham.gov.uk/service/business-and-investment-support/360-networking and use the Run 7 20-second line plus the Run 8 membership hook.
+  Connect Wrexham on Thu 26 Nov (tomorrow) is **not confirmed**: only go if the Skiddle/Eventbrite page shows it. Ask the council team for the 2027 360 dates.
+- Next run: look for 2027 dates (360 Networking, Networx, Wrexham University, Chamber, FSB); open own sites of DoodleIT, UK Promotion, Yellow Fly Design,
+  Happy Shrimp and HintSpire for referral partners; open one or two golf/tennis/sports club sites directly for membership-process observations.
 
 ## Changelog
 
@@ -593,3 +633,4 @@ exclusions: new features, platform fees, third-party renewals, cloud overage and
 - 2026-11-04 (run 5): workstreams Networking calendar, Competition, Referral partners, Prospect signals. 15 searches, 12 page-open attempts (10 read). Blocked/failed: wcnwchamber.org.uk (403), webboss.co.uk (410). Two new confirmed dates (360 Networking 10 Nov, 8 Dec); Connect Wrexham 29 Oct removed as past. Evidence still thin: no strong prospect.
 - 2026-11-11 (run 6): workstreams Networking calendar, Competition and search, Referral partners, Prospect signals, Local offer. 12 searches, 12 page-open attempts (10 read). Blocked/failed: iod.com (403), swdesigns.co (empty content); wcnwchamber.org.uk (403 earlier) not retried. Past dates removed (360 Networking 10 Nov, Chamber 11 Nov, Dec 2025 mince-pie event); baabaa design moved to referral partners; EngageWeb location corrected. Evidence still thin: no prospect with a clear problem found again.
 - 2026-11-18 (run 7): workstreams Networking calendar, Competition and search, Referral partners, Prospect signals, Local offer. 12 searches, 11 page-open attempts (8 read). Blocked/failed: wcnwchamber.org.uk (403), webboss.co.uk (410), bilarna.com (410); businesswales.gov.wales directory page retired. No new confirmed networking dates beyond Wrexham University (25 Nov, 9 Dec); 360 Networking 8 Dec remains the best fit; Connect Wrexham 26 Nov unconfirmed. Still no prospect with a clear problem; evidence thin.
+- 2026-11-25 (run 8): workstreams Networking calendar, Competition and search, Referral partners, Prospect signals, Local offer. 14 searches, 14 page-open attempts (12 read). Blocked/failed: clubspark.lta.org.uk (403); a Business Wales directory URL returned a generic retired-directory page; wcnwchamber.org.uk and iod.com not retried. FTF16 and Pitch Day removed as past; 360 Networking 8 Dec still the best confirmed date, 2027 dates not published (second-Tuesday pattern only); Connect Wrexham 26 Nov still unconfirmed. Added Stuff & Nonsense as a referral partner and club-membership pitch angle. Still no prospect with a clear problem; evidence thin.
