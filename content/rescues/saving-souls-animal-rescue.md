@@ -13,14 +13,14 @@ adoptionFeeMin: 670
 adoptionFeeMax: 720
 adoptionFeeNote: "£720 for an adult dog flying from Cyprus, £670 for a puppy flying from Cyprus; £470 for a dog already in the UK. Fees vary with the cost of the Brucellosis Canis blood test at each shelter."
 transportFrequency: null
-homeCheckType: null
+homeCheckType: in-person
 rehomesToHomesWithCats: case-by-case
 rehomesToHomesWithChildren: case-by-case
 rehomesWithoutGarden: case-by-case
 postAdoptionSupport: The rescue says it is always on hand for advice after adoption, has full UK rescue back-up if required, and invites adopters to a private Facebook group.
 feeIncludesTransport: "true"
 charityStatus: registered
-charityCheckedAt: 2026-11-05
+charityCheckedAt: 2026-11-26
 sources:
   - label: Saving Souls — Dog Adoption Policy and Procedure
     url: https://savingsoulsrescue.org/dog-adoption-policy/
@@ -30,7 +30,7 @@ sources:
     url: https://savingsoulsrescue.org/dogs-available-for-adoption/
   - label: Charity Commission register — Saving Souls Animal Rescue (1209645)
     url: https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5242267
-lastVerifiedAt: 2026-11-05
+lastVerifiedAt: 2026-11-26
 publishedAt: 2026-10-09
 ---
 
@@ -56,10 +56,10 @@ The fee includes vaccinations (distemper, parvovirus, rabies and DHPP); neuterin
 
 ## Home check and timescales
 
-The rescue says a home check will be arranged using a volunteer home-checking service, and that this "does take a good few days". It does not say whether checks are virtual or in person. Many dogs are still in Cyprus and fly over; adopters collect their dog from an agreed collection point. The rescue says the process can take roughly a month to complete the home check and book the next available flight.
+The rescue says a home check will be arranged using a volunteer home-checking service, and that this "does take a good few days". Its application form says: "Our process requires that we complete an in-person home check." Many dogs are still in Cyprus and fly over; adopters collect their dog from an agreed collection point. The rescue says the process can take roughly a month to complete the home check and book the next available flight.
 
 ## After you adopt
 
 The rescue says: "We are always on hand for a chat to discuss any questions or queries you may have", and that there is "full UK rescue back up should it be required". Adopters are also invited to join a private Facebook group to share updates and photos.
 
-*Details verified 5 November 2026 from the rescue's own website and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*
+*Details verified 26 November 2026 from the rescue's own website and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*

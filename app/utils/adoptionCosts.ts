@@ -12,7 +12,7 @@
 export type Country = 'romania' | 'cyprus' | 'bulgaria' | 'greece' | 'spain'
 export type DogSize = 'small' | 'medium' | 'large'
 
-export const SOURCES_CHECKED = '2026-11-05'
+export const SOURCES_CHECKED = '2026-11-26'
 
 // ---------------------------------------------------------------------------
 // Rescue fees — each from the rescue's own website. `fee` is the all-in cost
@@ -182,9 +182,10 @@ export const RESCUE_FEES: RescueFee[] = [
     variant: 'Most dogs',
     fee: 650,
     approx: true,
+    sourcesDiffer: true,
     parts: [{ label: 'Adoption fee (delivery included)', amount: 650 }],
-    note: '“Most adoption fees are £650”, covering passport, microchip, vaccinations, neutering if old enough, and delivery to you.',
-    sourceUrl: 'https://www.rescuedogsforadoption.co.uk/',
+    note: '“Most adoption fees are 650 U.K Pounds”, covering passport, chip, vaccinations, castration/spey if old enough, and transportation and delivery to you. The rescue’s about page says its fee “starts at £700”, so ask which applies.',
+    sourceUrl: 'https://rescuedogsforadoption.co.uk/adoption-process',
   },
   // Greece
   {
@@ -192,11 +193,11 @@ export const RESCUE_FEES: RescueFee[] = [
     rescue: 'Healing Paws Animal Rescue (Zakynthos)',
     country: 'greece',
     variant: 'Any dog',
-    fee: 680,
+    fee: 700,
     approx: true,
     parts: [
       { label: 'Adoption donation (minimum)', amount: 190 },
-      { label: 'Transport (approx.)', amount: 430 },
+      { label: 'Transport (approx.)', amount: 450 },
       { label: 'Health certificate & customs', amount: 60 },
     ],
     note: 'Donation covers registration, microchip, passport, parasite treatment, vaccinations and blood tests for leishmaniasis, dirofilaria, ehrlichia and anaplasma. Transport is paid to the transporter.',

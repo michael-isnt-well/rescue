@@ -14,7 +14,7 @@ facebookUrl: https://www.facebook.com/groups/pawprints2freedom
 applicationUrl: https://www.pawprints2freedom.co.uk/apply
 adoptionFeeMin: 520
 adoptionFeeMax: 520
-adoptionFeeNote: approximate, varies by dog and location
+adoptionFeeNote: "£520 standard adoption fee for mainland UK, according to the rescue's adopt page and adoption pack. The rescue says it reduces fees for some older dogs."
 transportFrequency: Roughly every few weeks — about 4–8 weeks from reservation to arrival
 homeCheckType: virtual
 rehomesToHomesWithCats: case-by-case
@@ -23,7 +23,7 @@ rehomesWithoutGarden: case-by-case
 postAdoptionSupport: Rescue back-up (RBU) for exceptional circumstances, post-adoption Facebook groups, and access to volunteer advice.
 feeIncludesTransport: "true"
 charityStatus: registered
-charityCheckedAt: 2026-11-05
+charityCheckedAt: 2026-11-26
 sources:
   - label: Pawprints to Freedom — adopt page
     url: https://www.pawprints2freedom.co.uk/adopt
@@ -31,7 +31,7 @@ sources:
     url: https://www.pawprints2freedom.co.uk/_files/ugd/3a38a8_e4a18f64e02b419293fdd868c0bc4062.pdf
   - label: Charity Commission register — Pawprints to Freedom Limited (1194754)
     url: https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5171025
-lastVerifiedAt: 2026-11-05
+lastVerifiedAt: 2026-11-26
 publishedAt: 2026-09-05
 ---
 
@@ -39,8 +39,9 @@ Pawprints to Freedom is a UK-registered charity (charity no. 1194754) that began
 
 ## The fee and what it covers
 
-The standard adoption fee for mainland UK is **around £520**, though it can vary depending on the individual dog and your location. It covers **transport to the UK, vaccinations and tests, microchip (and changing it to you), pet passport, import customs, and spay/neuter for dogs over 9 months old**, so the figure is close to the true all-in cost, not a starting point.
+According to its adopt page, "We charge a standard adoption fee of £520 for the whole of mainland UK." The adoption pack lists the same figure. The rescue says the fee covers **transport to the UK, vaccinations and tests, microchip (and changing it to you), pet passport, import customs, and spay/neuter for dogs over 9 months old**. Because transport is stated as part of that fee, £520 is the figure recorded here as the total.
 
+- **Deposits:** the adopt page says that for dogs already in the UK it takes "a £175 deposit at the time of reservation", and that for dogs still overseas it requires "the full adoption fee as a deposit".
 - **Puppies under 9 months:** an extra **£100 neutering deposit**, refunded if you have the dog neutered within 6 months of arrival.
 - **Older dogs:** the rescue offers **reduced fees**, fundraising the difference, to give older dogs a better chance of a home.
 - **Cancelling:** the rescue's adoption pack says £175 of the fee is non-refundable if you cancel before the dog boards the transport, and all of it once the dog has boarded. Its adopt page says "£175 of the fee is non-refundable if you cancel your reservation", whether the dog is already in the UK or has started its journey. The two pages are worded differently, so confirm the terms with the rescue before paying.
@@ -76,4 +77,4 @@ Adopters get **rescue back-up (RBU)**: if something serious and unforeseen happe
 - Adoption pack (dogs): [pawprints2freedom.co.uk/info-packs](https://www.pawprints2freedom.co.uk/info-packs)
 - Facebook community: [facebook.com/groups/pawprints2freedom](https://www.facebook.com/groups/pawprints2freedom)
 
-*Details verified 5 November 2026 from the rescue's own website, adoption pack and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*
+*Details verified 26 November 2026 from the rescue's own website, adoption pack and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*

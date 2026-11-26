@@ -21,7 +21,7 @@ postAdoptionSupport: "The rescue says it offers \"a free behavioural support pac
 feeIncludesTransport: null
 feeSourcesDiffer: false
 charityStatus: registered
-charityCheckedAt: 2026-10-27
+charityCheckedAt: 2026-11-26
 sources:
   - label: Project Galgo — adoption criteria, process and fees
     url: https://projectgalgo.com/about-project-galgo/about-dog-adoption/
@@ -33,7 +33,7 @@ sources:
     url: https://projectgalgo.com/
   - label: Charity Commission register — Project Galgo (1197487)
     url: https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5181184
-lastVerifiedAt: 2026-10-27
+lastVerifiedAt: 2026-11-19
 publishedAt: 2026-10-27
 ---
 
@@ -78,6 +78,6 @@ The rescue says: "Following adoption, we offer a free behavioural support packag
 
 ## Charity status
 
-Project Galgo's website shows "Registered Charity 1197487". We found a matching entry on the Charity Commission's register for England and Wales (registered 13 January 2022, checked 27 October 2026).
+Project Galgo's website shows "Registered Charity 1197487". We found a matching entry on the Charity Commission's register for England and Wales (registered 13 January 2022, checked 26 November 2026).
 
-*Details verified 27 October 2026 from the rescue's own website and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*
+*Details verified 19 November 2026 from the rescue's own website and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*
