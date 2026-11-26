@@ -1,7 +1,7 @@
 ---
 title: Healing Paws Animal Rescue
 name: Healing Paws Animal Rescue
-description: A UK registered charity rehoming dogs from the Greek island of Zakynthos, whose website lists a minimum £190 adoption donation plus approximately £430 towards transport.
+description: A UK registered charity rehoming dogs from the Greek island of Zakynthos, whose website lists a minimum £190 adoption donation plus approximately £450 towards transport.
 countries: [greece]
 regionsCovered: []
 charityNumber: "1177945"
@@ -9,9 +9,9 @@ charityRegisterUrl: https://register-of-charities.charitycommission.gov.uk/en/ch
 websiteUrl: https://healingpawsanimalrescue.com
 facebookUrl: https://www.facebook.com/HealingPawsAnimalRescue/
 applicationUrl: https://healingpawsanimalrescue.com/contact-us/
-adoptionFeeMin: 680
-adoptionFeeMax: 680
-adoptionFeeNote: "Added together: minimum £190 adoption donation, £60 for the health certificate and Greece-to-UK customs charge, and approx. £430 towards transport, making at least £680. Optional extra blood tests are charged separately."
+adoptionFeeMin: 700
+adoptionFeeMax: 700
+adoptionFeeNote: "Added together: minimum £190 adoption donation, £60 for the health certificate and Greece-to-UK customs charge, and approx. £450 towards transport, making at least £700. Optional extra blood tests are charged separately."
 transportFrequency: The rescue says it arranges overland transport to the UK "most months of the year".
 homeCheckType: virtual
 rehomesToHomesWithCats: null
@@ -20,7 +20,7 @@ rehomesWithoutGarden: null
 postAdoptionSupport: "The rescue says it will work closely with adopters \"throughout the whole process (and after adoption) to support and advise you\"."
 feeIncludesTransport: "false"
 charityStatus: registered
-charityCheckedAt: 2026-11-19
+charityCheckedAt: 2026-11-26
 sources:
   - label: Healing Paws — the adoption process
     url: https://healingpawsanimalrescue.com/the-adoption-process/
@@ -30,7 +30,7 @@ sources:
     url: https://healingpawsanimalrescue.com/adoptions/
   - label: Charity Commission register — Healing Paws Animal Rescue (1177945)
     url: https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5119742
-lastVerifiedAt: 2026-11-19
+lastVerifiedAt: 2026-11-26
 publishedAt: 2026-10-20
 ---
 
@@ -42,9 +42,9 @@ According to its adoption page, "there are two elements of donation relating to 
 
 - **Adoption donation:** "the health and documentation preparation in Zakynthos (minimum donation of £190)". The rescue lists Greek registration, microchip, passport, worming medication and Spot On, vaccinations, and blood tests for leishmaniasis, dirofilaria (heart worm), ehrlichia and anaplasmosis.
 - **Health certificate and customs:** "an additional £60 fee for the issue of the health certificate (£30) and the Greece to UK customs charge (£30)".
-- **Transport:** "The additional donation towards the travel costs of approximately £430 will be payable directly to the transporter by bank transfer and is required before the scheduled departure."
+- **Transport:** "The additional donation towards the travel costs of approximately £450 will be payable directly to the transporter by bank transfer and is required before the scheduled departure."
 
-Added together, that makes a total of at least **£680** (£190 + £60 + approx. £430), which is the figure recorded in our directory. Because the donation is a stated minimum and transport is approximate, the rescue's actual total may differ.
+Added together, that makes a total of at least **£700** (£190 + £60 + approx. £450), which is the figure recorded in our directory. Because the donation is a stated minimum and transport is approximate, the rescue's actual total may differ.
 
 The rescue also lists optional extra blood tests, charged separately: Brucella (£85), Heptazoon Canis (£60) and Babesia (£40).
 
@@ -72,4 +72,4 @@ The rescue says it will "work closely with you throughout the whole process (and
 
 The rescue's adoption page says: "Please get in touch using the form on the contact page."
 
-*Details verified 19 November 2026 from the rescue's own website and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*
+*Details verified 26 November 2026 from the rescue's own website and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*

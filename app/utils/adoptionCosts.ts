@@ -12,7 +12,7 @@
 export type Country = 'romania' | 'cyprus' | 'bulgaria' | 'greece' | 'spain'
 export type DogSize = 'small' | 'medium' | 'large'
 
-export const SOURCES_CHECKED = '2026-11-19'
+export const SOURCES_CHECKED = '2026-11-26'
 
 // ---------------------------------------------------------------------------
 // Rescue fees — each from the rescue's own website. `fee` is the all-in cost
@@ -193,11 +193,11 @@ export const RESCUE_FEES: RescueFee[] = [
     rescue: 'Healing Paws Animal Rescue (Zakynthos)',
     country: 'greece',
     variant: 'Any dog',
-    fee: 680,
+    fee: 700,
     approx: true,
     parts: [
       { label: 'Adoption donation (minimum)', amount: 190 },
-      { label: 'Transport (approx.)', amount: 430 },
+      { label: 'Transport (approx.)', amount: 450 },
       { label: 'Health certificate & customs', amount: 60 },
     ],
     note: 'Donation covers registration, microchip, passport, parasite treatment, vaccinations and blood tests for leishmaniasis, dirofilaria, ehrlichia and anaplasma. Transport is paid to the transporter.',

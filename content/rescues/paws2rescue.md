@@ -20,13 +20,13 @@ rehomesWithoutGarden: case-by-case
 postAdoptionSupport: The rescue says it keeps in contact with adopters and is there to support them after adoption.
 feeIncludesTransport: "true"
 charityStatus: registered
-charityCheckedAt: 2026-11-19
+charityCheckedAt: 2026-11-26
 sources:
   - label: Paws2Rescue — the adoption process
     url: https://paws2rescue.com/adoption/
   - label: Charity Commission register — Paws2Rescue (1156882)
     url: https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5046046
-lastVerifiedAt: 2026-11-19
+lastVerifiedAt: 2026-11-26
 publishedAt: 2026-10-09
 ---
 
@@ -43,7 +43,7 @@ The dog's own neutering is **not** included. For every dog adopted, the rescue f
 ## Who they rehome to
 
 - **Garden:** a fully secure garden is required, with no gaps a dog could escape through and fencing of at least 6ft (5.5ft for smaller dogs). Ground-floor flats with secure outdoor access are considered, with a more limited choice of dogs.
-- **Children:** children in the household should ideally be over 8, or over 12 for dogs from public shelters. Visiting children need to be mentioned in the application.
+- **Children:** children in the household should ideally be over 8, or over 12 for dogs from public shelters. The rescue's application page also says: "the minimum age for children in the household is 8 years old. We do not deviate from this." Visiting children need to be mentioned in the application.
 - **Cats:** cat-tested dogs are available, though the rescue is clear that outcomes can't be guaranteed.
 
 ## Timescales
@@ -54,4 +54,4 @@ The rescue says the vaccinations and passport usually take around a month to com
 
 The rescue says it keeps in contact with adopters and is there to support them after adoption.
 
-*Details verified 19 November 2026 from the rescue's own website and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*
+*Details verified 26 November 2026 from the rescue's own website and the Charity Commission register, to the best of our knowledge. Fees and policies change, so always confirm directly with the rescue.*
